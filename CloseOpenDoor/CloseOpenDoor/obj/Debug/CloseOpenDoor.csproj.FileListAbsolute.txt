@@ -1,0 +1,15 @@
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\bin\Debug\CloseOpenDoor.exe.config
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\bin\Debug\CloseOpenDoor.exe
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\bin\Debug\CloseOpenDoor.pdb
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.Form1.resources
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.Properties.Resources.resources
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.csproj.GenerateResource.cache
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.exe
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.pdb
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\bin\Debug\TcpClass.dll
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\bin\Debug\TcpClient.dll
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\bin\Debug\TcpClass.pdb
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\bin\Debug\TcpClient.pdb
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.csproj.CopyComplete
+F:\Projects\OnSVN\Lanbiang\CloseOpenDoor\CloseOpenDoor\obj\Debug\CloseOpenDoor.csprojAssemblyReference.cache

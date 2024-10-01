@@ -1,0 +1,84 @@
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Collections.Immutable.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Threading.Tasks.Extensions.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csprojAssemblyReference.cache
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csproj.CoreCompileInputs.cache
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csproj.CopyComplete
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Collections.Immutable.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Threading.Tasks.Extensions.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csprojAssemblyReference.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csproj.CoreCompileInputs.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csproj.CopyComplete
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.Mqtt.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Collections.Immutable.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\System.Threading.Tasks.Extensions.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Common.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Buffers.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Codecs.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\bin\Debug\net45\DotNetty.Transport.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csprojAssemblyReference.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.csproj.CopyComplete
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs.Mqtt\obj\Debug\net45\DotNetty.Codecs.Mqtt.pdb

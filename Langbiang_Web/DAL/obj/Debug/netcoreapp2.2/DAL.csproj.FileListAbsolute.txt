@@ -1,0 +1,82 @@
+D:\WebApp\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+D:\WebApp\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\WebApp\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\WebApp\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+D:\WebApp\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+D:\WebApp\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+D:\WebApp\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+D:\WebApp\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects Source\MyFW2\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+D:\Projects Source\MyFW2\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Projects Source\MyFW2\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects Source\MyFW2\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+D:\Projects Source\MyFW2\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+D:\Projects Source\MyFW2\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+D:\Projects Source\MyFW2\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+D:\Projects Source\MyFW2\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+D:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+D:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+D:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+D:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+F:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+F:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+F:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+F:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\HeThongBanVe\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\HeThongBanVe\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\VuonQuocGia\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+F:\Projects\OnSVN\VuonQuocGia\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\VuonQuocGia\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\VuonQuocGia\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\VuonQuocGia\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\VuonQuocGia\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+F:\Projects\OnSVN\VuonQuocGia\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\VuonQuocGia\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\VuonQuocGia\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGia\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+F:\Projects\OnSVN\VuonQuocGia\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\VuonQuocGia\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.pdb

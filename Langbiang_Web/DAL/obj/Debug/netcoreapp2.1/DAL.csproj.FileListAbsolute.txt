@@ -1,0 +1,8 @@
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\bin\Debug\netcoreapp2.1\DAL.deps.json
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\bin\Debug\netcoreapp2.1\DAL.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\bin\Debug\netcoreapp2.1\DAL.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.1\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.1\DAL.AssemblyInfoInputs.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.1\DAL.AssemblyInfo.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.1\DAL.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\DAL\obj\Debug\netcoreapp2.1\DAL.pdb

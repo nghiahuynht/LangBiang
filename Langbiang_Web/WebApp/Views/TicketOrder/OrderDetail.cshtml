@@ -1,0 +1,359 @@
+﻿@using DAL;
+@model DAL.Models.ConDao.OrderResultViewModel
+@{
+    ViewData["Title"] = "Thông tin mua vé";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section styles{
+
+    <link href="~/plugins/datepicker/datepicker3.css" rel="stylesheet" />
+    <link href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+
+    <style>
+        .badge-status{margin-top:5px;font-weight:bold;}
+        .fa-eye{color:#0094ff;cursor:pointer;}
+    </style>
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>@(ViewData["Title"])</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item">
+                        @{
+                            if (Model.TicketOrder.PaymentStatus == 0)
+                            {
+                                <input type="button" value="Huỷ order" class="btn bg-danger" id="btn-cancel" style="margin-right:5px;" />
+                            }
+                            if (Model.TicketOrder.PaymentStatus == 0)
+                            {
+                                <input type="button" value="Xác nhận thanh toán" class="btn bg-success" id="btn-confirm" style="margin-right:5px;" />
+                            }
+                            <input type="button" value="Gửi lại thông tin vé" class="btn bg-primary" id="btn-sendNoti" style="margin-right:5px;" />
+                            <a class="btn btn-default" href="/ticketorder/index">Trở lại danh sách</a>
+                        }
+
+
+                    </li>
+
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="card">
+        <div class="card-body">
+            <form class="form-horizontal" id="form-ticket-order">
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(x => x.TicketOrder.Id)
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Mã khách hàng *</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.Customer.CustomerCode, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Tên khách hàng *</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.Customer.CustomerName, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Điện thoại *</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.Customer.Phone, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Email</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.Customer.Email, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+
+                            <label class="col-md-12 col-form-label">Thông tin lấy hoá đơn</label>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Tên công ty</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.Customer.AgencyName, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">MST</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.Customer.TaxCode, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Địa chỉ</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.Customer.TaxAddress, new { @class = "form-control" })
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Mã Order *</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.TicketOrder.Id, new { @class = "form-control" })
+                            </div>
+                        </div>
+
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Ngày Order *</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="@(Model.TicketOrder.CreatedDate.HasValue?Model.TicketOrder.CreatedDate.Value.ToString("dd/MM/yyyy"):string.Empty)" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Ngày thăm quan *</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="@(Model.TicketOrder.VisitDate.HasValue?Model.TicketOrder.VisitDate.Value.ToString("dd/MM/yyyy"):string.Empty)" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Loại vé *</label>
+                            <div class="col-md-9">
+                                @Html.TextBoxFor(x => x.TicketOrder.TicketCode, new { @class = "form-control" })
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Đơn giá *</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="@(Model.TicketOrder.Price.ToString("N0"))" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Số lượng *</label>
+                            <div class="col-md-9">
+                                <input type="text" class="form-control" value="@(Model.TicketOrder.Quanti.ToString("N0"))" />
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Thành tiền *</label>
+                            <div class="col-md-9">
+                                @{
+                                    decimal Fee = Model.TicketOrder.PaymentType == Contanst.PaymentType_TrucTiep ? Contanst.PaymentFee_TrucTiep : Contanst.PaymentFee_OnePay;
+                                    decimal totalNoPayment = Model.TicketOrder.Total - Fee;
+                                }
+                                <input type="text" class="form-control" value="@(totalNoPayment.ToString("N0"))" />
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Tuyến *</label>
+                            <div class="col-md-9">
+                                @{
+                                    var TuyenDetail = Model.GateListAll.FirstOrDefault(x => x.GateCode == Model.TicketOrder.GateName);
+                                }
+                                <span>@(TuyenDetail != null ? TuyenDetail.GateName : string.Empty)</span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Đối tượng *</label>
+                            <div class="col-md-9">
+                                @{
+                                    string objName = string.Empty;
+                                    switch (Model.TicketOrder.ObjType)
+                                    {
+                                        case 1:
+                                            objName = "Người lớn";
+                                            break;
+                                        case 2:
+                                            objName = "Miễn giảm 50%";
+                                            break;
+                                        case 3:
+                                            objName = "Học sinh/ sinh viên";
+                                            break;
+                                        case 4:
+                                            objName = "Trẻ em/học sinh";
+                                            break;
+                                        case 5:
+                                            objName = "Học sinh/sinh viên ở Côn Đảo";
+                                            break;
+                                        default:
+                                            objName = "Chưa xác định";
+                                            break;
+
+                                    }
+
+                                            }
+                                <span>@(objName)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <hr />
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>STT</th>
+                            <th>Mã tra cứu</th>
+                            <th>Số HDDT</th>
+                            <th>Mã tra cứu Misa</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @{
+                                                if (Model.ListSubCode.Any())
+                                                {
+                                                    foreach (var item in Model.ListSubCode)
+                                                    {
+                                    <tr>
+                                        <td width="40px"><div class="text-center" onclick="ViewPDf(@(item.Id))"><span class="fa fa-eye"></span></div></td>
+                                        <td>@(item.SubNum)</td>
+                                        <td><span style="font-size:14pt;">@(item.SubOrderCode)</span></td>
+                                        <td>@(item.InvoiceNumber)</td>
+                                        <td>@(item.TransactionID)</td>
+                                    </tr>
+                                }
+                                    }
+                        }
+                    </tbody>
+                </table>
+                <hr />
+                <div class="row">
+
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="col-md-12 col-form-label">Tổng cần thanh toán *</label>
+                            <div class="col-md-12">
+                                <span class="badge badge-info badge-status">@(Model.TicketOrder.Total.ToString("N0")) VNĐ</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="form-group">
+                            <label class="col-md-12 col-form-label">Trạng thái thanh toán*</label>
+                            <div class="col-md-12">
+                                @{
+                                    if (Model.TicketOrder.PaymentStatus == 0)
+                                    {
+                                        <span class="badge badge-warning badge-status">Chờ xác nhận thanh toán</span>
+                                    }
+                                    else if (Model.TicketOrder.PaymentStatus == 1)
+                                    {
+                                        <span class="badge badge-success badge-status">Đã xác nhận</span>
+                                    }
+                                    else if (Model.TicketOrder.PaymentStatus == 2)
+                                    {
+                                        <span class="badge badge-danger badge-status">Huỷ</span>
+                                    }
+                                }
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </form>
+
+        </div>
+    </div>
+
+
+
+</section>
+
+@section scripts{
+    <script src="~/app-script/helper.js"></script>
+    <script>
+        $(document).ready(function ()
+        {
+            $("#btn-confirm").click(function ()
+            {
+                                                ChangeStatusPayment(1);
+                                            });
+
+            $("#btn-cancel").click(function ()
+            {
+                                                ChangeStatusPayment(2);
+                                            });
+            $("#btn-sendNoti").click(function () {
+                                                SendNoti();
+                                            });
+
+                                        })
+
+        function ChangeStatusPayment(newStatus) {
+                                            let orderId = $("#TicketOrder_Id").val();
+
+                                            let messageConfirm = newStatus == 1 ? "xác nhận" : "huỷ";
+                                            bootbox.confirm("Bạn có chắc muốn " + messageConfirm+" giao dịch mua vé này", function (confi) {
+                                                if (confi)
+                                                {
+                    $.ajax({
+                                                    type: "GET",
+                        contentType: 'application/json; charset=utf-8',
+                        url: "/TicketOrder/ChangeStatusOrder?orderId=" + orderId + "&newStatus=" + newStatus,
+                        success: function (result) {
+
+                                                            if (result.isSuccess == true) {
+                                                                bootbox.alert(AlertSuccess("Chuyển trạng thái thành công"), function () {
+
+                                                                    location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                                                    SendNoti();
+                                                                });
+
+                                                            } else {
+                                                                bootbox.alert(AlertFail("Chuyển trạng thái không thành công"), function () {
+                                                                    location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                                                });
+                                                            }
+
+
+                                                        }
+                                                    });
+                                                }
+                                            });
+
+
+                                        }
+                                        function SendNoti() {
+                                            let orderId = $("#TicketOrder_Id").val();
+                                            let crsfToken = document?.querySelector("#form-ticket-order > input[type=hidden]:nth-child(1)")?.getAttribute('value');
+            $.ajax({
+                                            type: "GET",
+                contentType: 'application/json; charset=utf-8',
+                headers: {
+                                                    'RequestVerificationToken': crsfToken
+                },
+                url: "/ConDao/SendNoti?id=" + orderId,
+                success: function (result) {
+                                                    debugger;
+                                                    if (result.isSuccess == true) {
+                                                        bootbox.alert(AlertSuccess("Gửi zalo/email thành công"), function () {
+                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                                        });
+
+                                                    } else {
+                                                        bootbox.alert(AlertFail(result.desc), function () {
+                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                                        });
+                                                    }
+
+
+                                                }
+                                            });
+                                        }
+
+                                        function ViewPDf(subId) {
+                                         window.open("/ticketorder/GetPDFForPrint/" + subId, 'Xem pdf');
+                                        }
+    </script>
+}

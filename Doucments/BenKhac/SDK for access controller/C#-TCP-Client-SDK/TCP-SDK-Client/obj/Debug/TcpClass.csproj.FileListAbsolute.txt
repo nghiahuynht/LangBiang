@@ -1,0 +1,12 @@
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\bin\Debug\TcpClient.dll
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\bin\Debug\TcpClient.pdb
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\obj\Debug\TcpClient.dll
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\obj\Debug\TcpClient.pdb
+E:\ACS\BS-ACS\Src\TCPIP\bin\Debug\TcpClass.dll
+E:\ACS\BS-ACS\Src\TCPIP\bin\Debug\TcpClass.pdb
+E:\ACS\BS-ACS\Src\TCPIP\obj\Debug\TcpClass.dll
+E:\ACS\BS-ACS\Src\TCPIP\obj\Debug\TcpClass.pdb
+E:\ACS\BS-ACS\Test\标准控制器接口\TCPIP\bin\Debug\TcpClass.dll
+E:\ACS\BS-ACS\Test\标准控制器接口\TCPIP\bin\Debug\TcpClass.pdb
+E:\ACS\BS-ACS\Test\标准控制器接口\TCPIP\obj\Debug\TcpClass.dll
+E:\ACS\BS-ACS\Test\标准控制器接口\TCPIP\obj\Debug\TcpClass.pdb

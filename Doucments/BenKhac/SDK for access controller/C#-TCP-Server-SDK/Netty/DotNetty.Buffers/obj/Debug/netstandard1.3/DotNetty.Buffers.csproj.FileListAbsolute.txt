@@ -1,0 +1,91 @@
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.deps.json
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.deps.json
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.deps.json
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.deps.json
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csprojAssemblyReference.cache
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CopyComplete
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.deps.json
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csprojAssemblyReference.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CoreCompileInputs.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CopyComplete
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.deps.json
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csprojAssemblyReference.cache
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CoreCompileInputs.cache
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CopyComplete
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.deps.json
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csprojAssemblyReference.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.csproj.CopyComplete
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Buffers\obj\Debug\netstandard1.3\DotNetty.Buffers.pdb

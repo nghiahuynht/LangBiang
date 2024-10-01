@@ -1,0 +1,446 @@
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+D:\WebApp\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\_ViewImports.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\_ViewStart.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\WebApp\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Projects Source\MyFW2\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Detail.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\PermissionMenu.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\_PartialLstPermissionMenu.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListMenuNavigationByRole\LeftMenuNavigation.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetail.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategorySearch.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\Index.g.cshtml.cs
+D:\Projects Source\MyFW2\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategoryDetail.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Detail.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\PermissionMenu.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\_PartialLstPermissionMenu.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\Index.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategoryDetail.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategorySearch.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetail.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\Index.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\InvoiceDetail.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListMenuNavigationByRole\LeftMenuNavigation.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Supplier\SupplierDetail.g.cshtml.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+D:\Projects\Web Application\FW-NetCore-Jquery\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Detail.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\PermissionMenu.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\_PartialLstPermissionMenu.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\Index.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategoryDetail.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategorySearch.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetail.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\Index.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\InvoiceDetail.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListMenuNavigationByRole\LeftMenuNavigation.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Supplier\SupplierDetail.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\Index.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketDetail.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketSales.g.cshtml.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+D:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleHistory.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Detail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\PermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\_PartialLstPermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategoryDetail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategorySearch.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\InvoiceDetail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListMenuNavigationByRole\LeftMenuNavigation.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Supplier\SupplierDetail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleHistory.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleReport.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketDetail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketSales.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutConDao.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\TicketOrder.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\PaymentOrder.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Finish.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\FinishOrder.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\OrderDetail.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\Index.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\ViewTicketOrderPdf.g.cshtml.cs
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\HeThongBanVe\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\HeThongBanVe\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\ReportSoatVe.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Detail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\PermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\_PartialLstPermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategoryDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategorySearch.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Finish.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\FinishOrder.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\PaymentOrder.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\TicketOrder.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\InvoiceDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Report\TicketTypeReport.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListMenuNavigationByRole\LeftMenuNavigation.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutConDao.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Supplier\SupplierDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\OrderDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\ViewTicketOrderPdf.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\ReportSoatVe.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleHistory.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleReport.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketSales.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ZNS\ZaloNotiConfig.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnSVN\VuonQuocGiaConDao\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\SaleScreen.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\VuonQuocGia\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Detail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\PermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\_PartialLstPermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategoryDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategorySearch.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Finish.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\FinishOrder.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\PaymentOrder.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\TicketOrder.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\GatePermission\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\_PartialStaffSaleCounter.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\_PartialTicketSaleMisaStatus.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\InvoiceDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Report\TicketTypeReport.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListMenuNavigationByRole\LeftMenuNavigation.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutConDao.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\SoatVe\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Supplier\SupplierDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\GetPDFForPrint.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\htmlprint.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\OrderDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\SaleScreen.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\ViewTicketOrderPdf.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\Index.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\ReportSoatVe.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleHistory.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleReport.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketDetail.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketSales.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ZNS\ZaloNotiConfig.g.cshtml.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\VuonQuocGia\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.csprojAssemblyReference.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorAssemblyInfo.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfoInputs.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.AssemblyInfo.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.deps.json
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.json
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.runtimeconfig.dev.json
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\DAL.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\DAL.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.input.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.TagHelpers.output.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorCoreGenerate.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Detail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\Login.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\PermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Account\_PartialLstPermissionMenu.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategoryDetail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Category\_PartialCategorySearch.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Finish.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\FinishOrder.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\PaymentOrder.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ConDao\TicketOrder.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\CustomerDetail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Customer\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\GatePermission\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Contact.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\Privacy.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\_PartialStaffSaleCounter.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Home\_PartialTicketSaleMisaStatus.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Invoice\InvoiceDetail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Report\TicketTypeReport.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\ListMenuNavigationByRole\LeftMenuNavigation.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Layout.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutConDao.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\SoatVe\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\SoatVe\SearchInOutHistory.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Supplier\SupplierDetail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\GetPDFForPrint.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\htmlprint.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\OrderDetail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\SaleScreen.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\ViewTicketOrderPdf.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\Index.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\ReportSoatVe.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleHistory.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\SaleReport.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketDetail.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Ticket\TicketSales.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\ZNS\ZaloNotiConfig.g.cshtml.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cache
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.RazorTargetAssemblyInfo.cs
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.Views.pdb
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
+F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb

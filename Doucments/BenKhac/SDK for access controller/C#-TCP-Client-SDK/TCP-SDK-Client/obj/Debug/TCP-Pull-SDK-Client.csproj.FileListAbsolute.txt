@@ -1,0 +1,10 @@
+E:\门禁控制器开发包\TCP-Pull-SDK-C#\TCP-SDK-Client\obj\Debug\TcpClass.dll
+E:\门禁控制器开发包\TCP-Pull-SDK-C#\TCP-SDK-Client\obj\Debug\TcpClass.pdb
+E:\门禁控制器开发包\TCP-Pull-SDK-C#\TCP-SDK-Client\bin\Debug\TcpClass.dll
+E:\门禁控制器开发包\TCP-Pull-SDK-C#\TCP-SDK-Client\bin\Debug\TcpClass.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Client-SDK\TCP-SDK-Client\bin\Debug\TcpClass.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Client-SDK\TCP-SDK-Client\bin\Debug\TcpClass.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Client-SDK\TCP-SDK-Client\obj\Debug\TCP-Pull-SDK-Client.csprojAssemblyReference.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Client-SDK\TCP-SDK-Client\obj\Debug\TCP-Pull-SDK-Client.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Client-SDK\TCP-SDK-Client\obj\Debug\TcpClass.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Client-SDK\TCP-SDK-Client\obj\Debug\TcpClass.pdb

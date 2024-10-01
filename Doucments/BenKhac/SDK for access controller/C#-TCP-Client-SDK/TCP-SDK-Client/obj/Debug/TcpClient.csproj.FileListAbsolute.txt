@@ -1,0 +1,8 @@
+E:\ACS\Src\TCPIP\TcpClient\bin\Debug\TcpClient.dll
+E:\ACS\Src\TCPIP\TcpClient\bin\Debug\TcpClient.pdb
+E:\ACS\Src\TCPIP\TcpClient\obj\Debug\TcpClient.dll
+E:\ACS\Src\TCPIP\TcpClient\obj\Debug\TcpClient.pdb
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\obj\Debug\TcpClient.dll
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\bin\Debug\TcpClient.dll
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\bin\Debug\TcpClient.pdb
+E:\ACS\BS-ACS\Src\TCPIP\TcpClient\obj\Debug\TcpClient.pdb

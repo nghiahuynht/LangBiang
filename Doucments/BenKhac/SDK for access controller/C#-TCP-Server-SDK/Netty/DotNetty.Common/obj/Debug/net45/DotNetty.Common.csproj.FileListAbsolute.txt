@@ -1,0 +1,101 @@
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csprojAssemblyReference.cache
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CopyComplete
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csprojAssemblyReference.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CopyComplete
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CopyComplete
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\DotNetty.Common.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csprojAssemblyReference.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.csproj.CopyComplete
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\net45\DotNetty.Common.pdb

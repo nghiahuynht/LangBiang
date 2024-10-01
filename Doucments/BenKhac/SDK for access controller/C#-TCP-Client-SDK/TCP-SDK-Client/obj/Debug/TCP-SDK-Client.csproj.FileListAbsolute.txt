@@ -1,0 +1,8 @@
+E:\ACS\BS-ACS\Test\TCP-SDK-C#\TCP-SDK-Client\bin\Debug\TcpClass.dll
+E:\ACS\BS-ACS\Test\TCP-SDK-C#\TCP-SDK-Client\bin\Debug\TcpClass.pdb
+E:\ACS\BS-ACS\Test\TCP-SDK-C#\TCP-SDK-Client\obj\Debug\TcpClass.dll
+E:\ACS\BS-ACS\Test\TCP-SDK-C#\TCP-SDK-Client\obj\Debug\TcpClass.pdb
+E:\门禁控制器开发包\TCP-SDK-C#\TCP-SDK-Client\bin\Debug\TcpClass.dll
+E:\门禁控制器开发包\TCP-SDK-C#\TCP-SDK-Client\bin\Debug\TcpClass.pdb
+E:\门禁控制器开发包\TCP-SDK-C#\TCP-SDK-Client\obj\Debug\TcpClass.dll
+E:\门禁控制器开发包\TCP-SDK-C#\TCP-SDK-Client\obj\Debug\TcpClass.pdb

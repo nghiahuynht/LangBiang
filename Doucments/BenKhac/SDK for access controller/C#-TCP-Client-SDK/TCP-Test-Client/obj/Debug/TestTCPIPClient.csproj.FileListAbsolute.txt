@@ -1,0 +1,9 @@
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TestTCPClient.exe.config
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TestTCPClient.exe
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TestTCPClient.pdb
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TcpClient.dll
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TcpClient.pdb
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPClient.Properties.Resources.resources
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPClient.exe
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPClient.pdb
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TcpipIntface.Form1.resources

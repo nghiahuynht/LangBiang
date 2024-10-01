@@ -1,0 +1,5 @@
+E:\ACS\BS-ACS\Src\TCPIP\bin\Release\TcpClass.dll
+E:\ACS\BS-ACS\Src\TCPIP\bin\Release\TcpClass.pdb
+E:\ACS\BS-ACS\Src\TCPIP\obj\Release\ResolveAssemblyReference.cache
+E:\ACS\BS-ACS\Src\TCPIP\obj\Release\TcpClass.dll
+E:\ACS\BS-ACS\Src\TCPIP\obj\Release\TcpClass.pdb

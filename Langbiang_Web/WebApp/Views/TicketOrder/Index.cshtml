@@ -1,0 +1,228 @@
+﻿@using DAL
+@using DAL.Models.Ticket
+@{
+    ViewData["Title"] = "Danh sách mua vé";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@section styles{
+
+    <link href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
+    <link href="~/plugins/datatables-fixedcolumns/css/fixedColumns.bootstrap4.css" rel="stylesheet" />
+
+}
+<section class="content-header">
+    <div class="container-fluid">
+        <div class="row mb-2">
+            <div class="col-sm-6">
+                <h1>@(ViewData["Title"])</h1>
+            </div>
+            <div class="col-sm-6">
+                <ol class="breadcrumb float-sm-right">
+                    <li class="breadcrumb-item"><a href="#">Trang chủ</a></li>
+                    <li class="breadcrumb-item active">@(ViewData["Title"])</li>
+                </ol>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
+</section>
+<section class="content">
+    <div class="card">
+        <div class="card-header">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label>Hình thức mua vé</label>
+                    <select class="form-control" id="ddl-chanel">
+                        <option value="0">Tất cả</option>
+                        <option value="1">Website bán vé</option>
+                        <option value="2">Bán tại quầy</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label>Từ ngày</label>
+                    <div class="input-group date">
+                        <input type="text" id="FromDate" value="@(DateTime.Now.AddDays(-7).ToString("dd/MM/yyyy"))" class="form-control">
+                        <span class="input-group-addon group-date-icon"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <label>Đến ngày</label>
+                    <div class="input-group date">
+                        <input type="text" id="ToDate" value="@(DateTime.Now.ToString("dd/MM/yyyy"))" class="form-control">
+                        <span class="input-group-addon group-date-icon"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <label>Tuyến thăm quan</label>
+                    <select class="form-control" id="ddl-gatecode">
+                        <option value="All">Tất cả</option>
+                        @{
+                            var lstGate = (List<GateListModel>)ViewBag.GateList;
+                            foreach (var item in lstGate)
+                            {
+                                <option value="@(item.GateCode)">@(item.GateName)</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label>Tình trạng thanh toán</label>
+                    <select class="form-control" id="ddl-status">
+                        <option value="-1">Tất cả</option>
+                        <option value="0">Chờ xác nhận TT</option>
+                        <option value="1">Đã xác nhận thanh toán</option>
+                        <option value="2">Huỷ</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label>Mã/tên KH/SĐT khách hàng</label>
+                    <input type="text" class="form-control" id="txtkeyword" />
+                </div>
+                <div class="col-sm-2">
+                    <input type="button" value="Tìm" class="btn btn-primary btn-filter" id="btn-search" />&nbsp;
+                   
+                </div>
+            </div>
+
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-hover dataTable" id="table-order">
+                <thead>
+                    <tr>
+                        <th width="40px"></th>
+                        <th width="150px">Số đơn hàng</th>
+                        <th width="200px">Đối tượng</th>
+                        <th width="150px">Ngày mua</th>
+                        <th width="150px">Ngày thăm quan</th>
+                        <th width="200px">Tên KH</th>
+                        <th width="120px">Điện thoại</th>
+                        <th width="200px">Tình trạng thanh toán</th>
+                        <th width="70px">Mã vé</th>
+                        <th width="100px">Đơn giá</th>
+                        <th width="40px">SL</th>
+                        <th width="150px">Thành tiền</th>
+                        <th width="200px">PT thanh toán</th>
+                        <th width="150px">Phí thanh toán</th>
+
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+</section>
+ 
+@section scripts{
+    <script src="~/plugins/datepicker/bootstrap-datepicker.js"></script>
+    <script src="~/plugins/datatable/jquery.datatable.js"></script>
+    <script src="~/plugins/datatables-bs4/js/dataTables.bootstrap4.js"></script>
+    <script src="~/plugins/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+
+    <script>
+        var tableId = "#table-order";
+        var ajaxURL = "/TicketOrder/SearchOrder";
+        var columnData = [
+            {
+                "data": "id", "render": function (data, type, row, meta) {
+                    return RenderTableAction(data);
+                }
+            },
+            { "data": "id" },
+            { "data": "objName" },
+            { "data": "createdDate" },
+            { "data": "visitDate" },
+            { "data": "customerName" },
+            { "data": "phone" },
+            {
+                "data": "paymentStatus", "render": function (data, type, row, meta) {
+                    return RenderStatus(data);
+                }
+            },
+            { "data": "ticketCode" },
+            { "data": "price" },
+            { "data": "quanti" },
+            { "data": "total" },
+
+            { "data": "paymentMethod" },
+            { "data": "paymentFee" }
+        ];
+
+        $(document).ready(function () {
+            // Khôi phục thông tin tìm kiếm từ sessionStorage
+            var searchHistory = JSON.parse(sessionStorage.getItem('searchHistory'));
+            if (searchHistory) {
+                $("#ddl-chanel").val(searchHistory.ChanelId);
+                $("#FromDate").val(searchHistory.FromDate);
+                $("#ToDate").val(searchHistory.ToDate);
+                $("#ddl-status").val(searchHistory.PaymentStatus);
+                $("#ddl-gatecode").val(searchHistory.GateCode);
+                $("#txtkeyword").val(searchHistory.Keyword);
+            }
+
+            SearchOrder();
+            $("#btn-search").click(function () {
+                // Lưu thông tin tìm kiếm vào sessionStorage trước khi tìm kiếm
+                SaveSearchHistory();
+                SearchOrder();
+            });
+
+            $(".date").datepicker({
+                format: "dd/mm/yyyy"
+            }).on('changeDate', function (e) {
+                $(this).datepicker('hide');
+            });
+        });
+
+        function SearchOrder() {
+            var searchModel = {
+                ChanelId: $("#ddl-chanel").val(),
+                FromDate: ConverFormatDate($("#FromDate").val()),
+                ToDate: ConverFormatDate($("#ToDate").val()),
+                PaymentMethod: "All",
+                PaymentStatus: $("#ddl-status").val(),
+                GateCode: $("#ddl-gatecode").val(),
+                Keyword: $("#txtkeyword").val()
+            };
+
+            GenrateDataTableSearch(tableId, ajaxURL, columnData, searchModel,10,"vé");
+        }
+
+        function SaveSearchHistory() {
+            var searchModel = {
+                ChanelId: $("#ddl-chanel").val(),
+                FromDate: $("#FromDate").val(),
+                ToDate: $("#ToDate").val(),
+                PaymentMethod: "All",
+                PaymentStatus: $("#ddl-status").val(),
+                GateCode: $("#ddl-gatecode").val(),
+                Keyword: $("#txtkeyword").val()
+            };
+
+            // Lưu thông tin tìm kiếm vào sessionStorage
+            sessionStorage.setItem('searchHistory', JSON.stringify(searchModel));
+        }
+
+        function RenderTableAction(invoiceId) {
+            var html = "<div class='div-table-action'>" +
+                "<i class='fa fa-edit' onclick='GotoDetail(" + invoiceId + ")'></i>&nbsp;" +
+                "</div>";
+            return html;
+        }
+
+        function GotoDetail(orderId) {
+            location.href = "/ticketorder/orderdetail/" + orderId;
+        }
+
+        function RenderStatus(status) {
+            var statusHTML = "";
+            if (status == 0) {
+                statusHTML = "<span class='badge badge-warning badge-status'>Chờ xác nhận TT</span>";
+            } else if (status == 1) {
+                statusHTML = "<span class='badge badge-success badge-status'>Đã xác nhận TT</span>";
+            } else if (status == 2) {
+                statusHTML = "<span class='badge badge-danger badge-status'>Hủy</span>";
+            }
+            return statusHTML;
+        }
+    </script>
+}
+}

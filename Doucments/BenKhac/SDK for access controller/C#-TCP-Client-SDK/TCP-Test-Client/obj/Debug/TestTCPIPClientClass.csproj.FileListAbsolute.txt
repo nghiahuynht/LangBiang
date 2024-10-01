@@ -1,0 +1,14 @@
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TestTCPClient.exe.config
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TestTCPClient.exe
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TestTCPClient.pdb
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TcpClass.dll
+E:\ACS\BS-ACS\Test\TestTCPClient\bin\Debug\TcpClass.pdb
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPIPClientClass.csprojResolveAssemblyReference.cache
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TcpipIntface.Form1.resources
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPClient.Properties.Resources.resources
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPIPClientClass.csproj.GenerateResource.Cache
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPClient.exe
+E:\ACS\BS-ACS\Test\TestTCPClient\obj\Debug\TestTCPClient.pdb
+E:\ACS\BS-ACS\Test\TCP-SDK-C#\TCP-Test-Client\bin\Debug\TestTCPClient.exe.config
+E:\ACS\BS-ACS\Test\TCP-SDK-C#\TCP-Test-Client\obj\Debug\TestTCPClient.exe
+E:\ACS\BS-ACS\Test\TCP-SDK-C#\TCP-Test-Client\obj\Debug\TestTCPClient.pdb

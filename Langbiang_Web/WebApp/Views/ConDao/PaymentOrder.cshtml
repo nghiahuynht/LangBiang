@@ -1,0 +1,413 @@
+﻿@using DAL
+@{
+    ViewData["Title"] = "Đặt vé thành cônng";
+    Layout = "~/Views/Shared/_LayoutConDao.cshtml";
+}
+@model DAL.Models.Ticket.ResOrderInfoDto
+@using DAL.Models
+<style>
+    @@media screen and (max-width: 767px) {
+        .breadcrumbs {
+            margin-top: 0px !important;
+        }
+    }
+
+    @@media screen and (min-width: 768px) {
+        .breadcrumbs {
+            margin-top: 50px !important;
+        }
+    }
+    @@media screen and (max-width: 599px) {
+        .modal-lg {
+            max-width: 100%;
+        }
+    }
+    @@media screen and (min-width: 600px) {
+        .modal-lg {
+            max-width: 70%;
+        }
+    }
+    .big-text {
+        font-size: 12pt;
+    }
+
+    .form-group {
+        margin-bottom: 2px !important;
+    }
+
+    label.error {
+        color: #ff0000;
+        font-weight: normal !important;
+    }
+
+    select.error {
+        border: 1px solid #ff0000;
+    }
+    .text-right{
+        width:100%;text-align:right;
+    }
+</style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8">
+                <h2>Đặt vé thành công</h2>
+            </div>
+            <div class="col-sm-4">
+                <ol>
+                    <li><a href="/">Trang chủ</a></li>
+                    <li>Mua vé thăm quan</li>
+                </ol>
+            </div>
+        </div>
+
+
+    </div>
+</section><!-- End Breadcrumbs -->
+<div class="container">
+    <br />
+    <div class="card card-primary">
+        <div class="card-body">
+            <form class="form-horizontal" id="form-payment">
+                @Html.AntiForgeryToken()
+                @Html.HiddenFor(x => x.Id)
+                <div class="row" style="padding:20px;">
+                    <div class="col-sm-6">
+                        <div class=" form-group row"><h3>Thông tin vé thăm quan của bạn</h3></div><br />
+                        
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-6 col-sm-6 col-form-label big-text"><strong>Mã vé:</strong></label>
+                            <div class="col-6 col-sm-6">
+                                <p class="big-text" style="margin-top:10px;" id="ticketCode">@(Model.TicketCode)</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-6 col-sm-6 col-sm-6 col-form-label big-text"><strong>Ngày mua vé:</strong></label>
+                            <div class="col-6 col-sm-6 col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.CreatedDate.HasValue ? Model.CreatedDate.Value.ToString("dd/MM/yyyy") : string.Empty)</p>
+
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="staticEmail" class="col-6 col-sm-6 col-form-label big-text"><strong>Ngày thăm quan:</strong></label>
+                            <div class="col-6 col-sm-6">
+                                <p class="big-text" style="margin-top:10px;" id="ticketCode">@(Model.VisitDate.HasValue ? Model.VisitDate.Value.ToString("dd/MM/yyyy") : string.Empty)</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-6 col-sm-6 col-form-label big-text"><strong>Đơn giá:</strong></label>
+                            <div class="col-6 col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.Price.ToString("N0")) VNĐ</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-6 col-sm-6 col-form-label big-text"><strong>Số lượng:</strong></label>
+                            <div class="col-6 col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.Quanti.ToString("N0"))</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-6 col-sm-6 col-form-label big-text"><strong>Thành tiền:</strong></label>
+                            <div class="col-6 col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.Total.ToString("N0")) VNĐ</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-sm-6 col-form-label big-text"><strong>Phương thức thanh toán:</strong></label>
+                            <div class="col-sm-6">
+
+                                @{
+                                    var lstType = (List<ComboBoxModel>)ViewBag.LstPaymentType;
+                                    foreach (var item in lstType)
+                                    {
+                                        string checkedRadio = item.Value == Model.PaymentType ? "checked=checked" : string.IsNullOrEmpty(Model.PaymentType) && item.Value == Contanst.PaymentType_TrucTiep ? "checked=checked" : "";
+                                        <input type="radio" id="@item.Value" @(checkedRadio) name="input_PaymentMethod" value="@item.Value" />
+                                        <label for="@item.Value">@item.Text</label>
+                                        <br>
+                                    }
+                                }
+
+                            </div>
+                        </div>
+                        @*<div class="form-group row">
+            <label for="inputPassword" class="col-sm-6 col-form-label big-text"><strong>Phí thanh toán:</strong></label>
+            <div class="col-sm-6">
+                <p class="big-text" id="payment-fee-text" style="margin-top:10px !important;">@(Model.PaymentFee.ToString("N0")) VNĐ</p>
+            </div>
+        </div>*@
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-6 col-form-label big-text"><strong>Tổng tiền thanh toán:</strong></label>
+                            <div class="col-sm-6">
+                                <span id="span-total-pay" class="badge badge-success big-text">@(Model.Total.ToString("N0")) VNĐ</span>
+                                <input type="hidden" value="@(Model.Total)" id="hid-total" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class=" form-group row"><h3>THÔNG TIN NGƯỜI MUA</h3></div><br />
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-6 col-sm-6 col-form-label big-text"><strong>Họ tên:</strong></label>
+                            <div class="col-6 col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.CustomerName)</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-6 col-form-label big-text"><strong>SĐT (nhận vé zalo):</strong></label>
+                            <div class="col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@Model.Phone</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-6 col-form-label big-text"><strong>Email (nhận vé):</strong></label>
+                            <div class="col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.Email)</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-sm-12 col-form-label big-text">Thông tin xuất biên lai điện tử dành cho Công ty, tổ chức (chỉ áp dụng cho vé đoàn)</span>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-6 col-form-label big-text"><strong>Tên công ty / Tổ chức:</strong></label>
+                            <div class="col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.AgencyName)</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-6 col-form-label big-text"><strong>Mã số thuế:</strong></label>
+                            <div class="col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.TaxCode)</p>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-6 col-form-label big-text"><strong>Địa chỉ:</strong></label>
+                            <div class="col-sm-6">
+                                <p class="big-text" style="margin-top:10px !important;">@(Model.TaxAddress)</p>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="form-group row">
+                            <div class="col-sm-12">
+                                <i>Vé điện tử sẽ được gửi qua Số điện thoại zalo hoặc email. Xuất trình vé khi đến các điểm thăm quan</i>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <hr />
+
+                <div class="col-12">
+                    <br />
+                    <div class="form-group row">
+                        <div class="text-right">
+                            <input type="button" id="btn-back" value="Trở về" class="btn btn-lg btn-danger" />&nbsp;
+                            <input type="button" id="btn-payment" value="Thanh toán" class="btn btn-lg btn-success" />&nbsp;
+                        </div>
+
+                    </div>
+                </div>
+
+            </form>
+
+
+        </div>
+
+    </div>
+</div>
+
+<div class="modal fade show" id="modal-payment-direct" aria-modal="true" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Thông tin chuyển khoản</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h5>Quét mã để thanh toán</h5>
+                        <img id="imgQRCode" class="img img-bordered" style="max-width:100%;" src="~/img/QRThanhToan-ConDao.jpg" />
+                        <div style="margin-top: 10px; max-width: 100%">
+                            <a class="btn btn-outline-info" style="display:block" id="download-qrcode">
+                                <i class="fa fa-download"></i>&nbsp; Tải ảnh về
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <!--<div class="col-sm-8">
+         <h5>Hoặc chuyển khoản đến thông tin bên dưới</h5>
+        @{
+            int standerLen = 7;
+            int refixLength = Model.Id.ToString().Length;
+            string temp = "";
+            for (int i = refixLength; i < standerLen; i++)
+            {
+                temp = temp + "0";
+            }
+            string madon = temp + Model.Id.ToString();
+        }
+         <br />
+         <div style="font-size:14pt;margin-bottom:5px;"><strong>STK:</strong>&nbsp; 1110 0293 6272</div>
+         <div style="font-size:14pt;margin-bottom:5px;"><strong>Ngân hàng:</strong>&nbsp; VietinBank (ngân hàng Công Thương Việt Nam)</div>
+         <div style="font-size:14pt;margin-bottom:5px;"><strong>Tên thụ hưởng:</strong>&nbsp; Trung Tâm Bảo Tồn Di Tích Quốc Gia Côn Đảo Tỉnh BRVT</div>
+         <div style="font-size:14pt;"><strong>Nội dung:</strong>&nbsp; muavethamquanDH@(madon)</div>
+         <div style="font-size:10pt"><i>(Quý khách vui lòng để nội dung thanh toán chuyển khoản mặc định khi quét mã QR để hệ thống tự động đối soát)</i></div>
+    </div>-->
+
+
+
+
+                    <div class="col-sm-8">
+                        <h5>Hoặc chuyển khoản đến thông tin bên dưới</h5>
+                        <br />
+                        <div style="font-size:14pt;margin-bottom:5px;"><strong>STK:</strong>&nbsp; 0181 0034 12055</div>
+                        <div style="font-size:14pt;margin-bottom:5px;"><strong>Ngân hàng:</strong>&nbsp; VietCom bank (ngân hàng TMCP Ngoại Thương Việt Nam)</div>
+                        <div style="font-size:14pt;margin-bottom:5px;"><strong>Tên thụ hưởng:</strong>&nbsp; Huỳnh Trọng Nghĩa</div>
+                        <div style="font-size:14pt;"><strong>Nội dung:</strong>&nbsp; VQGCD@(madon)</div>
+                        <div style="font-size:12pt; color: red;"><i>(Quý khách để đúng nội dung chuyển khoản mặc định khi quét mã QR để nhận được vé online)</i></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="~/condao/finishorder/@(Model.Id)" class="btn btn-success">OK, đã chuyển khoản thanh toán</a>
+                
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
+<script src="~/plugins/jquery/jquery.js"></script>
+<script src="~/app-script/helper.js"></script>
+<script src="~/plugins/bootbox/bootbox.min.js"></script>
+<script src="~/plugins/bootstrap/js/bootstrap.js"></script>
+<script src="~/plugins/bootstrap3-typehead/bootstrap3-typeahead.js"></script>
+
+
+@section scripts{
+    <script>
+        $(document).ready(function () {
+            $("#btn-payment").click(function () {
+                var valid = ValidPayment();
+                if (valid)
+                    openBankInfo();
+            });
+
+            $.validator.addMethod(
+                "ChoosePaymentMethod",
+                function (value, element) {
+                    if (value != "")
+                        return true;
+                    return false;
+                },
+                "Vui lòng chọn phương thức thanh toán!"
+            );
+
+            $("input[name='input_PaymentMethod']").change(function () {
+                calculaPaymentFee();
+            });
+            $("#btn-back").click(function () {
+                location.href = `/condao/ticketorder?ticketCode=${document.getElementById("ticketCode").textContent}&orderId=${parseFloat($("#Id").val())}`;
+            });
+
+
+            $("#download-qrcode").click(function () {
+                dowloadQRCode();
+            });
+        });
+        function ValidPayment() {
+            var resutlValid = $("#form-payment").validate({
+                rules: {
+                    "input_PaymentMethod": {
+                        required: true,
+                        ChoosePaymentMethod: true
+                    }
+                },
+                messages: {
+                    "input_PaymentMethod": {
+                        required: "Thông tin bắt buộc!",
+                        checkPhone: "Vui lòng chọn phương thức thanh toán!"
+                    }
+                }
+            }).form();
+            return resutlValid;
+        }
+
+        function openBankInfo() {
+            var method = $("input[name='input_PaymentMethod']:checked").val();
+            var viewModel = {
+                OrderId: parseFloat($("#Id").val()),
+                PaymentType: method
+            };
+            $.ajax({
+                type: "POST",
+                contentType: 'application/json; charset=utf-8',
+                url: "/condao/GetUrlPayment",
+                dataType: 'json',
+                data: JSON.stringify(viewModel),
+                headers: {
+                    'RequestVerificationToken': TokenHeaderValue()
+                },
+                beforeSend: function () {
+
+                },
+                success: function (result) {
+                    if (result.isSuccess) {
+                        if (method == "Direct") {// trực tiếp qua ngân hàng CĐ
+                            // genaral qr code
+                            document.getElementById('imgQRCode').src = result.desc;
+                            $("#modal-payment-direct").modal();
+                        } else {//qua Onepay
+                            location.href = result.data;
+                        }
+                    } else {
+                        bootbox.alert(AlertFail(result.desc));
+                    }
+                }
+
+            });
+        }
+
+        function calculaPaymentFee()
+        {
+            var method = $("input[name='input_PaymentMethod']:checked").val();
+            let paymentFee = 0;
+            let totalOrder = parseFloat($("#hid-total").val());
+            let totalPayment = totalOrder;
+
+
+            if (method == "OnePay") {
+                paymentFee = 2000;
+                $("#payment-fee-text").html(`${paymentFee.toLocaleString()} VNĐ`);
+                totalPayment = totalPayment + paymentFee;
+            } else
+            {
+                paymentFee = 0;
+                totalPayment = totalPayment + paymentFee;
+                $("#payment-fee-text").html("0");
+            }
+            $("#span-total-pay").html(`${totalPayment.toLocaleString()} VNĐ`);
+
+        }
+        function dowloadQRCode() {
+            var base64Image = document.getElementById("imgQRCode").src;
+            
+            var a = document.createElement("a"); //Create <a>
+            a.href = base64Image; //Image Base64 Goes here
+            a.download = "Image.png"; //File name Here
+            a.click(); //Downloaded file
+        }
+    </script>
+}
+
+

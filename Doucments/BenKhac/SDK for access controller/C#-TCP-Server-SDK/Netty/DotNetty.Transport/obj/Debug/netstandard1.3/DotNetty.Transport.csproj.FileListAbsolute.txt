@@ -1,0 +1,112 @@
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.deps.json
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\NetC#TcpStandard\DotNetty-dev\src\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.deps.json
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\TcpStandard_Server\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.deps.json
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csprojAssemblyReference.cache
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CopyComplete
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\NetC#TcpStandard\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.deps.json
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csprojAssemblyReference.cache
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CoreCompileInputs.cache
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CopyComplete
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\Java\JavaWork\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.deps.json
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csprojAssemblyReference.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CoreCompileInputs.cache
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CopyComplete
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\门禁控制器开发包\Standard-TCPServer-C#\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.deps.json
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csprojAssemblyReference.cache
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CoreCompileInputs.cache
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CopyComplete
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.dll
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.xml
+E:\MQTT\MQTT_App\C#-MQTT-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.deps.json
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Common.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csprojAssemblyReference.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CoreCompileInputs.cache
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.csproj.CopyComplete
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.dll
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.xml
+F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Transport\obj\Debug\netstandard1.3\DotNetty.Transport.pdb
