@@ -146,22 +146,19 @@ namespace WebApp.Controllers
                             return Json(res);
                         }
 
-                        var lstAllGate = soatVeService.GetAllGateFullInfo();
-                        var gateDetail = lstAllGate.Where(x => x.GateCode == model.GateCode).FirstOrDefault();
-
-                        decimal priceSale = gateDetail.Price.HasValue ? gateDetail.Price.Value : 0;
+                       
                         var objData = new TicketOrder()
                         {
                             TicketCode = model.TicketCode,
                             CustomerCode = cusCode,
                             CustomerName = model.FullName,
-                            Price = priceSale,
+                            Price = objTicket.Price,
                             Quanti = model.Quantity,
                             CustomerType = objTicket.LoaiIn,
-                            Total = (priceSale * model.Quantity),
+                            Total = (objTicket.Price * model.Quantity),
                             SaleChannelId = (int)SaleChannelId.Online,
                             VisitDate  = model.VisitDate,
-                            GateName = model.GateCode,
+                            GateName = objTicket.Description,
                             ObjType=1,// mua từ webonline mặc định = 1
                             
                         };
@@ -354,7 +351,7 @@ namespace WebApp.Controllers
                     SubOrderCode = objOD.SubOrderCode,
                     SubOrderId = objOD.SubOrderCodeId,
                     PhoneNumber = objOD.Phone,
-                    UrlQRCode = $"{AppSettingServices.Get.DomainSettings.ConDaoService}{string.Format(AppSettingServices.Get.ZaloSettings.URLQRCode, objOD.SubOrderCodeId)}",
+                    UrlQRCode = $"{AppSettingServices.Get.DomainSettings.LangBiangService}{string.Format(AppSettingServices.Get.ZaloSettings.URLQRCode, objOD.SubOrderCodeId)}",
                     StrVisitDate = objOD.StrVisitDate,
                     GateName = objOD.TicketDescription
                 };
@@ -416,7 +413,7 @@ namespace WebApp.Controllers
                 pm.AddDigitalOrderField("vpc_Amount", $"{decimal.Truncate(model.TotalVAT)}00");
                 pm.AddDigitalOrderField("vpc_Currency", "VND");
                 ///url trả về khi thanh toán thành công
-                pm.AddDigitalOrderField("vpc_ReturnURL", $"{AppSettingServices.Get.DomainSettings.ConDaoService}{UrlsConfig.PaymentOperations.GetURLReturnPayment}");
+                pm.AddDigitalOrderField("vpc_ReturnURL", $"{AppSettingServices.Get.DomainSettings.LangBiangService}{UrlsConfig.PaymentOperations.GetURLReturnPayment}");
                 // Thong tin them ve khach hang. De trong neu khong co thong tin
                 pm.AddDigitalOrderField("vpc_Customer_Phone", model.PhoneNumber);
                 pm.AddDigitalOrderField("vpc_Customer_Email", "");
@@ -424,7 +421,7 @@ namespace WebApp.Controllers
                 // Dia chi IP cua khach hang
                 pm.AddDigitalOrderField("vpc_TicketNo", GetIPAddress());
                 //Link trang thanh toán của website trước khi chuyển sang OnePAY
-                pm.AddDigitalOrderField("AgainLink", string.Format($"{AppSettingServices.Get.DomainSettings.ConDaoService}{UrlsConfig.PaymentOperations.GetAgainLinkPayment}", model.OrderId));//"https://localhost:44377/condao/ticketorder");
+                pm.AddDigitalOrderField("AgainLink", string.Format($"{AppSettingServices.Get.DomainSettings.LangBiangService}{UrlsConfig.PaymentOperations.GetAgainLinkPayment}", model.OrderId));//"https://localhost:44377/condao/ticketorder");
                 // Chuyen huong trinh duyet sang cong thanh toan
                 rs = pm.Create3PartyQueryString();
 
@@ -444,22 +441,22 @@ namespace WebApp.Controllers
             var objOD = ticketService.GetOrderInfo(id);
             if (objOD.PaymentStatus == (int)PaymentStatus.Paid)//thanh toán thành công
             {
-                //var model = new SendZNSModel()
-                //{
-                //    CustomerName = objOD.CustomerName,
-                //    StrPrice = objOD.StrPrice,
-                //    StrTotal = objOD.StrTotal,
-                //    Quanti = objOD.Quanti,
-                //    StrCreatedDate = objOD.StrCreatedDate,
-                //    SubOrderCode = objOD.SubOrderCode,
-                //    PhoneNumber = objOD.Phone,
-                //    SubOrderId = objOD.SubOrderCodeId,
-                //    UrlQRCode = $"{AppSettingServices.Get.DomainSettings.ConDaoService}{string.Format(AppSettingServices.Get.ZaloSettings.URLQRCode, objOD.SubOrderCodeId)}",
-                //    StrVisitDate = objOD.StrVisitDate,
-                //    GateName = objOD.GateName
-                //};
-                //rs = znsService.SendZalo(model);
-                emailService.SendEMail(objOD);
+                var model = new SendZNSModel()
+                {
+                    CustomerName = objOD.CustomerName,
+                    StrPrice = objOD.StrPrice,
+                    StrTotal = objOD.StrTotal,
+                    Quanti = objOD.Quanti,
+                    StrCreatedDate = objOD.StrCreatedDate,
+                    SubOrderCode = objOD.SubOrderCode,
+                    PhoneNumber = objOD.Phone,
+                    SubOrderId = objOD.SubOrderCodeId,
+                    UrlQRCode = $"{AppSettingServices.Get.DomainSettings.LangBiangService}{string.Format(AppSettingServices.Get.ZaloSettings.URLQRCode, objOD.SubOrderCodeId)}",
+                    StrVisitDate = objOD.StrVisitDate,
+                    GateName = objOD.TicketDescription
+                };
+                rs = znsService.SendZalo(model);
+               // emailService.SendEMail(objOD);
                 //rs.Desc = SendMailOrderTicketSuccess(objOD.Email);
             }
             else

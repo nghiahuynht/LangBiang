@@ -16,3 +16,12 @@ F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netco
 F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.AssemblyInfo.cs
 F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.dll
 F:\Projects\OnSVN\Lanbiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\bin\Release\netcoreapp2.2\WebApp.Infrastructure.deps.json
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\bin\Release\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\bin\Release\netcoreapp2.2\WebApp.Infrastructure.pdb
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.csprojAssemblyReference.cache
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.csproj.CoreCompileInputs.cache
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.AssemblyInfoInputs.cache
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.AssemblyInfo.cs
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.dll
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.pdb

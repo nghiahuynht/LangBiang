@@ -14661,11 +14661,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\WebApp\\WebApp.csproj",
+      "projectPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp\\WebApp.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\WebApp\\obj\\",
+      "outputPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -14686,8 +14686,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\DAL\\DAL.csproj": {
-              "projectPath": "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\DAL\\DAL.csproj"
+            "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\DAL\\DAL.csproj": {
+              "projectPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\DAL\\DAL.csproj"
             }
           }
         }

@@ -33,7 +33,7 @@ namespace WebApp.Infrastructure.Configuration
             /// <summary>
             /// domain côn đảo
             /// </summary>
-            public string ConDaoService { get; set; }
+            public string LangBiangService { get; set; }
             /// <summary>
             /// Domain Zalo
             /// </summary>

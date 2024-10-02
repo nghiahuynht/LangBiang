@@ -82,7 +82,7 @@ namespace WebApp.Controllers
                                         SubOrderCode = objODNew.SubOrderCode,
                                         PhoneNumber = objOD.Phone,
                                         SubOrderId = objODNew.SubOrderCodeId,
-                                        UrlQRCode = $"{AppSettingServices.Get.DomainSettings.ConDaoService}{string.Format(AppSettingServices.Get.ZaloSettings.URLQRCode, objODNew.SubOrderCodeId)}",
+                                        UrlQRCode = $"{AppSettingServices.Get.DomainSettings.LangBiangService}{string.Format(AppSettingServices.Get.ZaloSettings.URLQRCode, objODNew.SubOrderCodeId)}",
                                         StrVisitDate = objOD.StrVisitDate,
                                         GateName = objOD.TicketDescription
                                     };

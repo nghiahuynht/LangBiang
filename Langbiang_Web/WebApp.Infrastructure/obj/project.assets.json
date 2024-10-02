@@ -1507,11 +1507,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj",
+      "projectUniqueName": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj",
       "projectName": "WebApp.Infrastructure",
-      "projectPath": "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj",
+      "projectPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\OnSVN\\Lanbiang\\Langbiang_Web\\WebApp.Infrastructure\\obj\\",
+      "outputPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

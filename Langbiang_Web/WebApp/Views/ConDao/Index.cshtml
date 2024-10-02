@@ -4,80 +4,65 @@
 }
 @using DAL.Entities
 @using DAL.Models.Ticket
+
+<link rel="stylesheet" href="css/icomoon.css">
+<link rel="stylesheet" href="css/style.css">
+<link href="~/plugins/datepicker/datepicker3.css" rel="stylesheet" />
 <style>
 
-
+    #hero h2{
+        color:#555;
+    }
     .la-hero {
         font-size: 16pt;
         color: #000000;
     }
 
-    #frame-buy {
-        border: 1px solid #f4f4f4;
-        padding: 30px;
-        height: 250px;
-        background-color: rgba(255, 255, 255, 0.8);
-        margin-top: 50px;
+    .fw-bold {
+        color: #333;
     }
-    @@media
-    only screen and (max-width: 768px) {
+
+    @@media only screen and (max-width: 768px) {
         .la-hero {
             font-size: 13pt;
             color: #000000;
         }
-        #frame-buy {
-            border: 1px solid #f4f4f4;
-            padding: 30px;
-            height: 350px;
-            background-color: rgba(255, 255, 255, 0.8);
-            margin-top: 50px;
-        }
+
         #header .logo {
-            
             line-height: 1.4;
-            
         }
     }
 </style>
 
-<link rel="stylesheet" href="css/icomoon.css">
-<link rel="stylesheet" href="css/style.css">
-<link href="~/plugins/datepicker/datepicker3.css" rel="stylesheet" />
+
 <!-- ======= Hero Section ======= -->
 <section id="hero" class="d-flex">
-    <div class="container" id="frame-buy">
+    <div class="container">
         <div class="row">
-            <div class="col-12 col-md-6">
-                <label for="se-gate" class="la-hero">Chọn tuyến thăm quan</label>
-                <select class="form-control" id="se-ticket">
-                    @{
-                        var ticketList = (List<Ticket>)ViewBag.Ticket;
-                        foreach (var ticket in ticketList)
-                        {
-                            <option value="@(ticket.Code)">@(ticket.Description)</option>
-                        }
-                    }
-                </select>
-            </div>
-            <div class="col-6 col-md-2">
-                <label for="txt-quanti" class="la-hero">Số lượng</label>
-                <input type="number" class="form-control" id="txt-quanti" value="1" />
-            </div>
-            <div class="col-6 col-md-4">
-                <label for="VisitDate" class="la-hero">Ngày thăm quan</label>
-                <div class="input-group">
-                    <input type="text" id="VisitDate" name="VisitDate" value="@(DateTime.Now.ToString("dd/MM/yyyy"))" class="form-control">
-                    <span class="input-group-text"><i class="fa fa-calendar"></i></span>
-                </div>
-            </div>
+
+            @{
+                var lstTicket = (List<Ticket>)ViewBag.Ticket;
+                foreach (var ticket in lstTicket.OrderByDescending(x => x.Id))
+                {
+                    <div class="col-lg-6 col-xxl-4 mb-5" >
+                        <div class="card border-0 h-100" style="background-color: rgba(255, 255, 255, 0.8);">
+                            <div class="card-body text-center p-4 p-lg-5 pt-0 pt-lg-0">
+                                <div class="feature bg-gradient rounded-3 mb-4 mt-n4"><i style="font-size:40pt;" class="fa fa-user-tag"></i>&nbsp;<strong>@(ticket.Code)</strong></div>
+                                <strong class="fs-4 fw-bold" style="font-size:16pt;">@(ticket.Description)</strong><br />
+                                <strong class="fs-4 fw-bold" style="color:#0094ff;font-size:20pt">@(ticket.Price.ToString("#,##0")) VNĐ</strong>
+                                <p class="mb-0">Thăm quan và vui chơi các địa điểm</p>
+                                <a href="/condao/ticketorder?ticketCode=@(ticket.Code)&quanti=1&visitDate=@(DateTime.Now.ToString("dd/MM/yyyy"))" class="btn btn-danger">Mua vé</a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+
         </div>
-        <div class="row mt-3">
-            <div class="col-12 col-md-12 d-grid justify-content-center" style="text-align:center">
-                <button class="btn btn-lg btn-danger w-50" id="btn-order"><i class="fa fa-money"></i>&nbsp;Mua vé</button>
-            </div>
-        </div>
+
     </div>
-   
+
 
 </section>
 <!-- End Hero -->
@@ -102,7 +87,7 @@
         </div>
     </div>
     <br />
-    
+
 
 </section><!-- End About Us Section -->
 
@@ -111,15 +96,14 @@
 
     <div class="container" data-aos="fade-up">
         <div class="section-title">
-            <h2>CÁC TUYẾN THĂM QUAN</h2>
-            <p>Thắng cảnh, địa điểm thăm quan tại Côn Đảo rất nhiều. Dưới đây là những tuyến thăm quan không thể bỏ qua cho chuyến du lịch Côn Đảo của bạn:</p>
+            <h2>CÁC ĐiỂM THÚ VỊ VÀ TRÒ CHƠI Ở LANGBINANG</h2>
+            <p>Núi Langbiang Đà Lạt - Biểu tượng của thiên nhiên núi rừng Tây Nguyên hùng vĩ. Cùng nhau trên chuyến hành trình du ngoạn khám phá một trong những vùng đất thú vị nhất trong tour du lịch Đà Lạt nhé!</p>
         </div>
 
         <div class="row">
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 1</a></h4>
-                    <p>Đảo côn sơn / Vòng các đảo nhỏ</p>
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tượng Lang biang</a></h4>
                     <img class="img img-thumbnail img-location" src="~/img/tuyen1.jpg" />
                 </div>
             </div>
@@ -127,8 +111,7 @@
 
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 2</a></h4>
-                    <p>Đảo Côn Sơn / Hòn Tài / Hòn Bảy Cạnh</p>
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Thung lũng trăm năm</a></h4>
                     <img class="img img-thumbnail img-location" src="~/img/tuyen2.jpg" />
 
                 </div>
@@ -137,8 +120,8 @@
 
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 3</a></h4>
-                    <p>Đảo Côn Sơn  / Hòn Bảy Cạnh / Hòn Cau</p>
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Bãi Mimosa</a></h4>
+                    <p>Bãi Mimosa</p>
                     <img class="img img-thumbnail img-location" src="~/img/tuyen3.jpg" />
 
                 </div>
@@ -148,8 +131,7 @@
         <div class="row">
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 4</a></h4>
-                    <p>Đảo Côn Sơn  / Hòn Tre Lớn / Hòn Tre Nhỏ</p>
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Chơi dù lượn</a></h4>
                     <img class="img img-thumbnail img-location" src="~/img/tuyen4.jpg" />
 
                 </div>
@@ -157,37 +139,7 @@
 
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 5</a></h4>
-                    <p>Đảo Côn Sơn / Bãi Dương / Vịnh Đầm Tre</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen1.jpg" />
-
-                </div>
-            </div>
-
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 6</a></h4>
-                    <p>Đảo Côn Sơn / Hòn Bà / Hòn Tre Lớn</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen2.jpg" />
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 7</a></h4>
-                    <p>Đảo Côn Sơn / Hòn Trứng / Vịnh Đầm Tre</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen3.jpg" />
-
-                </div>
-            </div>
-
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 8</a></h4>
-                    <p>Ma Thiên Lãnh / Hang Đức Mẹ / Bãi Ông Đụng</p>
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Đi xe Jeep</a></h4>
                     <img class="img img-thumbnail img-location" src="~/img/tuyen5.jpg" />
 
                 </div>
@@ -195,39 +147,8 @@
 
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 9</a></h4>
-                    <p>Ma Thiên Lãnh / Hang Đức Mẹ / Đất Thắm / Bãi Bàng</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen1.jpg" />
-
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 10</a></h4>
-                    <p>Ma Thiên Lãnh / Bãi Đầm Trầu / Bãi Ông Cường</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen2.jpg" />
-
-                </div>
-            </div>
-
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 11</a></h4>
-                    <p>Ma Thiên Lãnh / Hồ An Hải / Núi Thánh Giá</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen3.jpg" />
-
-                </div>
-            </div>
-
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 12</a></h4>
-                    <p>Ma Thiên Lãnh / Sở Rãy / Bãi Ông Đụng</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen4.jpg" />
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Leo núi</a></h4>
+                    <img class="img img-thumbnail img-location" src="~/img/tuyen6.jpg" />
 
                 </div>
             </div>
@@ -236,52 +157,28 @@
         <div class="row">
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 13</a></h4>
-                    <p>Ma Thiên Lãnh / Mũi Cá Mập / Bến Đầm / Hòn Bà</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen5.jpg" />
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Cưỡi ngựa</a></h4>
+                    <img class="img img-thumbnail img-location" src="~/img/tuyen7.jpg" />
 
                 </div>
             </div>
 
             <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
                 <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 14</a></h4>
-                    <p>Ma Thiên Lãnh / Suối Ớt / Vịnh Đầm Tre</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen1.jpg" />
+                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Săn mây</a></h4>
+                    <img class="img img-thumbnail img-location" src="~/img/tuyen8.jpg" />
 
                 </div>
             </div>
 
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Điểm thăm quan 15</a></h4>
-                    <p>Ma Thiên Lãnh / Núi chúa / Núi Nhà Bàn / Cỏ Ống</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen5.jpg" />
 
-                </div>
-            </div>
         </div>
 
 
-        <div class="row">
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 16</a></h4>
-                    <p>Đất Dốc / Núi Nhà Bàn</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen3.jpg" />
 
-                </div>
-            </div>
 
-            <div class="col-md-4 col-lg-4 col-xl-4" data-aos="zoom-in" data-aos-delay="100">
-                <div class="icon-box">
-                    <h4><i class="bx bx-tachometer"></i> &nbsp;<a href="">Tuyến thăm quan 17</a></h4>
-                    <p>Sân bay cỏ Ống / Hòn Cau</p>
-                    <img class="img img-thumbnail img-location" src="~/img/tuyen4.jpg" />
 
-                </div>
-            </div>
-        </div>
+
 
 
 
@@ -289,56 +186,7 @@
 </section>
 
 
-<div class="modal fade show" id="modal-note" aria-modal="true" role="dialog">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">
-                    Các trường hợp giảm 50% giá vé được Quy định tại Điều 5 Nghị quyết số 03/2020/NQ-HĐND ngày 04/08/2020 của Hội đồng nhân dân tỉnh Bà Rịa–Vũng Tàu
-                </h5>
-                <button type="button" class="close" aria-label="Close" onclick="ClosePopup()">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div id="frame-scroll">
-                    <span><strong>- Người được hưởng chính sách ưu đãi hưởng thụ văn hóa quy định tại điều 2 Quyết định số 170/2003/QĐ-TTg ngày 14/08/2003</strong></span><br />
-                    <span>&nbsp;&nbsp;&nbsp; + Nhân dân ở các xã đặc biệt khó khăn miền núi và vùng sâu, vùng xa được quy định trong Chương trình 135 của Chính phủ.</span>
-                    <br />
-                    <span style="margin-left:15px;">
-                        <strong>+ Người có công với cách mạng</strong> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Cán bộ lão thành cách mạng; cán bộ ''tiền khởi nghĩa''.<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Thân nhân liệt sĩ.<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Anh hùng Lực lượng vũ trang, Anh hùng Lao động, Bà mẹ Việt Nam anh hùng.<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;d) Thương binh, người hưởng chính sách như thương binh, bệnh binh.<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;đ) Các đối tượng được chăm sóc tại các cơ sở nuôi dưỡng, điều dưỡng thương, bệnh binh và người có công.
-                    </span><br />
-                    <span style="margin-left:15px;">
-                        <strong>+ Người thuộc diện chính sách xã hội:</strong> <br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;a) Người tàn tật, người già cô đơn.<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b) Các đối tượng được chăm sóc tại cơ sở bảo trợ xã hội.<br />
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;c) Học sinh các trường phổ thông dân tộc nội trú
-                    </span>
-                    <br />
-                    <span><strong>- Người khuyết tật nặng (Khoản 2 điều 11 Nghị định số 28/2012/NĐ-CP ngày 10/04/2012)</strong></span>
-                    <br />
-                    <span><strong>- Người cao tuổi (Khoản 2 điều 5 Nghị định số 06/2011/NĐ-CP ngày 14/01/2011</strong></span>
-                    <br />
-                    <span class="text-danger">
-                        <strong>Lưu ý</strong>: Khách thăm quan xuất trình giấy tờ chứng minh thuộc diện được giảm giá: CCCD, thẻ thương binh, … Trường hợp không xuất trình được giấy tờ chứng minh khách hàng vui lòng mua lại vé mới và không được hoàn lại vé đã mua
-                    </span>
-                </div>
 
-            </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-danger" onclick="ClosePopup()">Không đồng ý</button>
-                <button type="button" class="btn btn-success" id="btn-agree-25">Đồng ý</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
 
 <div class="modal fade show" id="modal-notify" aria-modal="true" role="dialog">
     <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -349,12 +197,12 @@
                     <span aria-hidden="true">×</span>
                 </button>
             </div>
-            <div class="modal-body" >
+            <div class="modal-body">
                 <div class="row" style="margin:0px">
                     <i>Khách hàng vui lòng liên hệ Quầy vé để được hướng dẫn mua tuyến thăm quan này</i>
                     <br />
                     <i><b>Số hotline:</b> 0983.83.06.69</i>
-                    
+
                 </div>
             </div>
 
@@ -370,7 +218,7 @@
     <script src="~/plugins/datepicker/bootstrap-datepicker.js"></script>
 
     <script src="~/plugins/bootstrap/js/bootstrap.js"></script>
-   
+
     <script>
         $(document).ready(function () {
             $(".date").datepicker({
