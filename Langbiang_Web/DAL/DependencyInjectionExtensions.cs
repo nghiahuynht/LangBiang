@@ -36,8 +36,9 @@ namespace DAL
             services.AddTransient<IZNSService, ZNSService>();
             services.AddTransient<ISoatVeService, SoatVeService>();
             services.AddTransient<IGatePermissionService, GatePermissionService>();
-            services.AddTransient<IGatePermissionService, GatePermissionService>();
-             services.AddTransient<ITokenMisaService,TokenMisaService>();
+            services.AddTransient<ITokenMisaService,TokenMisaService>();
+            services.AddTransient<IPartnerService, PartnerService>();
+            services.AddTransient<IPromotionService, PromotionService>();
             return services;
         }
     }

@@ -90,17 +90,20 @@
                 <thead>
                     <tr>
                         <th width="40px"></th>
-                        <th width="150px">Số đơn hàng</th>
+                        <th width="50px">Id vé</th>
                         <th width="200px">Đối tượng</th>
                         <th width="150px">Ngày mua</th>
                         <th width="150px">Ngày thăm quan</th>
                         <th width="200px">Tên KH</th>
                         <th width="120px">Điện thoại</th>
                         <th width="200px">Tình trạng thanh toán</th>
+                        <th width="70px">Mã đối tác</th>
                         <th width="70px">Mã vé</th>
                         <th width="100px">Đơn giá</th>
                         <th width="40px">SL</th>
                         <th width="150px">Thành tiền</th>
+                        <th width="150px">Tiền Giảm</th>
+                        <th width="150px">Tổng tiền</th>
                         <th width="200px">PT thanh toán</th>
                         <th width="150px">Phí thanh toán</th>
 
@@ -137,11 +140,22 @@
                     return RenderStatus(data);
                 }
             },
+
+            {"data": "partnerCode" },
             { "data": "ticketCode" },
             { "data": "price" },
             { "data": "quanti" },
             { "data": "total" },
-
+            {
+                "data": "discountedAmount", "render": function (data, type, row, meta) {
+                    return RenderNumerFormat(data);
+                }
+            },
+            {
+                "data": "totalAfterDiscounted", "render": function (data, type, row, meta) {
+                    return RenderNumerFormat(data);
+                }
+            },
             { "data": "paymentMethod" },
             { "data": "paymentFee" }
         ];

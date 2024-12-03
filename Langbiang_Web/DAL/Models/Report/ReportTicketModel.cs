@@ -52,4 +52,32 @@ namespace DAL.Models.Report
         public int SlSale { get; set; }
         public int AmountSale { get; set; }
     }
+
+
+    public class ResGetRPByPartner
+    {
+        /// <summary>
+        /// SL bán
+        /// </summary>
+        public int? SLBan { get; set; } = 0;
+        /// <summary>
+        /// Tổng doanh thu
+        /// </summary>
+        public decimal? TongDoanhSo { get; set; } = 0;
+        /// <summary>
+        /// Tổng doanh thu
+        /// </summary>
+
+        public List<SaleReportByPartnerGridModel> Data { get; set; }
+    }
+
+    public class SaleReportByPartnerGridModel
+    {
+        public string PartnerCode { get; set; }
+        public string PartnerName { get; set; }
+        public int SLBan { get; set; }
+        public decimal TongDoanhSo { get; set; }
+    }
+
+
 }

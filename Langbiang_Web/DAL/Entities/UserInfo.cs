@@ -14,5 +14,7 @@ namespace DAL.Entities
         public string Phone { get; set; }
         public string Title { get; set; }
         public string RoleCode { get; set; }
+        public bool IsPartner { get; set; }
+        public string PartnerCode { get; set; }
     }
 }

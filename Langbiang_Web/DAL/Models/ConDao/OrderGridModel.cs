@@ -20,5 +20,8 @@ namespace DAL.Models.ConDao
         public int? PaymentStatus { get; set; }
         public string GateName { get; set; }
         public string ObjName { get; set; }
+        public string PartnerCode { get; set; }
+        public decimal DiscountedAmount { get; set; }
+        public decimal TotalAfterDiscounted { get; set; }
     }
 }

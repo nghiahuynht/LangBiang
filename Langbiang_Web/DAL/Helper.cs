@@ -14,6 +14,7 @@ using System.Net.Sockets;
 using System.Threading.Tasks;
 using WebApp.Exceptions;
 using System.Text.RegularExpressions;
+using System.Globalization;
 
 namespace DAL
 {
@@ -99,8 +100,34 @@ namespace DAL
         }
 
 
+        public static string GenPartnerCode(string input)
+        {
+            if (string.IsNullOrEmpty(input))
+                return input;
 
-       
+            // Chuyển chuỗi thành dạng chuẩn hóa NFD (Normalization Form Decomposed)
+            string normalizedString = input.Normalize(NormalizationForm.FormD);
+
+            // Duyệt qua từng ký tự và chỉ giữ lại các ký tự không phải là dấu hoặc khoảng trắng
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (char c in normalizedString)
+            {
+                UnicodeCategory unicodeCategory = CharUnicodeInfo.GetUnicodeCategory(c);
+                // Kiểm tra nếu ký tự không phải là dấu (MarkNonSpacing) và không phải khoảng trắng
+                if (unicodeCategory != UnicodeCategory.NonSpacingMark && !char.IsWhiteSpace(c))
+                {
+                    stringBuilder.Append(c);
+                }
+            }
+            Random random = new Random();
+
+            // Tạo số ngẫu nhiên từ 1000 đến 9999
+            int randomNumber = random.Next(1000, 10000);
+
+            // Trả chuỗi về dạng bình thường sau khi loại bỏ dấu và khoảng trắng
+            return stringBuilder.ToString().Normalize(NormalizationForm.FormC) + randomNumber.ToString();
+        }
+
 
 
 

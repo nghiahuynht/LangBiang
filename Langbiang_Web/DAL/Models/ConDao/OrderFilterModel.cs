@@ -13,6 +13,7 @@ namespace DAL.Models.ConDao
         public int PaymentStatus { get; set; }
         public string GateCode { get; set; }
         public string Keyword { get; set; }
-        
+        public string PartnerCode { get; set; }
+
     }
 }

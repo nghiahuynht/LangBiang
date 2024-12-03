@@ -1,4 +1,4 @@
-/**
+﻿/**
 * Template Name: Arsha - v2.3.1
 * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
 * Author: BootstrapMade.com
@@ -1842,4 +1842,53 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+/*--------------------------------------------------------------
+# modal
+--------------------------------------------------------------*/
+#partnerRegistrationModal .form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px) !important;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+#partnerRegistrationModal .custom-file-upload {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#partnerRegistrationModal .file-input {
+    width: 100%;
+    padding: 10px;
+    border: 2px dotted #aaa; /* Viền nét đứt */
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Định dạng cho ảnh xem trước */
+#partnerRegistrationModal .img-preview {
+    border: 2px dotted #aaa; /* Viền nét đứt */
+    border-radius: 5px;
+    width: 200px; /* Đặt chiều rộng hình vuông */
+    height: 200px; /* Đặt chiều cao hình vuông */
+    object-fit: cover; /* Giúp ảnh nằm vừa khung */
+    display: block;
+    margin: 10px auto; /* Căn giữa ảnh */
+}
+
+#partnerRegistrationModal .error {
+    color: red;
 }

@@ -85,8 +85,6 @@ namespace WebApp.Controllers
             viewmodel.GateListAll = ticketService.GetAllGatelist();
 
 
-
-
             return View(viewmodel);
         }
 
@@ -113,6 +111,7 @@ namespace WebApp.Controllers
         [HttpPost]
         public async Task<DataTableResultModel<OrderGridModel>> SearchOrder(OrderFilterModel filter)
         {
+            filter.PartnerCode = AuthenInfo().PartnerCode;
             var res = await ticketOrderService.SearchOrder(filter);
             return res;
         }

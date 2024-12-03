@@ -517,3 +517,6 @@ F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.
 F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.csproj.CopyComplete
 F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
 F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Partner\Index.g.cshtml.cs
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Partner\PartnerDatail.g.cshtml.cs
+F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Promotion\Index.g.cshtml.cs

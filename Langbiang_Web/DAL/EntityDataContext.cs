@@ -5,7 +5,9 @@ using DAL.Models.ConDao;
 using DAL.Models.Customer;
 using DAL.Models.GatePermission;
 using DAL.Models.Invoice;
+using DAL.Models.partner;
 using DAL.Models.Product;
+using DAL.Models.Promotion;
 using DAL.Models.Report;
 using DAL.Models.SoatVe;
 using DAL.Models.Ticket;
@@ -89,12 +91,17 @@ namespace DAL
         public DbSet<ColumnChartModel> ColumnChartModel { get; set; }
         public DbSet<MisaConfigModel> MisaConfigModel { get; set; }
         public DbSet<TokenMisaModel> TokenMisaModel { get; set; }
-
+        public DbSet<PartnerGridModel> PartnerGridModel { get; set; }
+        public DbSet<PartnerModelViewModel> PartnerModelViewModel { get; set; }
+        public DbSet<PromotionGridModel> PromotionGridModel { get; set; }
+        public DbSet<InfoVoucherViewModel> InfoVoucherViewModel { get; set; }
+        public DbSet<InfoPartnerViewModel> InfoPartnerViewModel { get; set; }
+        public DbSet<SaleReportByPartnerGridModel> SaleReportByPartnerGridModel { get; set; }
 
         //===== Soát vé =============
 
         public DbSet<HistoryInOutModel> HistoryInOutModel { get; set; }
-
+       
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -115,6 +122,12 @@ namespace DAL
             modelBuilder.Entity<ColumnChartModel>().HasKey(o => o.Thang);
             modelBuilder.Entity<MisaConfigModel>().HasKey(o => o.appId);
             modelBuilder.Entity<TokenMisaModel>().HasKey(o => o.TokenKey);
+            modelBuilder.Entity<PartnerGridModel>().HasKey(o => o.Id);
+            modelBuilder.Entity<InfoPartnerViewModel>().HasKey(o => o.PartnerCode);
+            modelBuilder.Entity<InfoVoucherViewModel>().HasKey(o => o.VoucherCode);
+            modelBuilder.Entity<PartnerModelViewModel>().HasKey(o => o.Id);
+            modelBuilder.Entity<SaleReportByPartnerGridModel>().HasKey(o => o.PartnerCode);
+
         }
     }
 }

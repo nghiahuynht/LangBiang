@@ -6,6 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -27,7 +28,7 @@ namespace DAL.Service
         /// <returns></returns>
         public async Task<ResGetRPSales> GetReportSalesByTicketType(TicketTypeRPFilter filter)
         {
-            //var res = new ResGetRPSales();
+            var res = new ResGetRPSales();
             //try
             //{
             //    var param = new SqlParameter[] {
@@ -42,8 +43,8 @@ namespace DAL.Service
             //    var lstData = await dtx.TicketTypeRPGridModel.FromSql("EXEC Sp_ReportSaleByTickeType @UserName,@FromDate,@ToDate,@Keyword,@TotalSL OUT,@TotalAmount OUT", param)
             //        .ToListAsync();
 
-                
-                
+
+
             //    res.SellQuantity = Convert.ToInt32(param[param.Length - 2]?.Value ?? 0);
             //    res.TotalSales = Convert.ToDecimal(param[param.Length - 1]?.Value);
             //    if (lstData != null
@@ -154,5 +155,49 @@ namespace DAL.Service
             }
             return resData;
         }
+
+
+        /// <summary>
+        /// lấy báo cáo doanh số bán theo đối tác
+        /// </summary>
+        /// <param name="filter"></param>
+        /// <returns></returns>
+        public async Task<ResGetRPByPartner> GetReportSalesByPartner(TicketTypeRPFilter filter)
+        {
+            var res = new ResGetRPByPartner();
+            try
+            {
+                DateTime _fromDate;
+                DateTime.TryParseExact(filter.FromDate, "yyyy/MM/dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _fromDate);
+                DateTime _toDate;
+                DateTime.TryParseExact(filter.ToDate, "yyyy/MM/dd", CultureInfo.InvariantCulture, DateTimeStyles.None, out _toDate);
+
+
+                var param = new SqlParameter[] {
+                new SqlParameter("@PartnerCode", filter.UserName),
+                new SqlParameter("@FromDate", _fromDate),
+                new SqlParameter("@ToDate", _toDate),
+                new SqlParameter { ParameterName = "@TotalNumberSale", DbType = System.Data.DbType.Int32, Direction = System.Data.ParameterDirection.Output },
+                    new SqlParameter { ParameterName = "@TotalPrice", DbType = System.Data.DbType.Decimal, Direction = System.Data.ParameterDirection.Output }
+            };
+                ValidNullValue(param);
+                var lstData = await dtx.SaleReportByPartnerGridModel.FromSql("EXEC sp_GetDataReportPartner @PartnerCode,@FromDate,@ToDate,@TotalNumberSale OUT,@TotalPrice OUT", param).ToListAsync();
+                res.TongDoanhSo = Convert.ToDecimal(param[param.Length - 1].Value);
+                res.SLBan = Convert.ToInt32(param[param.Length - 2].Value);
+                res.Data = lstData.ToList();
+            }
+            catch (Exception ex)
+            {
+                WriteLog.writeToLogFile($"[Exception]: {ex}");
+                res.SLBan = 0;
+                res.TongDoanhSo = 0;
+                res.Data = new List<SaleReportByPartnerGridModel>();
+            }
+
+            return res;
+        }
+
+
+
     }
 }

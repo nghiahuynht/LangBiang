@@ -20,5 +20,6 @@ namespace DAL.IService
         List<SaleTicketMisaStatusModel> ReportTicketMisaStatus(string fromDate, string toDate);
 
         List<ColumnChartModel> GetColumnCharteport(int year);
+        Task<ResGetRPByPartner> GetReportSalesByPartner(TicketTypeRPFilter filter);
     }
 }
