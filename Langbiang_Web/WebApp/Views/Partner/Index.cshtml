@@ -97,7 +97,8 @@
                         <div style="font-size:14pt;margin-bottom:5px;"><strong>Tên:</strong>&nbsp; <span id="PartnerName"></span></div>
                         <div style="font-size:14pt;margin-bottom:5px;"><strong>SĐT:</strong>&nbsp; <span id="PartnerPhone"></span></div>
                         <div style="font-size:14pt;margin-bottom:5px;"><strong>Địa chỉ:</strong>&nbsp; <span id="PartnerAdress"></span></div>
-                        
+                        <div style="font-size:14pt;margin-bottom:5px;"><strong>STK:</strong>&nbsp; <span id="PartnerBankNum"></span></div>
+                        <div style="font-size:14pt;margin-bottom:5px;"><strong>Ngân hàng:</strong>&nbsp; <span id="PartnerBankName"></span></div>
                     </div>
                 </div>
             </div>
@@ -130,7 +131,12 @@
                     return RenderStatus(data);
                 }
             },
-            { "data": "createdDate" },
+            {
+                "data": "createdDate", "render": function (data, type, row, meta) {
+                    return RenderDateComlumnGrid(data);
+                }
+            },
+           // { "data": "createdDate" },
             {
                 "data": "id", "render": function (data, type, row, meta) {
                     return RenderTableAction(data, row.status);
@@ -242,6 +248,7 @@
 
                 },
                 success: function (result) {
+                    debugger;
                     if (result.isSuccess) {
                         console.log(result)
                         document.getElementById('imgQRCodePartner').src = "data:image/png;base64," + result.data.base64QRCode;
@@ -249,6 +256,8 @@
                         $("#PartnerName").text(result.data.partnerName);
                         $("#PartnerPhone").text(result.data.partnerPhone);
                         $("#PartnerAdress").text(result.data.partnerAddress);
+                        $("#PartnerBankNum").text(result.data.partnerAddress);
+                        $("#PartnerBankName").text(result.data.partnerAddress);
                         $("#modal-info-partner").modal();
                     } else {
                         bootbox.alert(AlertFail(result.desc));

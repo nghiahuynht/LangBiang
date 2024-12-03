@@ -39,4 +39,3 @@ F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Debug\netcor
 F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Debug\netcoreapp2.2\WebApp.Infrastructure.AssemblyInfo.cs
 F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
 F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
-F:\Projects\OnGIT\LangBiang\Langbiang_Web\WebApp.Infrastructure\obj\Debug\netcoreapp2.2\WebApp.Infrastructure.csprojAssemblyReference.cache

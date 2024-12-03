@@ -61,7 +61,8 @@ namespace WebApp.Controllers
             using (QRCodeGenerator QrGenerator = new QRCodeGenerator())
             {
                 string domain = $"{Request.Scheme}://{Request.Host}";
-                QRCodeData QrCodeInfo = QrGenerator.CreateQrCode(domain + "/?partner=" + res.PartnerCode, QRCodeGenerator.ECCLevel.Q);
+                string urlPartner = string.Format(@"{0}?partner={1}",domain,res.PartnerCode);
+                QRCodeData QrCodeInfo = QrGenerator.CreateQrCode(urlPartner, QRCodeGenerator.ECCLevel.Q);
                 QRCode QrCode = new QRCode(QrCodeInfo);
 
                 using (Bitmap bitMap = QrCode.GetGraphic(20))
