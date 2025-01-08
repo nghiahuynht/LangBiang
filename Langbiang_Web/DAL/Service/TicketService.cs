@@ -238,13 +238,14 @@ namespace DAL.Service
             {
                 var param = new SqlParameter[] {
                 new SqlParameter("@BranchId", filter.BranchId),
+                new SqlParameter("@TicketGroup", filter.TicketGroup),
                 new SqlParameter("@Keyword", filter.Keyword),
                 new SqlParameter("@Start", filter.start),
                 new SqlParameter("@Length", filter.length),
                 new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int16, Direction = System.Data.ParameterDirection.Output }
             };
                 ValidNullValue(param);
-                var lstData = dtx.TicketGridModel.FromSql("SearchTicketByCode @BranchId,@Keyword,@Start,@Length,@TotalRow OUT", param).ToList();
+                var lstData = dtx.TicketGridModel.FromSql("SearchTicketByCode @BranchId,@TicketGroup,@Keyword,@Start,@Length,@TotalRow OUT", param).ToList();
                 res.recordsTotal = Convert.ToInt16(param[4].Value);
                 res.recordsFiltered = res.recordsTotal;
                 res.data = lstData.ToList();
@@ -619,6 +620,29 @@ namespace DAL.Service
 
             return res;
         }
+
+
+        public List<TicketGroupModel> GetTicketGroupDDL()
+        {
+            var res = new List<TicketGroupModel>();
+            try
+            {
+                var param = new SqlParameter[] {
+                   
+                };
+                ValidNullValue(param);
+                res = dtx.TicketGroupModel.FromSql("EXEC sp_GetTicketGroupDDL", param).ToList();
+            }
+            catch (Exception ex)
+            {
+                WriteLog.writeToLogFile($"[Exception]: {ex}");
+                res = new List<TicketGroupModel>();
+            }
+
+            return res;
+        }
+
+
 
 
     }

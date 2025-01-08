@@ -81,7 +81,7 @@ namespace WebApp
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=ConDao}/{action=Index}/{id?}/{id2?}");
+                    template: "{controller=Home}/{action=Index}/{id?}/{id2?}");
             });
             RotativaConfiguration.Setup((IHostingEnvironment)env);
         }

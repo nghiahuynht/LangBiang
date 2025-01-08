@@ -23,7 +23,7 @@ using System.Text;
 
 namespace DAL
 {
-    public class EntityDataContext: DbContext
+    public class EntityDataContext : DbContext
     {
         public EntityDataContext(DbContextOptions<EntityDataContext> options) : base(options)
         {
@@ -59,7 +59,7 @@ namespace DAL
 
         /*============ for Excute SQL query=============================== */
 
-        public DbSet<UserInfoGridModel> UserInfoGridModel  { get; set; }
+        public DbSet<UserInfoGridModel> UserInfoGridModel { get; set; }
         public DbSet<ProductGridModel> ProductGridModel { get; set; }
         public DbSet<CustomerGridModel> CustomerGridModel { get; set; }
         public DbSet<InvoiceSearchResultModel> InvoiceSearchResultModel { get; set; }
@@ -97,7 +97,7 @@ namespace DAL
         public DbSet<InfoVoucherViewModel> InfoVoucherViewModel { get; set; }
         public DbSet<InfoPartnerViewModel> InfoPartnerViewModel { get; set; }
         public DbSet<SaleReportByPartnerGridModel> SaleReportByPartnerGridModel { get; set; }
-
+        public DbSet<TicketGroupModel> TicketGroupModel { get;set;}
         //===== Soát vé =============
 
         public DbSet<HistoryInOutModel> HistoryInOutModel { get; set; }
@@ -127,6 +127,7 @@ namespace DAL
             modelBuilder.Entity<InfoVoucherViewModel>().HasKey(o => o.VoucherCode);
             modelBuilder.Entity<PartnerModelViewModel>().HasKey(o => o.Id);
             modelBuilder.Entity<SaleReportByPartnerGridModel>().HasKey(o => o.PartnerCode);
+            modelBuilder.Entity<TicketGroupModel>().HasKey(o => o.GroupCode);
 
         }
     }

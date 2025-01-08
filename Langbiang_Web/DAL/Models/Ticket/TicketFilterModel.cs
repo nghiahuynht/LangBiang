@@ -10,6 +10,7 @@ namespace DAL.Models.Ticket
         /// Id chi nhánh
         /// </summary>
         public int BranchId { get; set; }
+        public string TicketGroup { get; set; }
         // <summary>
         /// Mã code Ticket
         /// </summary>

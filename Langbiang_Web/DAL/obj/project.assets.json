@@ -3195,7 +3195,7 @@
       ]
     },
     "runtime.native.System.Data.SqlClient.sni/4.5.0": {
-      "sha512": "AJfX7owAAkMjWQYhoml5IBfXh8UyYPjktn8pK0BFGAdKgBS7HqMz1fw5vdzfZUWfhtTPDGCjgNttt46ZyEmSjg==",
+      "sha512": "zmr7mxqvG7M7qWzPTHQEF0jIOo65vqsnaJ2s7AyZ9JQaSJ3rfXZ7vPGszw1EbvRATu6zsFMdpQeq1g7oaNocOg==",
       "type": "package",
       "path": "runtime.native.system.data.sqlclient.sni/4.5.0",
       "files": [
@@ -3738,7 +3738,7 @@
       ]
     },
     "System.Data.SqlClient/4.6.0": {
-      "sha512": "gwItUWW1BMCckicFO85c8frFaMK8SGqYn5IeA3GSX4Lmid+CjXETfoHz7Uv+Vx6L0No7iRc/7cBL8gd6o9k9/g==",
+      "sha512": "cppLAiY36su7Hr9dOaeDXRkndLKtnh7HgQgOfAgV0oN764BQXShll7yBZ8OwPtdYUSuwTT0re7eDQPGhwnojVQ==",
       "type": "package",
       "path": "system.data.sqlclient/4.6.0",
       "files": [
@@ -6639,25 +6639,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\HP\\.nuget\\packages\\": {},
+    "C:\\Users\\Nghia\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\DAL\\DAL.csproj",
+      "projectUniqueName": "D:\\Projects\\OnGit\\LangBiang\\LangbiAng_Source\\Langbiang_Web\\DAL\\DAL.csproj",
       "projectName": "DAL",
-      "projectPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\DAL\\DAL.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\DAL\\obj\\",
+      "projectPath": "D:\\Projects\\OnGit\\LangBiang\\LangbiAng_Source\\Langbiang_Web\\DAL\\DAL.csproj",
+      "packagesPath": "C:\\Users\\Nghia\\.nuget\\packages\\",
+      "outputPath": "D:\\Projects\\OnGit\\LangBiang\\LangbiAng_Source\\Langbiang_Web\\DAL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Nghia\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6671,8 +6671,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj": {
-              "projectPath": "F:\\Projects\\OnGIT\\LangBiang\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj"
+            "D:\\Projects\\OnGit\\LangBiang\\LangbiAng_Source\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj": {
+              "projectPath": "D:\\Projects\\OnGit\\LangBiang\\LangbiAng_Source\\Langbiang_Web\\WebApp.Infrastructure\\WebApp.Infrastructure.csproj"
             }
           }
         }

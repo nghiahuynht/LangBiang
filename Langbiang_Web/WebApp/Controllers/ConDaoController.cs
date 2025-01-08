@@ -79,7 +79,7 @@ namespace WebApp.Controllers
         /// <param name="orderId"> ID đơn hàng</param>
         /// <returns></returns>
 
-        public IActionResult TicketOrder(string ticketCode, int quanti, string visitDate)
+        public IActionResult TicketOrder(string partner, string ticketCode, int quanti, string visitDate)
         {
 
             string printType = "Ve_Doan";// mua online thì mặc định = Ve_Doan
@@ -93,6 +93,7 @@ namespace WebApp.Controllers
             viewModel.Quanti = quanti;
             viewModel.VisitDate = Convert.ToDateTime(DAL.Helper._ChangeFormatDate(visitDate));
             viewModel.TicketDescription = ticketDetail.Description;
+            viewModel.PartnerCode = partner;
             return View(viewModel);
         }
         /// <summary>
@@ -159,7 +160,7 @@ namespace WebApp.Controllers
                             SaleChannelId = (int)SaleChannelId.Online,
                             VisitDate  = model.VisitDate,
                             GateName = objTicket.Description,
-                            ObjType=1,// mua từ webonline mặc định = 1
+                            ObjType=1,// mua từ webonline mặc định = 1 đối tượng bình thường
                             
                         };
 

@@ -18,6 +18,7 @@ namespace DAL.Models.Customer
         public string CreatedDate { get; set; }
         public string UpdatedDate { get; set; }
         public string UpdatedBy { get; set; }
+        public string CustomerTypeName { get; set; }
     }
     
     

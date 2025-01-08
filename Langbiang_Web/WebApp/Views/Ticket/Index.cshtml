@@ -4,6 +4,7 @@
 }
 
 @using DAL.Entities
+@using DAL.Models.Ticket
 @section styles{
 
     <link href="~/plugins/datatables-bs4/css/dataTables.bootstrap4.css" rel="stylesheet" />
@@ -43,6 +44,19 @@
                         }
                     </select>
                 </div>
+                <div class="col-sm-2">
+                    <label>Loại vé</label>
+                    <select class="form-control" id="ddl-ticketgroup">
+                        <option value="All">Tất cả</option>
+                        @{
+                            var lstTicketsGroup = (List<TicketGroupModel>)ViewBag.LstGroup;
+                            foreach (var opt in lstTicketsGroup)
+                            {
+                                <option value="@opt.GroupCode">@opt.GroupName</option>
+                            }
+                        }
+                    </select>
+                </div>
                 <div class="col-sm-4">
                     <label>Tìm theo mã vé</label>
                     <input type="text" class="form-control" id="txtkeyword" />
@@ -50,11 +64,11 @@
                 <div class="col-sm-2">
                     <input type="button" value="Tìm" class="btn btn-primary btn-filter" id="btn-search" />
                 </div>
-                <div class="col-sm-4">
+                <div class="col-sm-2">
                     <div class="text-right">
                         <a class="btn btn-sm btn-primary btn-filter" href="/Ticket/TicketDetail"><i class="fa fa-plus-circle"></i>&nbsp;Thêm mới</a>
                         @*<button class="btn btn-sm btn-success"><i class="fa fa-download"></i>&nbsp;Export excel</button>
-                        <button class="btn btn-sm btn-success"><i class="fa fa-upload"></i>&nbsp;Import excel</button>*@
+                <button class="btn btn-sm btn-success"><i class="fa fa-upload"></i>&nbsp;Import excel</button>*@
                     </div>
                 </div>
             </div>
@@ -66,15 +80,11 @@
             <table class="table table-bordered table-hover dataTable" id="table-ticket" width="100%">
                 <thead>
                     <tr>
-                        <th>Id</th>
                         <th>Mã vé</th>
                         <th>Giá vé</th>
                         <th>Mô tả</th>
                         <th>Điểm bán vé</th>
-                        <th>Ngày, Giờ tạo </th>
-                        <th>Người tạo</th>
-                        <th>Ngày cập nhật</th>
-                        <th>Người cập nhật</th>
+                        <th>Loại vé</th>
                         <th></th>
                     </tr>
                 </thead>
@@ -92,7 +102,6 @@
         var tableId = "#table-ticket";
         var ajaxURL = "/Ticket/SearchTicket";
         var columnData = [
-            { "data": "id", visible: false },
             { "data": "code" },
             {
                 "data": "price", "render": function (data, type, row, meta) {
@@ -101,10 +110,7 @@
             },
             { "data": "description" },
             { "data": "branchName" },
-            { "data": "createdDate" },
-            { "data": "createdBy" },
-            { "data": "updatedDate" },
-            { "data": "updatedBy" },
+            { "data": "ticketGroup" },
             {
                 "data": "id", "render": function (data, type, row, meta) {
                     return RenderTableAction(data);
@@ -143,6 +149,7 @@
 
             var dataSearch = {
                 BranchId: $("#ddl-Branch").val(),
+                TicketGroup: $("#ddl-ticketgroup").val(),
                 Keyword: $("#txtkeyword").val()
             };
             GenrateDataTableSearch(tableId, ajaxURL, columnData, dataSearch, 10,"vé");

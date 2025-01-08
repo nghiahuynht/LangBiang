@@ -138,5 +138,6 @@ namespace DAL.IService
 
         ResOrderInfoSendZaloDto GetOrderInfoSendZalo(long orderId);
         Ticket GetTicketByGate(string printType);
+        List<TicketGroupModel> GetTicketGroupDDL();
     }
 }

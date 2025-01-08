@@ -250,6 +250,9 @@ namespace DAL.Models.Ticket
         public string StrVisitDate { get { return VisitDate.HasValue ? VisitDate.Value.ToString("dd/MM/yyyy") : string.Empty; } }
 
         public string TicketDescription { get; set; }
+        public string PartnerCode { get; set; }
+        public decimal? DiscountedAmount { get; set; } = 0;
+        public decimal? TotalAfterDiscounted { get; set; } = 0;
 
     }
 

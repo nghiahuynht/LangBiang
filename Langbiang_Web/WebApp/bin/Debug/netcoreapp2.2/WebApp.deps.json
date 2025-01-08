@@ -6076,7 +6076,7 @@
     "runtime.native.System.Data.SqlClient.sni/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-AJfX7owAAkMjWQYhoml5IBfXh8UyYPjktn8pK0BFGAdKgBS7HqMz1fw5vdzfZUWfhtTPDGCjgNttt46ZyEmSjg==",
+      "sha512": "sha512-zmr7mxqvG7M7qWzPTHQEF0jIOo65vqsnaJ2s7AyZ9JQaSJ3rfXZ7vPGszw1EbvRATu6zsFMdpQeq1g7oaNocOg==",
       "path": "runtime.native.system.data.sqlclient.sni/4.5.0",
       "hashPath": "runtime.native.system.data.sqlclient.sni.4.5.0.nupkg.sha512"
     },
@@ -6188,7 +6188,7 @@
     "System.Data.SqlClient/4.6.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gwItUWW1BMCckicFO85c8frFaMK8SGqYn5IeA3GSX4Lmid+CjXETfoHz7Uv+Vx6L0No7iRc/7cBL8gd6o9k9/g==",
+      "sha512": "sha512-cppLAiY36su7Hr9dOaeDXRkndLKtnh7HgQgOfAgV0oN764BQXShll7yBZ8OwPtdYUSuwTT0re7eDQPGhwnojVQ==",
       "path": "system.data.sqlclient/4.6.0",
       "hashPath": "system.data.sqlclient.4.6.0.nupkg.sha512"
     },
@@ -6363,7 +6363,7 @@
     "System.Numerics.Vectors/4.5.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
+      "sha512": "sha512-MNcaYxUJvUcoXOa+jgKl/GDw/Mh+wMrxDjW4dre7qrp35LUGTjUBNtZsNjxsWX592ocdyqt1X5hMJB+5OStoYw==",
       "path": "system.numerics.vectors/4.5.0",
       "hashPath": "system.numerics.vectors.4.5.0.nupkg.sha512"
     },

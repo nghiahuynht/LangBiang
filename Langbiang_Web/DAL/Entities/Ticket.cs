@@ -42,5 +42,7 @@ namespace DAL.Entities
         /// số hiệu
         /// </summary>
         public string KyHieu { get; set; }
+        public decimal? VAT { get; set; }
+        public string TicketGroup { get; set; }
     }
 }

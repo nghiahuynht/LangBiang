@@ -27,6 +27,7 @@ namespace DAL.Models.Ticket
         /// Loại vé: vé lẻ / vé đoàn
         /// </summary>
         public string LoaiIn { get; set; }
+        public string TicketGroup { get; set; }
     }
 
     public class SaleHistoryGridModel

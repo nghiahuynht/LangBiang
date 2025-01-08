@@ -45,6 +45,7 @@ namespace WebApp.Controllers
         public IActionResult Index()
         {
             ViewBag.LstBranch = ticketService.GetAllBranch();
+            ViewBag.LstGroup = ticketService.GetTicketGroupDDL();
             return View();
         }
         /// <summary>
@@ -61,6 +62,7 @@ namespace WebApp.Controllers
             }
             ViewBag.LstBranch = ticketService.GetAllBranch();
             ViewBag.LstLoaiIn = ticketService.GetAllLoaiIn();
+            ViewBag.LstGroup = ticketService.GetTicketGroupDDL();
             return View(ticketinfo);
         }
         /// <summary>

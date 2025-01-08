@@ -63,6 +63,10 @@
                                 @Html.TextBoxFor(x => x.Customer.Email, new { @class = "form-control" })
                             </div>
                         </div>
+                       
+                    </div>
+
+                    <div class="col-md-6">
                         <div class="form-group row">
                             <label class="col-md-4 col-form-label">Người đại diện</label>
                             <div class="col-md-8">
@@ -81,70 +85,23 @@
                                 @Html.TextBoxFor(x => x.Customer.TaxAddress, new { @class = "form-control" })
                             </div>
                         </div>
-                        @*<div class="form-group row">
-            <label class="col-md-3 col-form-label">Loại khách hàng</label>
-            <div class="col-md-9">
-                <select class="form-control" id="Customer_CustomerTypeId" name="Customer.CustomerTypeId">
-                    <option value=""></option>
-                    @{
-                        foreach (var item in Model.ListCustType)
-                        {
-                            string customerType = string.IsNullOrEmpty(Model.Customer.CustomerType) ? Model.Customer.CustomerType : string.Empty;
-                            string selected = item.Code == customerType ? "selected='selected'" : string.Empty;
-                            <option value="@item.Id" @(selected)>@item.Name</option>
-                        }
-                    }
-                </select>
-            </div>
-        </div>*@
-                    </div>
-
-                    <div class="col-md-6">
-
-                        @*<div class="form-group row">
-                            <label class="col-md-3 col-form-label">Địa chỉ</label>
-                            <div class="col-md-9">
-                                @Html.TextBoxFor(x => x.Customer.Address, new { @class = "form-control" })
-                            </div>
-                        </div>*@
-                        @*<div class="form-group row">
-                            <label class="col-md-3 col-form-label">Tỉnh thành</label>
-                            <div class="col-md-9">
-                                <select class="form-control" id="Customer_ProvinceCode" name="Customer.ProvinceCode">
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label">Loại khách hàng</label>
+                            <div class="col-md-8">
+                                <select class="form-control" id="Customer_CustomerType" name="Customer.CustomerType">
+                                    <option value=""></option>
                                     @{
-                                        foreach (var item in Model.ListAllProvince)
+                                        foreach (var item in Model.ListCustType)
                                         {
-
-                                            string selected = item.Code == Model.Customer.ProvinceCode ? "selected='selected'" : string.Empty;
+                                            string customerType = string.IsNullOrEmpty(Model.Customer.CustomerType) ? Model.Customer.CustomerType : string.Empty;
+                                            string selected = item.Code == customerType ? "selected='selected'" : string.Empty;
                                             <option value="@item.Code" @(selected)>@item.Name</option>
                                         }
                                     }
                                 </select>
                             </div>
-                        </div>*@
-                        @*<div class="form-group row">
-                            <label class="col-md-3 col-form-label">Khu vực</label>
-                            <div class="col-md-9">
-                                <select class="form-control" id="Customer_AreaCode" name="Customer.AreaCode">
-                                    @{
-                                        foreach (var item in Model.ListAllArea)
-                                        {
+                        </div>
 
-                                            string selected = item.Code == Model.Customer.AreaCode ? "selected='selected'" : string.Empty;
-                                            <option value="@item.Code" @(selected)>@item.Name</option>
-                                        }
-                                    }
-                                </select>
-
-
-                            </div>
-                        </div>*@
-                        @*<div class="form-group row">
-                            <label class="col-md-3 col-form-label">Ghi chú</label>
-                            <div class="col-md-9">
-                                @Html.TextAreaFor(x => x.Customer.Note, new { @class = "form-control", @rows = "4" })
-                            </div>
-                        </div>*@
 
                     </div>
 
@@ -177,16 +134,12 @@
         function ValidCustomer() {
             var resutlValid = $("#form-customer").validate({
                 rules: {
-                    "Customer.CustomerCode": "required",
                     "Customer.CustomerName": "required",
-                    "Customer.TaxCode": "required",
-                    "Customer.TaxAddress": "required",
+                    "Customer.CustomerType": "required",
                 },
                 messages: {
-                    "Customer.CustomerCode": "Thông tin bắt buộc!",
                     "Customer.CustomerName": "Thông tin bắt buộc!",
-                    "Customer.TaxCode": "Thông tin bắt buộc!",
-                    "Customer.TaxAddress": "Thông tin bắt buộc!",
+                    "Customer.CustomerType": "Thông tin bắt buộc!",
                 }
             }).form();
             return resutlValid;

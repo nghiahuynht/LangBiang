@@ -32,7 +32,7 @@ namespace WebApp.Controllers
             {
                 viewModel.Customer = await customerService.GetCustomerById(id.Value);
             }
-            //viewModel.ListCustType = await customerService.LstAllCustomerType();
+            viewModel.ListCustType = await customerService.LstAllCustomerType();
             //viewModel.ListAllArea = await customerService.LstAllArea();
             //viewModel.ListAllProvince = await customerService.LstAllProvince();
             return View(viewModel);

@@ -200,7 +200,7 @@ namespace WebApp.Controllers
                         log.AppendLine($"SubCode: {JsonConvert.SerializeObject(subCode)}");
                         using (QRCodeGenerator QrGenerator = new QRCodeGenerator())
                         {
-                            QRCodeData QrCodeInfo = QrGenerator.CreateQrCode(subCode.CardNum.ToString(), QRCodeGenerator.ECCLevel.Q);
+                            QRCodeData QrCodeInfo = QrGenerator.CreateQrCode(subCode.SubId.ToString(), QRCodeGenerator.ECCLevel.Q);
                             QRCode QrCode = new QRCode(QrCodeInfo);
                             using (Bitmap bitMap = QrCode.GetGraphic(20))
                             {

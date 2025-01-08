@@ -155,7 +155,8 @@
                         <label class="col-md-3 col-form-label" >Đối tượng</label>
                         <div class="col-md-9">
                             <select id="ddl-objType" class="form-control selectpicker" data-style="btn-info" data-live-search="true">
-                                <option value="1">Người lớn</option>
+                                <option value="1">Bình thường</option>
+                                <option value="2">Tặng vé</option>
                             </select>
                         </div>
 
@@ -253,9 +254,7 @@
             });
 
 
-            $("#ddl-objType").change(function () {
-                calculaTotal();
-            });
+           
 
         });
 
@@ -275,39 +274,9 @@
             let quanti = ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) ? 0 : parseInt($("#txt-quanti").val());
             let price = ($("#hid_TicketPrice").val() == "" || $("#hid_TicketPrice").val() == null) ? 0 : parseFloat($("#hid_TicketPrice").val());
 
-            let doituong = parseInt($("#ddl-objType").val());
-            let priceReturn = getPriceByObj(doituong, price);
-
-            let total = quanti * priceReturn;
+          
+            let total = quanti * price;
             $("#span-total").html(RenderNumerFormat(total));
-        }
-
-        function getPriceByObj(doituongInput, priceInput)
-        {
-            let priceReturn = priceInput;
-            if (doituongInput == 2)
-            {
-                priceReturn = priceInput / 2;
-            }
-
-            if (doituongInput == 3)
-            {
-                priceReturn = 20000;
-            }
-
-            if (doituongInput == 4) {
-                priceReturn = 10000;
-            }
-            if (doituongInput == 5) {
-                priceReturn = 10000;
-            }
-            if (doituongInput == 6) {
-                priceReturn = 5000;
-            }
-            if (doituongInput == 7) {
-                priceReturn = 0;
-            }
-            return priceReturn;
         }
 
 
@@ -366,7 +335,7 @@
                             bootbox.alert(AlertSuccess("Bán vé thành công, bạn có muốn in không?"), function () {
                                 $.each(res, function (index, value) {
 
-                                   // printPdf("https://vuonquocgiacondao.gamanjsc.com/ticketorder/GetPDFForPrint/" + value.subId);
+                                     printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint/" + value.subId);
                                     //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint/" + value.subId);
 
                                 });
