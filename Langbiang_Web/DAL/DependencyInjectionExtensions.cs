@@ -39,6 +39,7 @@ namespace DAL
             services.AddTransient<ITokenMisaService,TokenMisaService>();
             services.AddTransient<IPartnerService, PartnerService>();
             services.AddTransient<IPromotionService, PromotionService>();
+            services.AddTransient<IPricePolicyService, PricePolicyService>();
             return services;
         }
     }

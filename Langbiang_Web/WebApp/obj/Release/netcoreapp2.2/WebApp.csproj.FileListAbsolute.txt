@@ -257,6 +257,7 @@ D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\ne
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\Invoice\InvoiceDetail.g.cshtml.cs
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\Partner\Index.g.cshtml.cs
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\Partner\PartnerDatail.g.cshtml.cs
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\PricePolicy\Index.g.cshtml.cs
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\Product\Index.g.cshtml.cs
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\Product\ProductDetail.g.cshtml.cs
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\Promotion\Index.g.cshtml.cs
@@ -288,3 +289,4 @@ D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\ne
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\WebApp.csproj.CopyComplete
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\WebApp.dll
 D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\WebApp.pdb
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\WebApp\obj\Release\netcoreapp2.2\Razor\Views\PricePolicy\_PartialPricePolicy.g.cshtml.cs

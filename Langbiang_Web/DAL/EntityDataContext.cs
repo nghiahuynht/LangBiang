@@ -98,6 +98,7 @@ namespace DAL
         public DbSet<InfoPartnerViewModel> InfoPartnerViewModel { get; set; }
         public DbSet<SaleReportByPartnerGridModel> SaleReportByPartnerGridModel { get; set; }
         public DbSet<TicketGroupModel> TicketGroupModel { get;set;}
+        public DbSet<TicketPricePolicyModel> TicketPricePolicyModel { get; set; }
         //===== Soát vé =============
 
         public DbSet<HistoryInOutModel> HistoryInOutModel { get; set; }

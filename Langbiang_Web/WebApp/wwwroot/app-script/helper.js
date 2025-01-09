@@ -106,6 +106,7 @@ function ConverFormatDate(currentFormatDate) {
 
 
 function RenderDateComlumnGrid(date) {
+    debugger;
     if (date != null && date != "") {
         var d = new Date(date),
             month = '' + (d.getMonth() + 1),

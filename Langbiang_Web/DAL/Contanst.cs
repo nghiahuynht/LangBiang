@@ -37,5 +37,10 @@ namespace DAL
             POST = 2,
             PUT = 3
         }
+
+
+        public static string CustForm_NguoiLon = "NguoiLon";
+        public static string CustForm_TreEm = "TreEm";
+
     }
 }

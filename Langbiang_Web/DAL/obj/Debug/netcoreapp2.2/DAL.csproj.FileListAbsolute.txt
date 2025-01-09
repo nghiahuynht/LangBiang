@@ -104,3 +104,15 @@ D:\Projects\OnGit\LangBiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.Assemb
 D:\Projects\OnGit\LangBiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
 D:\Projects\OnGit\LangBiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.dll
 D:\Projects\OnGit\LangBiang\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\DAL.deps.json
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\DAL.pdb
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.dll
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\bin\Debug\netcoreapp2.2\WebApp.Infrastructure.pdb
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.csprojAssemblyReference.cache
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CoreCompileInputs.cache
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfoInputs.cache
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.AssemblyInfo.cs
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.csproj.CopyComplete
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.dll
+D:\Projects\OnGit\LangBiang\LangbiAng_Source\Langbiang_Web\DAL\obj\Debug\netcoreapp2.2\DAL.pdb
