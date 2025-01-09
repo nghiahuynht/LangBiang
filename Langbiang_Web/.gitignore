@@ -1,10 +1,5 @@
 .vs/
-.vs/slnx.sqlite
-CloseOpenDoor/CloseOpenDoor/obj/
-CloseOpenDoor/CloseOpenDoor/bin/
-Documents/BenKhac/SDK for access controller/
-Langbiang_Web/.vs/
-Langbiang_Web/DAL/obj/
-Langbiang_Web/DAL/bin/
-Langbiang_Web/WebApp/obj/
-Langbiang_Web/WebApp/bin/
+DAL/obj/
+DAL/bin/
+WebApp/obj/
+WebApp/bin/
