@@ -42,16 +42,9 @@
         /*Ticket item list*/
         #div-ticket {
             border:1px solid #f4f4f4;
-
         }
 
         .ticket-item {
-            width: 100%;
-            border: 1px solid #ccc;
-            padding: 2px;
-            background: #DDF590;
-            margin-bottom: 15px;
-            float:left;
             color:#333;
         }
 
@@ -90,35 +83,40 @@
 
             <div id="div-ticket">
                 <div class="row">
-                    @{
-                        var lstTicket = (List<Ticket>)ViewBag.TicketList;
+                    <table class="table table-bordered bg-white" id="table-ticket-sale">
+                        @{
+                            var lstGroupTicket = (List<TicketGroupModel>)ViewBag.GroupTicketList;
+                            var lstTicket = (List<Ticket>)ViewBag.TicketList;
+                            foreach (var itemGroup in lstGroupTicket)
+                            {
+                                var lstTicketSub = lstTicket.Where(x => x.TicketGroup == itemGroup.GroupCode);
+                                if (lstTicketSub.Any())
+                                {
+                                    <tr>
+                                        <th colspan="2"><span class="text-blue">::::: @(itemGroup.GroupName) :::::</span></th>
+                                    </tr>
+                                    foreach (var itemTicket in lstTicket.Where(x => x.TicketGroup == itemGroup.GroupCode))
+                                    {
+                                        <tr id="ticket-@(itemTicket.Code)" class="ticket-item" onclick="mouseSelectTicket('@(itemTicket.Code)',@(itemTicket.Price))">
+                                            <td width="25%"><i class="fa fa-tag"></i> &nbsp; @(itemTicket.Code)</td>
+                                            <td width="75%">@(itemTicket.Description)</td>
 
-                        foreach (var item in lstTicket)
-                        {
-                            <div class="col-sm-6">
-                                <div class="ticket-item" id="ticket-@(item.Code)" onclick="mouseSelectTicket('@(item.Code)',@(item.Price))" >
-
-                                    <table width="100%">
-                                        <tr>
-                                            <td><strong>Mã vé:</strong>&nbsp; @(item.Code)</td>
-                                            <td style="text-align:right;"><strong>Ký hiệu:</strong>&nbsp; @(item.KyHieu)</td>
                                         </tr>
-                                        <tr>
-                                            <td colspan="2" style="text-align:center;"><span style="font-size:20pt">@(item.Price.ToString("#,##0")) VNĐ</span></td>
-                                        </tr>
-                                        <tr>
-                                            <td colspan="2"> <span><i>@(item.Description)</i></span></td>
-                                        </tr>
-                                    </table>
+                                    }
 
-                                  
-                                </div>
-                            </div>
 
+                                }
+
+
+
+
+
+                            }
                         }
-
-                    }
+                    </table>
+                    
                 </div>
+               
 
             </div>
 
@@ -129,20 +127,29 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-sm-3"><label class="col-form-label">Khách hàng</label></div>
+                        <div class="col-sm-3"><label class="col-form-label">Loại khách hàng</label></div>
                         <div class="col-sm-9">
-                            <select class="form-control selectpicker" id="txt-customer" data-style="btn-info" data-live-search="true">
-
+                            <select class="form-control" id="ddl-customer-type">
                                 @{
-                                    var customerList = (List<Customer>)ViewBag.CustomerList;
-                                    if (customerList.Any())
+                                    var lstCustType = (List<CustomerType>)ViewBag.ListCustType;
+
+                                    foreach (var item in lstCustType)
                                     {
-                                        foreach (var cust in customerList)
-                                        {
-                                            <option value="@(cust.CustomerCode)">@(cust.CustomerName)</option>
-                                        }
+                                        string selected = item.Code == "Khach_Le" ? "selected='selected'" : string.Empty;
+                                        <option value="@(item.Code)" @(selected)>@item.Name</option>
                                     }
                                 }
+                            </select>
+
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row">
+                        <div class="col-sm-3"><label class="col-form-label">Khách hàng</label></div>
+                        <div class="col-sm-9">
+                            <select class="form-control" id="ddl-customer" data-style="btn-info" data-live-search="true">
+
+                                
 
 
                             </select>
@@ -247,15 +254,11 @@
 
     <script>
         $(document).ready(function () {
-            $('.selectpicker').selectpicker();
-            $("#table-ticket-sale tbody tr").click(function () {
-                $("#table-ticket-sale tbody tr").removeClass("ticket-selected");
-                $(this).addClass("ticket-selected");
+            
+            GetCustomerByType();
+            $("#ddl-customer-type").click(function () {
+                GetCustomerByType();
             });
-
-
-           
-
         });
 
         function mouseSelectTicket(ticketCode, price) {
@@ -294,6 +297,26 @@
             calculaTotal();
         }
 
+
+        function GetCustomerByType() {
+            let customerType = $("#ddl-customer-type").val();
+            $.ajax({
+                type: "Get",
+                contentType: 'application/json; charset=utf-8',
+                url: "/Customer/GetListCustomerByCustType?customerType=" + customerType,
+                success: function (res) {
+                    let optionCus = "";
+                    $.each(res, function (key, value) {
+   
+                        optionCus = optionCus + "<option value='" + value.customerCode+"'>"+value.customerName+"</option>";
+                    });
+                    $("#ddl-customer").html(optionCus);
+
+                }
+            });
+        }
+
+
         function SaleOrderByGate()
         {
             if ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) {
@@ -308,10 +331,10 @@
                 let doituong = parseInt($("#ddl-objType").val());
                 let priceReturn = getPriceByObj(doituong, price);
                 debugger;
-                let customerName = $("#txt-customer option:selected").text();
+                let customerName = $("#ddl-customer option:selected").text();
                 var modelData = {
                     TicketCode: $("#hid_TicketCode").val(),
-                    CustomerCode: $("#txt-customer").val(),
+                    CustomerCode: $("#ddl-customer").val(),
                     CustomerName: customerName,
                     ObjType: $("#ddl-objType").val(),
                     PrintType: $("#ddl-print-type").val(),

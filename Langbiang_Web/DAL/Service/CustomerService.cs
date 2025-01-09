@@ -110,6 +110,26 @@ namespace DAL.Service
             
         }
 
+        public async Task<List<Customer>> ListCustomerByType(string customerType)
+        {
+            try
+            {
+                var param = new SqlParameter[] {
+                    new SqlParameter("@CustomerType", customerType),
+                };
+                ValidNullValue(param);
+                var lstData =await dtx.Customer.FromSql("EXEC sp_ListCustomerByType @CustomerType", param).ToListAsync();
+                return lstData;
+            }
+            catch (Exception ex)
+            {
+                return new List<Customer>();
+            }
+
+        }
+
+
+
         public async Task<List<CustomerType>> LstAllCustomerType()
         {
             var res = await dtx.CustomerType.OrderBy(x => x.Name).ToListAsync();

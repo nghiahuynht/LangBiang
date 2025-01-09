@@ -245,46 +245,13 @@ namespace WebApp.Controllers
             ViewBag.CustomerList = await customerService.GetAllCustomer();
             ViewBag.GateList = soatVeService.GetAllGateFullInfo();
             ViewBag.TicketList = ticketService.GetAllTicket();
+            ViewBag.GroupTicketList = ticketService.GetTicketGroupDDL();
+            ViewBag.ListCustType = await customerService.LstAllCustomerType();
             return View();
         }
 
 
-        //[HttpPost]
-        //public IActionResult SaveOrderByGate([FromBody] PostTuyenOrderSaveModel model)
-        //{
-        //    var lstSubCode = new List<SubOrderPrintModel>();
-        //    if (!string.IsNullOrEmpty(AuthenInfo().UserName))
-        //    {
-        //        var ticketInfo = ticketService.GetTicketByGate(model.PrintType);
-        //        if (ticketInfo != null)
-        //        {
-
-        //            var modalSale = new PostOrderSaveModel
-        //            {
-        //                CustomerCode = model.CustomerCode,
-        //                TicketCode = ticketInfo.Code,
-        //                Price = model.Price,
-        //                Quanti = model.Quanti
-
-        //            };
-
-        //            var res = ticketOrderService.SaveOrderToData(modalSale, AuthenInfo().UserName, model.GateCode,model.ObjType);
-        //            CreateQRCode(res.ValueReturn);
-        //            lstSubCode = ticketOrderService.GetSubCodePrintInfo(res.ValueReturn).Result;
-        //        }
-
-                
-
-
-
-        //        return Json(lstSubCode);
-        //    }
-        //    else
-        //    {
-        //        return RedirectToAction("Login", "Account");
-        //    }
-
-        //}
+        
 
 
         [HttpPost]
@@ -357,6 +324,22 @@ namespace WebApp.Controllers
         #endregion
 
 
+
+
+        #region ============== SaleScreen custom version for LangbiAng==============
+
+        //public async Task<IActionResult> SaleScreenLangbiAng()
+        //{
+        //    ViewBag.CustomerList = await customerService.GetAllCustomer();
+        //    ViewBag.GateList = soatVeService.GetAllGateFullInfo();
+        //    ViewBag.TicketList = ticketService.GetAllTicket();
+        //    ViewBag.GroupTicketList = ticketService.GetTicketGroupDDL();
+        //    return View();
+        //}
+
+
+
+        #endregion
 
 
 

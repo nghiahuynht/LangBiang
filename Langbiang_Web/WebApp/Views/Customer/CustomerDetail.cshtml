@@ -86,15 +86,14 @@
                             </div>
                         </div>
                         <div class="form-group row">
-                            <label class="col-md-4 col-form-label">Loại khách hàng</label>
+                            <label class="col-md-4 col-form-label">Loại khách hàng *</label>
                             <div class="col-md-8">
                                 <select class="form-control" id="Customer_CustomerType" name="Customer.CustomerType">
                                     <option value=""></option>
                                     @{
                                         foreach (var item in Model.ListCustType)
                                         {
-                                            string customerType = string.IsNullOrEmpty(Model.Customer.CustomerType) ? Model.Customer.CustomerType : string.Empty;
-                                            string selected = item.Code == customerType ? "selected='selected'" : string.Empty;
+                                            string selected = item.Code == Model.Customer.CustomerType ? "selected='selected'" : string.Empty;
                                             <option value="@item.Code" @(selected)>@item.Name</option>
                                         }
                                     }

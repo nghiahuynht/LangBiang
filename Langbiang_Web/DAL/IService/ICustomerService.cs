@@ -29,6 +29,7 @@ namespace DAL.IService
         /// </summary>
         /// <returns></returns>
         Task<List<Customer>> GetAllCustomer();
+        Task<List<Customer>> ListCustomerByType(string customerType);
         /// <summary>
         /// tạo mã code KH
         /// </summary>

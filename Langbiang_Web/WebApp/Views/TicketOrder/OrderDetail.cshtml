@@ -327,29 +327,28 @@
                                         function SendNoti() {
                                             let orderId = $("#TicketOrder_Id").val();
                                             let crsfToken = document?.querySelector("#form-ticket-order > input[type=hidden]:nth-child(1)")?.getAttribute('value');
-            $.ajax({
-                                            type: "GET",
-                contentType: 'application/json; charset=utf-8',
-                headers: {
-                                                    'RequestVerificationToken': crsfToken
-                },
-                url: "/ConDao/SendNoti?id=" + orderId,
-                success: function (result) {
-                                                    debugger;
-                                                    if (result.isSuccess == true) {
-                                                        bootbox.alert(AlertSuccess("Gửi zalo/email thành công"), function () {
-                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
-                                                        });
+                                            $.ajax({
+                                                type: "GET",
+                                                contentType: 'application/json; charset=utf-8',
+                                                headers: { 'RequestVerificationToken': crsfToken
+                                                },
+                                                url: "/ConDao/SendNoti?id=" + orderId,
+                                                success: function (result) {
+                                                                                    debugger;
+                                                                                    if (result.isSuccess == true) {
+                                                                                        bootbox.alert(AlertSuccess("Gửi zalo/email thành công"), function () {
+                                                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                                                                        });
 
-                                                    } else {
-                                                        bootbox.alert(AlertFail(result.desc), function () {
-                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
-                                                        });
-                                                    }
+                                                                                    } else {
+                                                                                        bootbox.alert(AlertFail(result.desc), function () {
+                                                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                                                                        });
+                                                                                    }
 
 
-                                                }
-                                            });
+                                                                                }
+                                                                            });
                                         }
 
                                         function ViewPDf(subId) {

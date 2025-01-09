@@ -69,5 +69,13 @@ namespace WebApp.Controllers
         }
 
 
+        [HttpGet]
+        public async Task<JsonResult> GetListCustomerByCustType(string customerType)
+        {
+            var res = await customerService.ListCustomerByType(customerType);
+            return Json(res);
+        }
+
+
     }
 }
