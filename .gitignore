@@ -1,0 +1,10 @@
+.vs/
+Bin/
+bin/
+obj/
+ErrorLogs/
+*.user
+Logs/
+CloseOpenDoor/CloseOpenDoor/obj/
+CloseOpenDoor/CloseOpenDoor/bin/
+Documents/BenKhac/SDK for access controller
