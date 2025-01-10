@@ -32,8 +32,17 @@
         <div class="card-header">
             <div class="row">
                 <div class="col-sm-6">
-                    <label>Tìm theo mã vé</label>
-                    <input type="text" class="form-control" id="txtkeyword" />
+                    <label>Mã vé/dịch vụ</label>
+                    <select class="form-control" id="ddl-ticketcode">
+                        <option value="">Tất cả</option>
+                        @{
+                            var lstTicket = (List<Ticket>)ViewBag.TicketList;
+                            foreach (var item in lstTicket)
+                            {
+                                <option value="@item.Code">@(item.Description)</option>
+                            }
+                        }
+                    </select>
                 </div>
                 <div class="col-sm-2">
                     <input type="button" value="Tìm" class="btn btn-primary btn-filter" id="btn-search" />
@@ -149,9 +158,10 @@
         function SearchPricePolicy() {
 
             var dataSearch = {
-                TicketCode: $("#txtkeyword").val()
+                TicketCode: $("#ddl-ticketcode").val()
             };
-            GenrateDataTableSearch(tableId, ajaxURL, columnData, dataSearch, 10, "khách hàng");
+            debugger;
+            GenrateDataTableSearch(tableId, ajaxURL, columnData, dataSearch, 10, "giá");
 
         }
 

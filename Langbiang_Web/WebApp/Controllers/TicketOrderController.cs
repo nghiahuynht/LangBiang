@@ -55,9 +55,11 @@ namespace WebApp.Controllers
             this.soatVeService = soatVeService;
         }
 
-        public IActionResult Index()
+        public async Task<IActionResult> Index()
         {
-            ViewBag.GateList = soatVeService.GetAllGateFullInfo();
+            ViewBag.GroupTicketList = ticketService.GetTicketGroupDDL();
+            ViewBag.ListCustType = await customerService.LstAllCustomerType();
+            ViewBag.TicketList = ticketService.GetAllTicket();
             return View();
         }
 
@@ -189,8 +191,8 @@ namespace WebApp.Controllers
             try
             {
                 ticketOrderService.AssignSubIdForMapping(orderId);
-                string rootFolder = Path.GetFullPath(AppSettingServices.Get.GeneralSettings.RootFolder);//config["General:RootFolder"];
-                log.AppendLine($"RootFolder: {rootFolder}");
+                string qrCodeFolder = Path.GetFullPath(AppSettingServices.Get.GeneralSettings.QRCodeFolder);//config["General:RootFolder"];
+                log.AppendLine($"QRCodeFolder: {qrCodeFolder}");
                 
                 var lstSubCode = ticketOrderService.GetSubCodePrintInfo(orderId).Result;
                 if (lstSubCode.Any())
@@ -204,7 +206,7 @@ namespace WebApp.Controllers
                             QRCode QrCode = new QRCode(QrCodeInfo);
                             using (Bitmap bitMap = QrCode.GetGraphic(20))
                             {
-                                string fileFullPath = string.Format(rootFolder, subCode.SubId);
+                                string fileFullPath = string.Format(qrCodeFolder, subCode.SubId);
                                 if (!System.IO.File.Exists(fileFullPath))
                                 {
                                     bitMap.Save(fileFullPath, ImageFormat.Jpeg);
@@ -264,7 +266,7 @@ namespace WebApp.Controllers
                 var lstSubCode = new List<SubOrderPrintModel>();
                 if (!string.IsNullOrEmpty(AuthenInfo().UserName))
                 {
-                    var res = ticketOrderService.SaveOrderToData(model, AuthenInfo().UserName,string.Empty,1);
+                    var res = ticketOrderService.SaveOrderToData(model, AuthenInfo().UserName,string.Empty);
                     CreateQRCode(res.ValueReturn);
                     lstSubCode = ticketOrderService.GetSubCodePrintInfo(res.ValueReturn).Result;
 

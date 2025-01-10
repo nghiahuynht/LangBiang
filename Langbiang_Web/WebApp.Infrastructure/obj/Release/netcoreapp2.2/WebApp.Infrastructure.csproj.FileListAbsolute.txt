@@ -41,3 +41,4 @@ D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp.Infrastructure\obj\Release\
 D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.AssemblyInfo.cs
 D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.dll
 D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.pdb
+D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp.Infrastructure\obj\Release\netcoreapp2.2\WebApp.Infrastructure.csprojAssemblyReference.cache

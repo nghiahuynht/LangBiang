@@ -1,5 +1,8 @@
 ﻿@using DAL
 @using DAL.Models.Ticket
+@using DAL.Models.Customer
+@using DAL.Models
+@using DAL.Entities
 @{
     ViewData["Title"] = "Danh sách mua vé";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -39,28 +42,50 @@
                     </select>
                 </div>
                 <div class="col-sm-2">
-                    <label>Từ ngày</label>
-                    <div class="input-group date">
-                        <input type="text" id="FromDate" value="@(DateTime.Now.AddDays(-7).ToString("dd/MM/yyyy"))" class="form-control">
-                        <span class="input-group-addon group-date-icon"><i class="far fa-calendar-alt"></i></span>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <label>Đến ngày</label>
-                    <div class="input-group date">
-                        <input type="text" id="ToDate" value="@(DateTime.Now.ToString("dd/MM/yyyy"))" class="form-control">
-                        <span class="input-group-addon group-date-icon"><i class="far fa-calendar-alt"></i></span>
-                    </div>
-                </div>
-                <div class="col-sm-2">
-                    <label>Tuyến thăm quan</label>
-                    <select class="form-control" id="ddl-gatecode">
+                    <label>Loại KH</label>
+                    <select class="form-control" id="ddl-customertype">
                         <option value="All">Tất cả</option>
                         @{
-                            var lstGate = (List<GateListModel>)ViewBag.GateList;
-                            foreach (var item in lstGate)
+                            var lstCustType = (List<CustomerType>)ViewBag.ListCustType;
+
+                            foreach (var item in lstCustType)
                             {
-                                <option value="@(item.GateCode)">@(item.GateName)</option>
+                                string selected = item.Code == "Khach_Le" ? "selected='selected'" : string.Empty;
+                                <option value="@(item.Code)" @(selected)>@item.Name</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label>Đối tượng</label>
+                    <select class="form-control" id="ddl-objtype">
+                        <option value="All">Tất cả</option>
+                        <option value="@(Contanst.CustForm_NguoiLon)">Người lớn</option>
+                        <option value="@(Contanst.CustForm_TreEm)">Trẻ em</option>
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label>Loại vé</label>
+                    <select class="form-control" id="ddl-ticketgroup">
+                        <option value="All">Tất cả</option>
+                        @{
+                            var lstGroupTicket = (List<TicketGroupModel>)ViewBag.GroupTicketList;
+                            foreach (var item in lstGroupTicket)
+                            {
+                                <option value="@item.GroupCode">@(item.GroupName)</option>
+                            }
+                        }
+                    </select>
+                </div>
+                <div class="col-sm-2">
+                    <label>Mã vé/dịch vụ</label>
+                    <select class="form-control" id="ddl-ticketcode">
+                        <option value="All">Tất cả</option>
+                        @{
+                            var lstTicket = (List<Ticket>)ViewBag.TicketList;
+                            foreach (var item in lstTicket)
+                            {
+                                <option value="@item.Code">@(item.Description)</option>
                             }
                         }
                     </select>
@@ -75,12 +100,32 @@
                     </select>
                 </div>
                 <div class="col-sm-2">
+                    <label>Từ ngày</label>
+                    <div class="input-group date">
+                        <input type="text" id="FromDate" value="@(DateTime.Now.AddDays(-7).ToString("dd/MM/yyyy"))" class="form-control">
+                        <span class="input-group-addon group-date-icon"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <label>Đến ngày</label>
+                    <div class="input-group date">
+                        <input type="text" id="ToDate" value="@(DateTime.Now.ToString("dd/MM/yyyy"))" class="form-control">
+                        <span class="input-group-addon group-date-icon"><i class="far fa-calendar-alt"></i></span>
+                    </div>
+                </div>
+
+
+                <div class="col-sm-2">
+                    <label></label>
+                    <input type="radio" style="width:15px;height:15px;" class="btn-filter" value="false" name="radioisfree" checked="checked" />&nbsp;Bình thường&nbsp;&nbsp;
+                    <input type="radio" style="width:15px;height:15px;" class="btn-filter" value="true" name="radioisfree" />&nbsp;Miễn phí
+                </div>
+                <div class="col-sm-2">
                     <label>Mã/tên KH/SĐT khách hàng</label>
                     <input type="text" class="form-control" id="txtkeyword" />
                 </div>
                 <div class="col-sm-2">
                     <input type="button" value="Tìm" class="btn btn-primary btn-filter" id="btn-search" />&nbsp;
-                   
                 </div>
             </div>
 
@@ -111,7 +156,7 @@
         </div>
     </div>
 </section>
- 
+
 @section scripts{
     <script src="~/plugins/datepicker/bootstrap-datepicker.js"></script>
     <script src="~/plugins/datatable/jquery.datatable.js"></script>
@@ -139,7 +184,7 @@
                 }
             },
 
-            {"data": "partnerCode" },
+            { "data": "partnerCode" },
             { "data": "ticketCode" },
             { "data": "price" },
             { "data": "quanti" },
@@ -165,8 +210,20 @@
                 $("#FromDate").val(searchHistory.FromDate);
                 $("#ToDate").val(searchHistory.ToDate);
                 $("#ddl-status").val(searchHistory.PaymentStatus);
-                $("#ddl-gatecode").val(searchHistory.GateCode);
                 $("#txtkeyword").val(searchHistory.Keyword);
+                $("#ddl-customertype").val(searchHistory.CustomerType);
+                $("#ddl-ticketgroup").val(searchHistory.GroupTicket);
+                $("#ddl-objtype").val(searchHistory.ObjType);
+                $("#ddl-ticketcode").val(searchHistory.TicketCode);
+
+                if (searchHistory.IsFree == "true" || searchHistory.IsFree == true) {
+                    radioOptionFree = jQuery("input:radio[value=true]");
+                    radioOptionFree.prop("checked", true);
+                } else {
+                    radioOptionNonFree = jQuery("input:radio[value=false]");
+                    radioOptionNonFree.prop("checked", true);
+                }
+
             }
 
             SearchOrder();
@@ -190,22 +247,32 @@
                 ToDate: ConverFormatDate($("#ToDate").val()),
                 PaymentMethod: "All",
                 PaymentStatus: $("#ddl-status").val(),
-                GateCode: $("#ddl-gatecode").val(),
-                Keyword: $("#txtkeyword").val()
+                GateCode: "All",
+                Keyword: $("#txtkeyword").val(),
+                CustomerType: $("#ddl-customertype").val(),
+                GroupTicket: $("#ddl-ticketgroup").val(),
+                ObjType: $("#ddl-objtype").val(),
+                TicketCode: $("#ddl-ticketcode").val(),
+                IsFree: $('input[name="radioisfree"]:checked').val()
             };
-
-            GenrateDataTableSearch(tableId, ajaxURL, columnData, searchModel,10,"vé");
+            debugger;
+            GenrateDataTableSearch(tableId, ajaxURL, columnData, searchModel, 10, "vé");
         }
 
         function SaveSearchHistory() {
             var searchModel = {
                 ChanelId: $("#ddl-chanel").val(),
-                FromDate: $("#FromDate").val(),
-                ToDate: $("#ToDate").val(),
+                FromDate: ConverFormatDate($("#FromDate").val()),
+                ToDate: ConverFormatDate($("#ToDate").val()),
                 PaymentMethod: "All",
                 PaymentStatus: $("#ddl-status").val(),
-                GateCode: $("#ddl-gatecode").val(),
-                Keyword: $("#txtkeyword").val()
+                GateCode: "All",
+                Keyword: $("#txtkeyword").val(),
+                CustomerType: $("#ddl-customertype").val(),
+                GroupTicket: $("#ddl-ticketgroup").val(),
+                ObjType: $("#ddl-objtype").val(),
+                TicketCode: $("#ddl-ticketcode").val(),
+                IsFree: $('input[name="radioisfree"]:checked').val()
             };
 
             // Lưu thông tin tìm kiếm vào sessionStorage

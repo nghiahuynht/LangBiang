@@ -24,6 +24,7 @@ namespace WebApp.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.TicketList = ticketService.GetAllTicket();
             return View();
         }
 
@@ -65,7 +66,12 @@ namespace WebApp.Controllers
             return Json(res);
         }
 
-
+        [HttpGet]
+        public JsonResult GetAllPricePolicy()
+        {
+            var res = pricePolicyService.GetAllPricePloicyForSale();
+            return Json(res);
+        }
 
     }
 }

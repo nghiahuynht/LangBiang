@@ -3,6 +3,7 @@ using DAL.Models.Ticket;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace DAL.IService
 {
@@ -12,5 +13,6 @@ namespace DAL.IService
         TicketPricePolicyModel GetPolicyPriceById(int id);
         DataTableResultModel<TicketPricePolicyModel> SearchPricePolicy(PricePolicyFilterModel filter);
         SaveResultModel DeletePricePolicy(int id, string userName);
+        List<TicketPricePolicyModel> GetAllPricePloicyForSale();
     }
 }

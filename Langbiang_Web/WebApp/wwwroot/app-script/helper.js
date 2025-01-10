@@ -2,6 +2,7 @@
 
 function GenrateDataTableSearch(tableId, URL, columnsData, searchParams, displayLength = 20, sInfo="")
 {
+    debugger;
     // Language customization for DataTable
     var language = {
         "sProcessing": "Đang xử lý...",
@@ -43,7 +44,7 @@ function GenrateDataTableSearch(tableId, URL, columnsData, searchParams, display
             "zeroRecords": "Không tìm thấy dữ liệu",
             "infoEmpty": "0/0 Kết quả",
             "sInfo": "Hiển thị _START_ đến _END_ trong tổng số _TOTAL_ " + sInfo,
-            "sInfoEmpty": "Hiển thị 0 đến 0 trong tổng số 0 khách hàng",
+            "sInfoEmpty": "Hiển thị 0 đến 0 trong tổng số 0 " + sInfo,
             "oPaginate": {
                 "sFirst": "Đầu",
                 "sPrevious": "Trước",
@@ -54,9 +55,9 @@ function GenrateDataTableSearch(tableId, URL, columnsData, searchParams, display
         "ajax": {
             "url": URL,
             "type": "POST",
-            "headers": {
-                'RequestVerificationToken': TokenHeaderValue()
-            },
+            //"headers": {
+            //    'RequestVerificationToken': TokenHeaderValue()
+            //},
             "data": searchParams
         },
 

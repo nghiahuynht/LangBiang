@@ -96,6 +96,7 @@ namespace WebApp.Infrastructure.Configuration
         public class GeneralSettings
         {
             public string RootFolder { get; set; }
+            public string QRCodeFolder { get; set; }
         }
 
         public class GenerateQRCodeSettings

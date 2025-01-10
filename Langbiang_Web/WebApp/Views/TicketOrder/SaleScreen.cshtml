@@ -64,7 +64,7 @@
     <div class="container-fluid">
         <div class="row mb-2">
             <div class="col-sm-6">
-                <h1>CHỌN LOẠI VÉ CẦN BÁN</h1>
+                <h1><span id="span-price-policy-available"></span>&nbsp; BÁN VÉ </h1>
             </div>
             <div class="col-sm-6">
                 <ol class="breadcrumb float-sm-right">
@@ -127,75 +127,76 @@
             <div class="card">
                 <div class="card-header">
                     <div class="row">
-                        <div class="col-sm-3"><label class="col-form-label">Loại khách hàng</label></div>
-                        <div class="col-sm-9">
-                            <select class="form-control" id="ddl-customer-type">
-                                @{
-                                    var lstCustType = (List<CustomerType>)ViewBag.ListCustType;
+                        <div class="col-sm-6">
+                            <div class="col-sm-12"><label class="col-form-label">Loại khách hàng</label></div>
+                            <div class="col-sm-12">
+                                <select class="form-control" id="ddl-customer-type">
+                                    @{
+                                        var lstCustType = (List<CustomerType>)ViewBag.ListCustType;
 
-                                    foreach (var item in lstCustType)
-                                    {
-                                        string selected = item.Code == "Khach_Le" ? "selected='selected'" : string.Empty;
-                                        <option value="@(item.Code)" @(selected)>@item.Name</option>
+                                        foreach (var item in lstCustType)
+                                        {
+                                            string selected = item.Code == "Khach_Le" ? "selected='selected'" : string.Empty;
+                                            <option value="@(item.Code)" @(selected)>@item.Name</option>
+                                        }
                                     }
-                                }
-                            </select>
+                                </select>
 
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="col-sm-12"><label class="col-form-label">Khách hàng</label></div>
+                            <div class="col-sm-12">
+                                <select class="form-control" id="ddl-customer" data-style="btn-info" data-live-search="true"></select>
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <label class="col-md-12 col-form-label">Đối tượng</label>
+                            <div class="col-md-12">
+                                <select id="ddl-objType" class="form-control" data-style="btn-info">
+                                    <option value="NguoiLon">Người lớn</option>
+                                    <option value="TreEm">Trẻ em</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="col-md-12 col-form-label">Đơn giá</label>
+                            <div class="col-md-12">
+                                <input type="number" class="form-control" style="font-size:16pt;font-weight:bold;" onblur="calculaTotal()" id="txt-price-by-policy" />
+                            </div>
                         </div>
                     </div>
-                    <br />
                     <div class="row">
-                        <div class="col-sm-3"><label class="col-form-label">Khách hàng</label></div>
-                        <div class="col-sm-9">
-                            <select class="form-control" id="ddl-customer" data-style="btn-info" data-live-search="true">
-
-                                
-
-
-                            </select>
-
+                        <div class="col-sm-6">
+                            <label class="col-md-12 col-form-label">Số lượng</label>
+                            <div class="col-md-12">
+                                <input type="number" class="form-control" style="font-size:18pt;font-weight:bold;" onblur="calculaTotal()" id="txt-quanti" value="1" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <label class="col-md-12 col-form-label">Thành tiền</label>
+                            <div class="col-md-12">
+                                <h5 id="span-total" style="font-size:20pt;color:#ff0000">0</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <label class="col-md-6 col-form-label"></label>
+                        <div class="col-md-3">
+                            <input type="radio" style="width:15px;height:15px;" value="false" name="radioisfree" checked="checked" />&nbsp;Bình thường
+                        </div>
+                        <div class="col-md-3">
+                            <input type="radio" style="width:15px;height:15px;" value="true" name="radioisfree" />&nbsp;Miễn phí
                         </div>
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="form-group row">
-                        <label class="col-md-3 col-form-label" >Đối tượng</label>
-                        <div class="col-md-9">
-                            <select id="ddl-objType" class="form-control selectpicker" data-style="btn-info" data-live-search="true">
-                                <option value="1">Bình thường</option>
-                                <option value="2">Tặng vé</option>
-                            </select>
-                        </div>
-
-                    </div>
-                    <div class="form-group row">
-                        <label class="col-md-3 col-form-label">Kiểu in</label>
-                        <div class="col-md-3" >
-                            <select id="ddl-print-type" class="form-control" data-style="btn-info">
-                                <option value="Ve_Le">In lẻ</option>
-                                <option value="Ve_Doan">In đoàn</option>
-                            </select>
-                        </div>
-                        <label class="col-md-3 col-form-label">Số lượng</label>
-                        <div class="col-md-3">
-                            <input type="number" class="form-control" style="font-size:18pt;font-weight:bold;" onblur="calculaTotal()" id="txt-quanti" />
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4">
-                            <div class="text-left">
-                                <h5>Tổng tiền:</h5>
-                            </div>
-
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text-right">
-                                <h5 id="span-total" style="font-size:20pt;color:#ff0000">0</h5>
-                            </div>
-
-                        </div>
-                    </div>
+    
+                    
                     <br />
                     <div class="row">
                         @{
@@ -253,33 +254,65 @@
 
 
     <script>
+        var arrPricePolicy = [];
         $(document).ready(function () {
-            
+
+            GetAllPricePolicy();
             GetCustomerByType();
-            $("#ddl-customer-type").click(function () {
+            $("#ddl-customer-type").change(function () {
                 GetCustomerByType();
+                let priceSale = GetPriceForSale();
+                $("#txt-price-by-policy").val(priceSale);
+            });
+
+            $("#ddl-objType").change(function () {
+                let priceSale = GetPriceForSale();
+                $("#txt-price-by-policy").val(priceSale);
             });
         });
 
+
+        function GetAllPricePolicy() {
+            $.ajax({
+                type: "Get",
+                contentType: 'application/json; charset=utf-8',
+                url: "/PricePolicy/GetAllPricePolicy",
+                success: function (res) {
+                    debugger;
+                    arrPricePolicy = res;
+                    if (arrPricePolicy != null && arrPricePolicy.length > 0) {
+                        $("#span-price-policy-available").addClass("fa fa-star");
+                    }
+                }
+            });
+        }
+
+
+       
+
         function mouseSelectTicket(ticketCode, price) {
-            debugger;
+            
             if (!$("#ticket-" + ticketCode).hasClass("ticket-item-selected"))
             {
                 $(".ticket-item").removeClass("ticket-item-selected");
                 $("#ticket-" + ticketCode).addClass("ticket-item-selected");
                 $("#hid_TicketCode").val(ticketCode);
                 $("#hid_TicketPrice").val(price);
+
+                let priceSale = GetPriceForSale();
+                $("#txt-price-by-policy").val(priceSale);
+                calculaTotal();
             };
 
-            calculaTotal();
+
         }
         function calculaTotal() {
             let quanti = ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) ? 0 : parseInt($("#txt-quanti").val());
-            let price = ($("#hid_TicketPrice").val() == "" || $("#hid_TicketPrice").val() == null) ? 0 : parseFloat($("#hid_TicketPrice").val());
+            let price = ($("#txt-price-by-policy").val() == "" || $("#txt-price-by-policy") == null) ? 0 : parseFloat($("#txt-price-by-policy").val());
 
           
             let total = quanti * price;
-            $("#span-total").html(RenderNumerFormat(total));
+            $("#span-total").html(RenderTotal(total));
         }
 
 
@@ -296,6 +329,8 @@
             $("#txt-quanti").val(null);
             calculaTotal();
         }
+
+
 
 
         function GetCustomerByType() {
@@ -317,29 +352,53 @@
         }
 
 
+        function GetPriceForSale() {
+            let ticketCode = $("#hid_TicketCode").val();
+            let customerType = $("#ddl-customer-type").val();
+            let objType = $("#ddl-objType").val();
+
+            let policyOject = arrPricePolicy.filter(x => x.ticketCode == ticketCode
+                && x.customerType == customerType
+                && x.customerForm == objType)[0];
+
+            if (policyOject != null) {
+                return policyOject.price;
+            } else {
+                return 0;
+            }
+
+
+        }
+
         function SaleOrderByGate()
         {
+
+            
+
+
             if ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) {
                 bootbox.alert(AlertFail("Bạn chưa chọn số lượng"));
-            } else if ($("#hid_TicketPrice").val() == "" || $("#hid_TicketPrice").val() == null) {
+            } else if ($("#hid_TicketCode").val() == "" || $("#hid_TicketCode").val() == null) {
                 bootbox.alert(AlertFail("Bạn chưa chọn vé bán"));
             } else {
 
                 let quanti = ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) ? 0 : parseInt($("#txt-quanti").val());
-                let price = ($("#hid_TicketPrice").val() == "" || $("#hid_TicketPrice").val() == null) ? 0 : parseFloat($("#hid_TicketPrice").val());
+                let price = GetPriceForSale();
+                let doituong = $("#ddl-objType").val();
+                let isFree = $('input[name="radioisfree"]:checked').val();
 
-                let doituong = parseInt($("#ddl-objType").val());
-                let priceReturn = getPriceByObj(doituong, price);
                 debugger;
                 let customerName = $("#ddl-customer option:selected").text();
                 var modelData = {
                     TicketCode: $("#hid_TicketCode").val(),
                     CustomerCode: $("#ddl-customer").val(),
                     CustomerName: customerName,
-                    ObjType: $("#ddl-objType").val(),
-                    PrintType: $("#ddl-print-type").val(),
+                    CustomerType: $("#ddl-customer-type").val(),
+                    ObjType: doituong,
+                    PrintType: "Ve_Le",
                     Quanti: quanti,
-                    Price: priceReturn
+                    Price: price,
+                    IsFree: isFree
                 }
 
                 $.ajax({
@@ -356,12 +415,12 @@
 
                         if (res.length > 0) {
                             bootbox.alert(AlertSuccess("Bán vé thành công, bạn có muốn in không?"), function () {
-                                $.each(res, function (index, value) {
+                                //$.each(res, function (index, value) {
 
-                                     printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint/" + value.subId);
-                                    //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint/" + value.subId);
+                                //     printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint/" + value.subId);
+                                //    //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint/" + value.subId);
 
-                                });
+                                //});
                                 ResetSale();
                             });
 
@@ -476,9 +535,17 @@
 
         function ResetSale() {
             $(".ticket-item").removeClass("ticket-item-selected");
-            $("#txt-quanti").val(null);
+            $("#txt-quanti").val(1);
+            $("#hid_TicketCode").val(null);
+            $("#txt-price-by-policy").val(null);
             calculaTotal();
         }
-
+        function RenderTotal(data) {
+            var res = "";
+            if (data !== undefined) {
+                res = data.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+            }
+            return res;
+        }
     </script>
 }

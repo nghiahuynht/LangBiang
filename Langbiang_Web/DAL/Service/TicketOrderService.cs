@@ -102,12 +102,16 @@ namespace DAL.Service
                         new SqlParameter("@GateCode", filter.GateCode),
                         new SqlParameter("@Keyword", filter.Keyword),
                         new SqlParameter("@PartnerCode", filter.PartnerCode),
+                        new SqlParameter("@CustomerType", filter.CustomerType),
+                        new SqlParameter("@TicketGroup", filter.GroupTicket),
+                        new SqlParameter("@ObjType", filter.ObjType),
+                        new SqlParameter("@TicketCode", filter.TicketCode),
                         new SqlParameter("@Start", filter.start),
                         new SqlParameter("@Length", filter.length),
                         new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int16, Direction = System.Data.ParameterDirection.Output }
                     };
                 ValidNullValue(param);
-                var lstData = await dtx.OrderGridModel.FromSql("sp_SearchOrder @ChanelId,@FromDate,@ToDate,@PaymentMethod,@PaymentStatus,@GateCode,@Keyword,@PartnerCode,@Start,@Length,@TotalRow OUT", param).ToListAsync();
+                var lstData = await dtx.OrderGridModel.FromSql("sp_SearchOrder @ChanelId,@FromDate,@ToDate,@PaymentMethod,@PaymentStatus,@GateCode,@Keyword,@PartnerCode,@CustomerType,@TicketGroup,@ObjType,@TicketCode,@Start,@Length,@TotalRow OUT", param).ToListAsync();
                 res.recordsTotal = Convert.ToInt16(param[param.Length-1].Value);
                 res.recordsFiltered = res.recordsTotal;
                 res.data = lstData;
@@ -230,7 +234,7 @@ namespace DAL.Service
         }
 
 
-        public ResultModel SaveOrderToData(PostOrderSaveModel model, string userName,string gateName,int objType)
+        public ResultModel SaveOrderToData(PostOrderSaveModel model, string userName,string gateName)
         {
 
             var res = new ResultModel();
@@ -240,6 +244,7 @@ namespace DAL.Service
                         new SqlParameter("@Id",0),
                         new SqlParameter("@CustomerCode", model.CustomerCode),
                         new SqlParameter("@CustomerName", string.Empty),
+                        new SqlParameter("@CustomerType", model.CustomerType),
                         new SqlParameter("@TicketCode",model.TicketCode),
                         new SqlParameter("@Quanti", model.Quanti),
                         new SqlParameter("@Price", model.Price),
@@ -247,14 +252,15 @@ namespace DAL.Service
                         new SqlParameter("@BienSoXe", model.BienSoXe),
                         new SqlParameter("@IsCopy", false),
                         new SqlParameter("@GateName", gateName),
-                        new SqlParameter("@Objtype", objType),
+                        new SqlParameter("@Objtype", model.ObjType),
+                        new SqlParameter("@IsFree", model.IsFree),
                         new SqlParameter { ParameterName = "@OrderId", DbType = System.Data.DbType.Int64, Direction = System.Data.ParameterDirection.Output }
 
                     };
 
 
                 ValidNullValue(param);
-                dtx.Database.ExecuteSqlCommand("EXEC sp_SaveOrderTicket @Id,@CustomerCode,@CustomerName,@TicketCode,@Quanti,@Price,@UserName,@BienSoXe,@IsCopy,@GateName,@Objtype,@OrderId OUT", param);
+                dtx.Database.ExecuteSqlCommand("EXEC sp_SaveOrderTicket @Id,@CustomerCode,@CustomerName,@CustomerType,@TicketCode,@Quanti,@Price,@UserName,@BienSoXe,@IsCopy,@GateName,@Objtype,@IsFree,@OrderId OUT", param);
                 
 
                 res.ValueReturn = Convert.ToInt64(param[param.Length - 1].Value);

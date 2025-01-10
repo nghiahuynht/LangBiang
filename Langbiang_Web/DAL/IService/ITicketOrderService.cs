@@ -21,7 +21,7 @@ namespace DAL.IService
         TicketOrderModel CheckPayment(string Description, double Amount);
 
         Task<SaveResultModel> SaveTranSePayWebHook(WebHookReceiveModel model);
-        ResultModel SaveOrderToData(PostOrderSaveModel model, string userName, string gateName, int objType);
+        ResultModel SaveOrderToData(PostOrderSaveModel model, string userName, string gateName);
         void AssignSubIdForMapping(Int64 orderId);
 
 

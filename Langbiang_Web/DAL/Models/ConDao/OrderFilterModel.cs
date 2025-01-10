@@ -14,6 +14,11 @@ namespace DAL.Models.ConDao
         public string GateCode { get; set; }
         public string Keyword { get; set; }
         public string PartnerCode { get; set; }
+        public string CustomerType { get; set; }
+        public string GroupTicket { get; set; }
+        public string ObjType { get; set; }
+        public string TicketCode { get; set; }
+        public bool IsFree { get; set; }
 
     }
 }

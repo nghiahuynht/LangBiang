@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using WebApp.Infrastructure;
 
 namespace DAL.Service
@@ -126,7 +127,20 @@ namespace DAL.Service
             return res;
         }
 
-
+        public List<TicketPricePolicyModel> GetAllPricePloicyForSale()
+        {
+            var res = new List<TicketPricePolicyModel>();
+            try
+            {
+                var param = new SqlParameter[] {};
+                res = dtx.TicketPricePolicyModel.FromSql("EXEC sp_GetAllPricePolicy", param).ToList();
+            }
+            catch (Exception ex)
+            {
+                res = new List<TicketPricePolicyModel>();
+            }
+            return res;
+        }
 
     }
 }
