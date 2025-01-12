@@ -259,7 +259,7 @@ namespace WebApp.Controllers
         [HttpPost]
         public IActionResult SaleOrderAction([FromBody] PostOrderSaveModel model)
         {
-
+            var viewModel = new SaveOrderSuccessViewModel();
             if (!string.IsNullOrEmpty(AuthenInfo().UserName))
             {
 
@@ -269,12 +269,13 @@ namespace WebApp.Controllers
                     var res = ticketOrderService.SaveOrderToData(model, AuthenInfo().UserName,string.Empty);
                     CreateQRCode(res.ValueReturn);
                     lstSubCode = ticketOrderService.GetSubCodePrintInfo(res.ValueReturn).Result;
-
+                    viewModel.OrderId = res.ValueReturn;
+                    viewModel.LstSubCode = lstSubCode;
                 }
 
                 
 
-                return Json(lstSubCode);
+                return Json(viewModel);
             }
             else
             {
@@ -288,36 +289,27 @@ namespace WebApp.Controllers
 
 
 
-        public IActionResult GetPDFForPrint(int id)
-        
+
+
+
+
+        [HttpGet]
+        public IActionResult GetPDFForPrint(int subId)// dành cho kiểu in lẻ và in gộp
         {
 
-            var subDetail = ticketOrderService.GetPrintPdfSubOrderDetail(id);
+            var subDetail = ticketOrderService.GetPrintPdfSubOrderDetail(subId);
             // Get list gate by zone code
             subDetail.ListGate = soatVeService.GetGateByParentCode(subDetail.ZoneCode);
            
             subDetail.TotalByText = TienBangChu(subDetail.TotalAfterVAT.ToString());
             return View(subDetail);
-            //return new ViewAsPdf(subDetail)
-            //{
-            //    PageOrientation = Rotativa.AspNetCore.Options.Orientation.Portrait,
-            //    // PageSize = Rotativa.AspNetCore.Options.Size.A5,
-
-            //    PageWidth = 400,
-            //    PageHeight = 550,
-            //    CustomSwitches = "--disable-smart-shrinking",
-            //};
         }
 
 
-
-        public IActionResult htmlprint(int id)
+        public IActionResult PrintQRview(long orderId)
         {
-
-            var subDetail = ticketOrderService.GetPrintPdfSubOrderDetail(id);
-            subDetail.TotalByText = TienBangChu(subDetail.TotalAfterVAT.ToString());
-
-            return View(subDetail);
+            var lstQR = ticketOrderService.GetSubCodePrintInfo(orderId).Result;
+            return View(lstQR);
         }
 
 

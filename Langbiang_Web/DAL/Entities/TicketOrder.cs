@@ -98,6 +98,6 @@ namespace DAL.Entities
         /// </summary>
         public DateTime? VisitDate { get; set; }
         public string GateName { get; set; }
-        public int ObjType { get; set; }
+        public string ObjType { get; set; }
     }
 }

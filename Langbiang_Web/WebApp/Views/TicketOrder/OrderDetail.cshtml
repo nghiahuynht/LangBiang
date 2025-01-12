@@ -163,33 +163,7 @@
                         <div class="form-group row">
                             <label class="col-md-3 col-form-label">Đối tượng *</label>
                             <div class="col-md-9">
-                                @{
-                                    string objName = string.Empty;
-                                    switch (Model.TicketOrder.ObjType)
-                                    {
-                                        case 1:
-                                            objName = "Người lớn";
-                                            break;
-                                        case 2:
-                                            objName = "Miễn giảm 50%";
-                                            break;
-                                        case 3:
-                                            objName = "Học sinh/ sinh viên";
-                                            break;
-                                        case 4:
-                                            objName = "Trẻ em/học sinh";
-                                            break;
-                                        case 5:
-                                            objName = "Học sinh/sinh viên ở Côn Đảo";
-                                            break;
-                                        default:
-                                            objName = "Chưa xác định";
-                                            break;
-
-                                    }
-
-                                            }
-                                <span>@(objName)</span>
+                                @(Model.TicketOrder.ObjType)
                             </div>
                         </div>
                     </div>

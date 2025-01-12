@@ -185,13 +185,32 @@
                         </div>
                     </div>
                     <div class="row">
-                        <label class="col-md-6 col-form-label"></label>
-                        <div class="col-md-3">
-                            <input type="radio" style="width:15px;height:15px;" value="false" name="radioisfree" checked="checked" />&nbsp;Bình thường
+                        <div class="col-sm-6">
+                            <label class="col-md-12 col-form-label">Loại đơn</label>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input type="radio" style="width:15px;height:15px;" value="false" name="radioisfree" checked="checked" />&nbsp;Bình thường
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="radio" style="width:15px;height:15px;" value="true" name="radioisfree" />&nbsp;Miễn phí
+                                </div>
+                            </div>
+
                         </div>
-                        <div class="col-md-3">
-                            <input type="radio" style="width:15px;height:15px;" value="true" name="radioisfree" />&nbsp;Miễn phí
+                        <div class="col-sm-6">
+                            <label class="col-md-12 col-form-label">Kiểu in</label>
+                            <div class="col-md-12">
+                                <select id="ddl-printtypes" class="form-control" data-style="btn-info">
+                                    <option value="InLe">In lẻ</option>
+                                    <option value="InGop">In gộp</option>
+                                    <option value="InQRCode">In QR Code</option>
+                                </select>
+                            </div>
                         </div>
+
+
+
+
                     </div>
                 </div>
                 <div class="card-body">
@@ -412,15 +431,13 @@
                     },
                     success: function (res) {
                         HideWaiting();
+                        debugger;
+                        if (res.lstSubCode.length > 0)
+                        {
 
-                        if (res.length > 0) {
-                            bootbox.alert(AlertSuccess("Bán vé thành công, bạn có muốn in không?"), function () {
-                                //$.each(res, function (index, value) {
-
-                                //     printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint/" + value.subId);
-                                //    //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint/" + value.subId);
-
-                                //});
+                            bootbox.alert(AlertSuccess("Bán vé thành công, chuẩn bị in vé"), function () {
+                                let printOptionVal = $("#ddl-printtypes").val();
+                                PrintOrder(printOptionVal, res.orderId, res.lstSubCode);
                                 ResetSale();
                             });
 
@@ -439,57 +456,22 @@
         }
 
 
-
-        //function SaleOrder() {
-        //    if ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) {
-        //        bootbox.alert(AlertFail("Bạn chưa chọn số lượng"));
-        //    } else if ($("#hid_GatePrice").val() == "" || $("#hid_GatePrice").val() == null) {
-        //        bootbox.alert(AlertFail("Bạn chưa chọn vé bán"));
-        //    } else {
-
-        //        let quanti = ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) ? 0 : parseInt($("#txt-quanti").val());
-        //        let price = ($("#hid_GatePrice").val() == "" || $("#hid_GatePrice").val() == null) ? 0 : parseFloat($("#hid_GatePrice").val());
-
-
-
-        //        var modelData = {
-        //            TicketCode: $("#hid_ticketCode").val(),
-        //            CustomerCode: $("#txt-customer").val(),
-        //            CustomerName: "",
-        //            Quanti: quanti,
-        //            Price: price
-        //        }
-
-        //        $.ajax({
-        //            type: "POST",
-        //            contentType: 'application/json; charset=utf-8',
-        //            url: "/TicketOrder/SaleOrderAction",
-        //            dataType: 'json',
-        //            data: JSON.stringify(modelData),
-        //            beforeSend: function () {
-                       
-        //            },
-        //            success: function (res) {
-
-                       
-        //                if (res.length > 0) {
-        //                    bootbox.alert(AlertSuccess("Bán vé thành công, bạn có muốn in không?"), function () {
-        //                        $.each(res, function (index, value) {
-                              
-        //                            printPdf("https://vuonquocgiacondao.gamanjsc.com/ticketorder/GetPDFForPrint/" + value.subId);
-
-        //                        });
-        //                        ResetSale();
-        //                    });
-
-        //                } else {
-        //                    bootbox.alert(AlertFail("Bán vé không thành công, vui lòng đăng xuất và đăng nhập lại"));
-        //                }
-
-        //            }
-        //        });
-        //    }
-        //}
+        function PrintOrder(printOption,orderId ,lstTicketSuccess) {
+            debugger;
+            if (printOption == "InLe") {
+                $.each(lstTicketSuccess, function (index, value) {
+                    //printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + value.subId);
+                    printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + value.subId);
+                });
+            } else if (printOption == "InGop") {
+                let firstRowId = lstTicketSuccess[0].subId;
+                //printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + firstRowId);
+                printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + firstRowId);
+            } else if (printOption == "InQRCode") {
+                window.open('http://localhost:44377/ticketorder/PrintQRview?orderId=' + orderId, '_blank');
+            }
+        }
+        
 
 
         function selectTicketItem(ticketCode, price, obj) {

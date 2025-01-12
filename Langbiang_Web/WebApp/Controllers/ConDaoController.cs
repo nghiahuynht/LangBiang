@@ -160,7 +160,7 @@ namespace WebApp.Controllers
                             SaleChannelId = (int)SaleChannelId.Online,
                             VisitDate  = model.VisitDate,
                             GateName = objTicket.Description,
-                            ObjType=1,// mua từ webonline mặc định = 1 đối tượng bình thường
+                            ObjType= "NguoiLon",// mua từ webonline mặc định = 1 đối tượng bình thường
                             
                         };
 

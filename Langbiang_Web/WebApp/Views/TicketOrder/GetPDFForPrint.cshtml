@@ -127,17 +127,16 @@
                     <td class="wtd65 fS18" style="text-align:left">
                         <small style="color: #000000;font-size:14pt;"><b>Khu du lịch LangBiang</b></small> <br />
                         <small style="color: #000000;font-size:14pt;">Tình Lâm Đồng</small><br />
-                        @*  <small>tỉnh Bà Rịa-Vũng Tàu</small><br /> *@
                         <small style="color: #000000;font-size:14pt;">Số hotline: 0983.83.06.69</small>
                     </td>
 
                 </tr>
             </table>
             <br />
-            <div class="text-center fS25"><strong>VÉ THĂM QUAN</strong></div>
-            <div class="text-center fS25"><small>Đối tượng: @(Model.ObjDesc)</small></div>
-            <br />
-            <div class="text-center fS23"><strong>@(Model.ZoneName)</strong></div>
+            <div class="text-center fS25"><strong>@(Model.TicketGroup.ToUpper())</strong></div>
+            <div class="text-center fS25"><small>@(Model.CustomerTypeName)</small></div>
+            <div class="text-center fS25"><small>Đối tượng: @(Model.ObjTypeName)</small></div>
+
             <br />
             <table class="fS11" style="width:100%;">
                 <tr>
@@ -178,19 +177,7 @@
                     </td>
                 </tr>
             </table>
-            <br />
-            <div class="text-center fS21"><strong>***  Vé được tham quan tại các địa điểm  ***</strong></div>
-            <div style="text-align: center;align-items: center;margin-left: 35%;">
-                @{
-                    var counter = 1;
-                    foreach (var item in Model.ListGate)
-                    {
-                        <div style="text-align: left;"><small style="text-align:left" class="fS21">@(counter++). @(item.GateName)</small></div>
-                        // <p>@(item.GateName)</p>
-                    }
-                }
-
-            </div>
+           
             <table style="width: 100%; padding-left:10px" class="fS18">
 
                 <tr>

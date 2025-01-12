@@ -20,9 +20,15 @@ namespace DAL.Models.TicketOrder
         public DateTime? CreatedDate { get; set; }
 
         // ddphuong add prop
-            public string ObjDesc { get; set; }
-            public string ZoneCode { get; set; }
-            public string ZoneName { get; set; }
+        public string ObjDesc { get; set; }
+        public string ZoneCode { get; set; }
+        public string ZoneName { get; set; }
+
+       // Nghia
+        public string CustomerTypeName { get; set; }
+        public string ObjTypeName { get; set; }
+        public string TicketGroup { get; set; }
+
         [NotMapped]
         public List<GateListModel> ListGate { get; set; }= new List<GateListModel>();
     }

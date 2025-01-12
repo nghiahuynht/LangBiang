@@ -91,7 +91,7 @@ namespace WebApp.Controllers
         /// <param name="filter"></param>
         /// <returns></returns>
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public DataTableResultModel<TicketGridModel> SearchTicket(TicketFilterModel filter)
         {
             var res = ticketService.SearchTicket(filter);

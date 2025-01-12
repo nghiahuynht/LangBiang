@@ -1,0 +1,57 @@
+﻿@model List<DAL.Models.ConDao.SubOrderPrintModel>
+@{
+    Layout = null;
+}
+@{
+    string ngayinve = DateTime.Now.ToString("dd/MM/yyyy HH:mm:ss ");
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin vé</title>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <style>
+
+        body {
+            font-size: 15pt;
+            font-family: 'font-family: Arial, sans-serif';
+            margin: 0;
+            padding: 0px;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <div class="row">
+
+        @{
+            if (Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    <div class="col-sm-1">
+                        <div class="border" style="padding:5px;">
+                            <div class="text-center">
+                                <img src="~/QRCode/@(item.SubId).jpg" class="rounded img" style="width:100%; width:100px;">
+                                <label style="font-size:6pt;">@(item.SubOrderCode)</label>
+                            </div>
+                        </div>
+                      
+                    </div>
+                }
+            }
+            else
+            {
+                <h5>Không tìm thấy QR in</h5>
+            }
+
+        }
+
+
+    </div>
+</body>
+</html>
