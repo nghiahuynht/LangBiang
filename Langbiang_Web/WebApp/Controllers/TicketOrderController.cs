@@ -92,9 +92,9 @@ namespace WebApp.Controllers
 
 
         [HttpGet]
-        public async Task<JsonResult> ChangeStatusOrder(long orderId,int newStatus)
+        public JsonResult ChangePaymentStatusOrder(long orderId,int newStatus)
         {
-            var res = ticketOrderService.ChangeStatusTicketOrder(orderId, newStatus,AuthenInfo().UserName);
+            var res = ticketOrderService.ChangePaymentStatusTicketOrder(orderId, newStatus,AuthenInfo().UserName);
             if (newStatus == 1 && res.IsSuccess)
             {
                 var objOD = ticketService.GetOrderInfo(orderId);
@@ -109,6 +109,16 @@ namespace WebApp.Controllers
             }
             return Json(res);
         }
+
+
+        [HttpGet]
+        public JsonResult ChangeStatusOrder(long orderId, string newStatus)
+        {
+            SaveResultModel res = new SaveResultModel();
+            return Json(res);
+        }
+
+
 
         [HttpPost]
         public async Task<DataTableResultModel<OrderGridModel>> SearchOrder(OrderFilterModel filter)
@@ -308,8 +318,11 @@ namespace WebApp.Controllers
 
         public IActionResult PrintQRview(long orderId)
         {
-            var lstQR = ticketOrderService.GetSubCodePrintInfo(orderId).Result;
-            return View(lstQR);
+            OrderResultViewModel viewmodel = new OrderResultViewModel();
+            viewmodel.TicketOrder = ticketService.GetTicketOrderbyId(orderId);
+            viewmodel.Customer = customerService.GetCustomerByCode(viewmodel.TicketOrder.CustomerCode).Result;
+            viewmodel.ListSubCode = ticketOrderService.GetSubOrderCodeByOrderId(orderId);
+            return View(viewmodel);
         }
 
 

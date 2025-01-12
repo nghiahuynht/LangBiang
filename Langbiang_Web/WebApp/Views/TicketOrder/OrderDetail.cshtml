@@ -33,7 +33,14 @@
                             {
                                 <input type="button" value="Xác nhận thanh toán" class="btn bg-success" id="btn-confirm" style="margin-right:5px;" />
                             }
-                            <input type="button" value="Gửi lại thông tin vé" class="btn bg-primary" id="btn-sendNoti" style="margin-right:5px;" />
+
+                            if (Model.TicketOrder.OrderStatus == Contanst.OrderStatus_Completed)
+                            {
+                                <input type="button" value="Hủy" class="btn btn-danger" id="btn-cancel-order" style="margin-right:5px;" />
+                                <input type="button" value="In lại vé" class="btn btn-primary" id="btn-print-order" style="margin-right:5px;" />
+                            }
+
+
                             <a class="btn btn-default" href="/ticketorder/index">Trở lại danh sách</a>
                         }
 
@@ -151,19 +158,26 @@
 
                             </div>
                         </div>
-                        <div class="form-group row">
-                            <label class="col-md-3 col-form-label">Tuyến *</label>
-                            <div class="col-md-9">
-                                @{
-                                    var TuyenDetail = Model.GateListAll.FirstOrDefault(x => x.GateCode == Model.TicketOrder.GateName);
-                                }
-                                <span>@(TuyenDetail != null ? TuyenDetail.GateName : string.Empty)</span>
-                            </div>
-                        </div>
+
                         <div class="form-group row">
                             <label class="col-md-3 col-form-label">Đối tượng *</label>
                             <div class="col-md-9">
                                 @(Model.TicketOrder.ObjType)
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Trạng thái</label>
+                            <div class="col-md-9">
+                                @{
+                                    if (Model.TicketOrder.OrderStatus == Contanst.OrderStatus_Completed)
+                                    {
+                                        <span class="badge badge-success badge-status">Hoàn thành</span>
+                                    }
+                                    else if (Model.TicketOrder.OrderStatus == Contanst.OrderStatus_Cancel)
+                                    {
+                                        <span class="badge badge-danger badge-status">Huỷ</span>
+                                    }
+                                }
                             </div>
                         </div>
                     </div>
@@ -186,15 +200,15 @@
                                                 {
                                                     foreach (var item in Model.ListSubCode)
                                                     {
-                                    <tr>
-                                        <td width="40px"><div class="text-center" onclick="ViewPDf(@(item.Id))"><span class="fa fa-eye"></span></div></td>
-                                        <td>@(item.SubNum)</td>
-                                        <td><span style="font-size:14pt;">@(item.SubOrderCode)</span></td>
-                                        <td>@(item.InvoiceNumber)</td>
-                                        <td>@(item.TransactionID)</td>
-                                    </tr>
-                                }
-                                    }
+                                                        <tr>
+                                                            <td width="40px"><div class="text-center" onclick="ViewPDf(@(item.Id))"><span class="fa fa-eye"></span></div></td>
+                                                            <td>@(item.SubNum)</td>
+                                                            <td><span style="font-size:14pt;">@(item.SubOrderCode)</span></td>
+                                                            <td>@(item.InvoiceNumber)</td>
+                                                            <td>@(item.TransactionID)</td>
+                                                        </tr>
+                                                    }
+                                                }
                         }
                     </tbody>
                 </table>
@@ -265,68 +279,97 @@
                                         })
 
         function ChangeStatusPayment(newStatus) {
-                                            let orderId = $("#TicketOrder_Id").val();
+        let orderId = $("#TicketOrder_Id").val();
 
-                                            let messageConfirm = newStatus == 1 ? "xác nhận" : "huỷ";
-                                            bootbox.confirm("Bạn có chắc muốn " + messageConfirm+" giao dịch mua vé này", function (confi) {
-                                                if (confi)
-                                                {
-                    $.ajax({
-                                                    type: "GET",
-                        contentType: 'application/json; charset=utf-8',
-                        url: "/TicketOrder/ChangeStatusOrder?orderId=" + orderId + "&newStatus=" + newStatus,
-                        success: function (result) {
+        let messageConfirm = newStatus == 1 ? "xác nhận" : "huỷ";
+        bootbox.confirm("Bạn có chắc muốn " + messageConfirm+" giao dịch mua vé này", function (confi) {
+            if (confi)
+            {
+                $.ajax({
+                                type: "GET",
+                contentType: 'application/json; charset=utf-8',
+                url: "/TicketOrder/ChangePaymentStatusOrder?orderId=" + orderId + "&newStatus=" + newStatus,
+                success: function (result) {
 
-                                                            if (result.isSuccess == true) {
-                                                                bootbox.alert(AlertSuccess("Chuyển trạng thái thành công"), function () {
+                        if (result.isSuccess == true) {
+                            bootbox.alert(AlertSuccess("Chuyển trạng thái thành công"), function () {
 
-                                                                    location.href = "/TicketOrder/OrderDetail/" + orderId;
-                                                                    SendNoti();
-                                                                });
+                                location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                SendNoti();
+                            });
 
-                                                            } else {
-                                                                bootbox.alert(AlertFail("Chuyển trạng thái không thành công"), function () {
-                                                                    location.href = "/TicketOrder/OrderDetail/" + orderId;
-                                                                });
-                                                            }
-
-
-                                                        }
-                                                    });
-                                                }
-                                            });
+                        } else {
+                            bootbox.alert(AlertFail("Chuyển trạng thái không thành công"), function () {
+                                location.href = "/TicketOrder/OrderDetail/" + orderId;
+                            });
+                        }
 
 
-                                        }
-                                        function SendNoti() {
-                                            let orderId = $("#TicketOrder_Id").val();
-                                            let crsfToken = document?.querySelector("#form-ticket-order > input[type=hidden]:nth-child(1)")?.getAttribute('value');
-                                            $.ajax({
-                                                type: "GET",
-                                                contentType: 'application/json; charset=utf-8',
-                                                headers: { 'RequestVerificationToken': crsfToken
-                                                },
-                                                url: "/ConDao/SendNoti?id=" + orderId,
-                                                success: function (result) {
-                                                                                    debugger;
-                                                                                    if (result.isSuccess == true) {
-                                                                                        bootbox.alert(AlertSuccess("Gửi zalo/email thành công"), function () {
-                                                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
-                                                                                        });
-
-                                                                                    } else {
-                                                                                        bootbox.alert(AlertFail(result.desc), function () {
-                                                                                            location.href = "/TicketOrder/OrderDetail/" + orderId;
-                                                                                        });
-                                                                                    }
+                    }
+                });
+            }
+        });
 
 
-                                                                                }
-                                                                            });
-                                        }
+    }
+    function SendNoti() {
+        let orderId = $("#TicketOrder_Id").val();
+        let crsfToken = document?.querySelector("#form-ticket-order > input[type=hidden]:nth-child(1)")?.getAttribute('value');
+        $.ajax({
+            type: "GET",
+            contentType: 'application/json; charset=utf-8',
+            headers: { 'RequestVerificationToken': crsfToken
+            },
+            url: "/ConDao/SendNoti?id=" + orderId,
+            success: function (result)
+            {
+                debugger;
+                if (result.isSuccess == true) {
+                    bootbox.alert(AlertSuccess("Gửi zalo/email thành công"), function () {
+                        location.href = "/TicketOrder/OrderDetail/" + orderId;
+                    });
 
-                                        function ViewPDf(subId) {
-                                         window.open("/ticketorder/GetPDFForPrint/" + subId, 'Xem pdf');
-                                        }
+                } else {
+                    bootbox.alert(AlertFail(result.desc), function () {
+                        location.href = "/TicketOrder/OrderDetail/" + orderId;
+                    });
+                }
+
+
+
+            }
+         });
+    }
+
+    function ViewPDf(subId) {
+       window.open("/ticketorder/GetPDFForPrint?subId=" + subId, 'Xem pdf');
+    }
+
+    function ChangeStatusOrder(statuscode) {
+        bootbox.confirm("Bạn có chắc muốn " + messageConfirm + " giao dịch mua vé này", function (confi) {
+            if (confi) {
+                $.ajax({
+                    type: "GET",
+                    contentType: 'application/json; charset=utf-8',
+                    url: "/TicketOrder/ChangeStatusOrder?orderId=" + orderId + "&newStatus=" + statuscode,
+                    success: function (result) {
+
+                        if (result.isSuccess == true) {
+                            bootbox.alert(AlertSuccess("Chuyển trạng thái thành công"), function () {
+                                location.href = "/TicketOrder/OrderDetail/" + orderId;
+                            });
+
+                        } else {
+                            bootbox.alert(AlertFail("Chuyển trạng thái không thành công"));
+                        }
+
+
+                    }
+                });
+            }
+        });
+    }
+
+
     </script>
 }

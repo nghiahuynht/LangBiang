@@ -99,5 +99,6 @@ namespace DAL.Entities
         public DateTime? VisitDate { get; set; }
         public string GateName { get; set; }
         public string ObjType { get; set; }
+        public string OrderStatus { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿@model List<DAL.Models.ConDao.SubOrderPrintModel>
+﻿@model DAL.Models.ConDao.OrderResultViewModel
 @{
     Layout = null;
 }
@@ -22,36 +22,50 @@
             padding: 0px;
         }
 
+        #frame-print {
+            width: 21cm;
+            height: 29.7cm;
+            margin: 5mm 10mm 5mm 10mm;
+        }
        
     </style>
 </head>
 <body>
-    <div class="row">
+    <div id="frame-print">
+        <div class="text-center">
+            <h4>@(Model.TicketOrder.CustomerCode)</h4>
+            <span>Mã khách hàng: @(Model.Customer.CustomerName)</span><br />
+            <span>Ngày: @(Model.TicketOrder.CreatedDate.HasValue ? Model.TicketOrder.CreatedDate.Value.ToString("dd/MM/yyyy") : string.Empty)</span>
+        </div>
+        <hr />
+        <div class="row">
 
-        @{
-            if (Model.Any())
-            {
-                foreach (var item in Model)
+            @{
+                if (Model.ListSubCode.Any())
                 {
-                    <div class="col-sm-1">
-                        <div class="border" style="padding:5px;">
-                            <div class="text-center">
-                                <img src="~/QRCode/@(item.SubId).jpg" class="rounded img" style="width:100%; width:100px;">
-                                <label style="font-size:6pt;">@(item.SubOrderCode)</label>
+                    foreach (var item in Model.ListSubCode)
+                    {
+                        <div class="col-sm-2">
+                            <div class="border" style="padding:2px;margin-bottom:15px;">
+                                <div class="text-center">
+                                    <img src="~/QRCode/@(item.Id).jpg" class="rounded img" style="width:100%; width:90px;">
+                                    <label style="font-size:6pt;">@(item.SubOrderCode)</label>
+                                </div>
                             </div>
+
                         </div>
-                      
-                    </div>
+                    }
                 }
+                else
+                {
+                    <h5>Không tìm thấy QR in</h5>
+                }
+
             }
-            else
-            {
-                <h5>Không tìm thấy QR in</h5>
-            }
-
-        }
 
 
+        </div>
     </div>
+
 </body>
 </html>

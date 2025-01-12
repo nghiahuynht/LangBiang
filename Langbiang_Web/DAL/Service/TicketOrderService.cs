@@ -60,7 +60,7 @@ namespace DAL.Service
         }
 
 
-        public SaveResultModel ChangeStatusTicketOrder(long OrderId,int newStatus,string userName,string paymentValue="", long paymentID = 0)
+        public SaveResultModel ChangePaymentStatusTicketOrder(long OrderId,int newStatus,string userName,string paymentValue="", long paymentID = 0)
         {
             var res = new SaveResultModel();
             try

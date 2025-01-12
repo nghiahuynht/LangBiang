@@ -43,3 +43,17 @@ SubCode: {"SubId":18,"SubNum":5,"SubOrderCode":"VE-NGAY1201250012","CreatedBy":"
 SubCode: {"SubId":19,"SubNum":6,"SubOrderCode":"VE-NGAY1201250013","CreatedBy":"admin","CardNum":null}
 
 
+1/12/2025 4:09:03 PM: /TicketOrder/SaleOrderAction      
+QRCodeFolder: D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp\wwwroot\QRCode\{0}.jpg
+SubCode: {"SubId":1,"SubNum":1,"SubOrderCode":"VE-NGAY1201250001","CreatedBy":"admin","CardNum":"11111112"}
+SubCode: {"SubId":2,"SubNum":2,"SubOrderCode":"VE-NGAY1201250002","CreatedBy":"admin","CardNum":"11111111"}
+SubCode: {"SubId":3,"SubNum":3,"SubOrderCode":"VE-NGAY1201250003","CreatedBy":"admin","CardNum":"11111114"}
+SubCode: {"SubId":4,"SubNum":4,"SubOrderCode":"VE-NGAY1201250004","CreatedBy":"admin","CardNum":"11111115"}
+SubCode: {"SubId":5,"SubNum":5,"SubOrderCode":"VE-NGAY1201250005","CreatedBy":"admin","CardNum":"11111120"}
+SubCode: {"SubId":6,"SubNum":6,"SubOrderCode":"VE-NGAY1201250006","CreatedBy":"admin","CardNum":"11111119"}
+SubCode: {"SubId":7,"SubNum":7,"SubOrderCode":"VE-NGAY1201250007","CreatedBy":"admin","CardNum":"11111118"}
+SubCode: {"SubId":8,"SubNum":8,"SubOrderCode":"VE-NGAY1201250008","CreatedBy":"admin","CardNum":"11111117"}
+SubCode: {"SubId":9,"SubNum":9,"SubOrderCode":"VE-NGAY1201250009","CreatedBy":"admin","CardNum":"11111116"}
+SubCode: {"SubId":10,"SubNum":10,"SubOrderCode":"VE-NGAY1201250010","CreatedBy":"admin","CardNum":"11111113"}
+
+

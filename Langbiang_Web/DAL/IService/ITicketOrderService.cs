@@ -13,7 +13,7 @@ namespace DAL.IService
     public interface ITicketOrderService
     {
         List<DAL.Entities.TicketOrderSubNum> GetSubOrderCodeByOrderId(long orderId);
-        SaveResultModel ChangeStatusTicketOrder(long OrderId, int newStatus, string userName, string paymentValue="",long paymentID=0);
+        SaveResultModel ChangePaymentStatusTicketOrder(long OrderId, int newStatus, string userName, string paymentValue = "", long paymentID = 0);
         Task<DataTableResultModel<OrderGridModel>> SearchOrder(OrderFilterModel filter);
         Task<List<SubOrderPrintModel>> GetSubCodePrintInfo(long orderId);
         PrintPdfOrderModel GetPrintPdfSubOrderDetail(long subid);

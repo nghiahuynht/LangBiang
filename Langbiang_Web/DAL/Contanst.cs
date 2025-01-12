@@ -42,5 +42,8 @@ namespace DAL
         public static string CustForm_NguoiLon = "NguoiLon";
         public static string CustForm_TreEm = "TreEm";
 
+
+        public static string OrderStatus_Completed = "Completed";
+        public static string OrderStatus_Cancel = "Cancel";
     }
 }

@@ -60,7 +60,7 @@ namespace WebApp.Controllers
                     {
                         logger.Debug("ticketOrderId :" + ticketOrder.Id.ToString());
                         // update status 1
-                        var resUpdateStatus = ticketOrderService.ChangeStatusTicketOrder(ticketOrder.Id, 1, "auto aync", strJson, model.data[0].id);
+                        var resUpdateStatus = ticketOrderService.ChangePaymentStatusTicketOrder(ticketOrder.Id, 1, "auto aync", strJson, model.data[0].id);
                         if (resUpdateStatus.IsSuccess == true)
                         {
                             var objOD = ticketService.GetOrderInfo(ticketOrder.Id);

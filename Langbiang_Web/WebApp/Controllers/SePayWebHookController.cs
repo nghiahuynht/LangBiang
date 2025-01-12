@@ -55,7 +55,7 @@ namespace WebApp.Controllers
                     if (objOD.Total == model.transferAmount)
                     {
                         int paymentStatus = (int)PaymentStatus.Paid; // đã thanh toán
-                        var resStatus = ticketOrderService.ChangeStatusTicketOrder(orderId, paymentStatus, "SePay");
+                        var resStatus = ticketOrderService.ChangePaymentStatusTicketOrder(orderId, paymentStatus, "SePay");
                         if (resStatus.IsSuccess)
                         {
                             ticketService.CreateTicketSubOrder(objOD.Id, objOD.Quanti, objOD.TicketCode, objOD.Price);
