@@ -152,3 +152,25 @@ F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.dll
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.xml
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Handlers.deps.json
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Handlers.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Handlers.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Handlers.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Codecs.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Common.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Common.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Codecs.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Codecs.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.csprojAssemblyReference.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.csproj.CoreCompileInputs.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.csproj.CopyComplete
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\netstandard1.3\DotNetty.Handlers.pdb

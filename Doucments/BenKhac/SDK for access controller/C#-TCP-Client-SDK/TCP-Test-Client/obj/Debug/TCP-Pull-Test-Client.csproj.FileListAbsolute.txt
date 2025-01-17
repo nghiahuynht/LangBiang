@@ -35,3 +35,16 @@ F:\Projects\OnSVN\Lanbiang\Doucments\BenKhac\SDK for access controller\C#-TCP-Cl
 F:\Projects\OnSVN\Lanbiang\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TCP-Pull-Test-Client.csproj.CopyComplete
 F:\Projects\OnSVN\Lanbiang\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TestTCPClient.exe
 F:\Projects\OnSVN\Lanbiang\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TestTCPClient.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\bin\Debug\TestTCPClient.exe.config
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\bin\Debug\TestTCPClient.exe
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\bin\Debug\TestTCPClient.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\bin\Debug\TcpClass.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\bin\Debug\TcpClass.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TCP-Pull-Test-Client.csprojAssemblyReference.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TcpipIntface.Form1.resources
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TestTCPClient.Properties.Resources.resources
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TCP-Pull-Test-Client.csproj.GenerateResource.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TCP-Pull-Test-Client.csproj.CoreCompileInputs.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TCP-Pull-Test-Client.csproj.CopyComplete
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TestTCPClient.exe
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Client-SDK\TCP-Test-Client\obj\Debug\TestTCPClient.pdb

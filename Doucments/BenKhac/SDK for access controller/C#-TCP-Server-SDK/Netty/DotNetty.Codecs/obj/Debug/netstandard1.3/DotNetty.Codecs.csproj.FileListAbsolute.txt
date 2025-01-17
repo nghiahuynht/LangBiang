@@ -131,3 +131,22 @@ F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.dll
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.xml
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Codecs.deps.json
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Codecs.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Codecs.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Codecs.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Buffers.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Common.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Transport.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Common.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Common.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Buffers.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Buffers.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Transport.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\bin\Debug\netstandard1.3\DotNetty.Transport.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.csprojAssemblyReference.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.csproj.CoreCompileInputs.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.csproj.CopyComplete
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Codecs\obj\Debug\netstandard1.3\DotNetty.Codecs.pdb

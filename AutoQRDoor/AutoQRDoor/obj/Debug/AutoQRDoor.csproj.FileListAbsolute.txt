@@ -1,0 +1,11 @@
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\bin\Debug\AutoQRDoor.exe.config
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\bin\Debug\AutoQRDoor.exe
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\bin\Debug\AutoQRDoor.pdb
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.Form1.resources
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.Properties.Resources.resources
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.csproj.GenerateResource.cache
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.csproj.CoreCompileInputs.cache
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.exe
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.pdb
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.csproj.CopyComplete
+D:\Projects\OnGit\LangBianSytem\AutoQRDoor\AutoQRDoor\obj\Debug\AutoQRDoor.csprojAssemblyReference.cache

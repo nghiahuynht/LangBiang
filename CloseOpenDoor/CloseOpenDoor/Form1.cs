@@ -1,7 +1,9 @@
-﻿using System;
+﻿using Microsoft.ApplicationBlocks.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -108,21 +110,19 @@ namespace CloseOpenDoor
 
 
 
-
+        // hàm scan QR code lấy value quét
         void EventHandler(RAcsEvent Event, TTCPControllerBase Object)
         {
-
-            if (Event.Value.ToString() == "44001133")
+            string qrValue = Event.Value.ToString();
+            bool validQR = CheckValidQR(qrValue);
+            if (validQR == true)
             {
-
                 //OpenConnectionDevice();
                 if (TCPClientWorker.TCPNet.IsConnectSuccess())
                 {
                     OpenDoor();
                 }
                 //CloseConnectionDevice();
-
-
             }
 
 
@@ -145,7 +145,7 @@ namespace CloseOpenDoor
 
             //        }
             //        break;
-                
+
             //}
         }
 
@@ -188,7 +188,58 @@ namespace CloseOpenDoor
         }
         private void btnOpenDoor_Click(object sender, EventArgs e)
         {
-            OpenDoor();
+            string testQRvalue = "10";
+            bool validQR = CheckValidQR(testQRvalue);
+            if (validQR)
+            {
+                OpenDoor();
+            }
+           
         }
+
+
+
+
+
+
+        private bool CheckValidQR(string qrValue)//GAMAN customize
+        {
+            
+            try
+            {
+                DataTable dtresult = GetCheckValidQR(Convert.ToInt64(qrValue));
+                if (dtresult.Rows.Count != 0 && dtresult.Rows[0]["ResultScan"].ToString() == "ok")
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public DataTable GetCheckValidQR(long qrValue)
+        {
+            var param = new SqlParameter[] {
+                        new SqlParameter("@QRValue", qrValue)
+
+                    };
+
+
+            SqlHelper.ValidNullValue(param);
+            string query = string.Format(@"EXEC sp_CheckValidQRforScan @QRValue");
+            DataTable dataResult = SqlHelper.ExecuteDataset(SqlHelper.ConnString(), CommandType.Text, query, param).Tables[0];
+            return dataResult;
+        }
+
+
+
+
+
     }
 }

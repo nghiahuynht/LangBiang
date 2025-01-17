@@ -193,3 +193,31 @@ F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.dll
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.xml
 F:\Projects\OnSVN\Lanbiang\Doucments\Bên Khác\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Handlers.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Handlers.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Handlers.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\Microsoft.Extensions.Logging.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\System.Collections.Immutable.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\System.Runtime.CompilerServices.Unsafe.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\System.Threading.Tasks.Extensions.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Buffers.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Codecs.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Common.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Transport.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Common.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Common.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Buffers.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Buffers.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Codecs.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Codecs.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Transport.pdb
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\bin\Debug\net45\DotNetty.Transport.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.csprojAssemblyReference.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.csproj.CoreCompileInputs.cache
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.csproj.CopyComplete
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.dll
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.xml
+D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Handlers\obj\Debug\net45\DotNetty.Handlers.pdb
