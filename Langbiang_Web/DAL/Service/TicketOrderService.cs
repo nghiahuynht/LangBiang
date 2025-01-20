@@ -165,12 +165,13 @@ namespace DAL.Service
                 new SqlParameter("@GateCode", filter.GateCode),
                 new SqlParameter("@UserName", filter.UserName),
                 new SqlParameter("@TicketCode", filter.TicketCode),
+                new SqlParameter("@Keyword", filter.Keyword),
                 new SqlParameter("@FromDate", filter.FromDate),
                 new SqlParameter("@ToDate", filter.ToDate),
 
             };
                 ValidNullValue(param);
-                res = dtx.ReportSaleCounterModel.FromSql("EXEC sp_CounterReportSaleWeb @SaleChanelId,@GateCode,@UserName,@TicketCode,@FromDate,@ToDate", param).FirstOrDefault();
+                res = dtx.ReportSaleCounterModel.FromSql("EXEC sp_CounterReportSaleWeb @SaleChanelId,@GateCode,@UserName,@TicketCode,@Keyword,@FromDate,@ToDate", param).FirstOrDefault();
 
             }
             catch (Exception ex)

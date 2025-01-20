@@ -102,7 +102,7 @@ namespace DAL
         //===== Soát vé =============
 
         public DbSet<HistoryInOutModel> HistoryInOutModel { get; set; }
-       
+        public DbSet<ReportBanVeByCustTypeGridModel> ReportBanVeByCustTypeGridModel { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -129,6 +129,7 @@ namespace DAL
             modelBuilder.Entity<PartnerModelViewModel>().HasKey(o => o.Id);
             modelBuilder.Entity<SaleReportByPartnerGridModel>().HasKey(o => o.PartnerCode);
             modelBuilder.Entity<TicketGroupModel>().HasKey(o => o.GroupCode);
+            modelBuilder.Entity<ReportBanVeByCustTypeGridModel>().HasKey(o => o.STT);
 
         }
     }

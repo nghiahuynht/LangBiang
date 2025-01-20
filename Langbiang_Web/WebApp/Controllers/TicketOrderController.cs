@@ -330,7 +330,7 @@ namespace WebApp.Controllers
                 var lstSubCode = new List<SubOrderPrintModel>();
                 if (!string.IsNullOrEmpty(AuthenInfo().UserName))
                 {
-                    var res = ticketOrderService.SaveOrderToData(model, AuthenInfo().UserName,string.Empty);
+                    var res = ticketOrderService.SaveOrderToData(model, AuthenInfo().UserName,model.GateName);
                     CreateQRCodeLangbianLand(res.ValueReturn);
                     lstSubCode = ticketOrderService.GetSubCodePrintInfo(res.ValueReturn).Result;
                     viewModel.OrderId = res.ValueReturn;

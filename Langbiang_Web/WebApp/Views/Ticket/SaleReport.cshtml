@@ -76,23 +76,11 @@
                         <span class="input-group-addon group-date-icon"><i class="far fa-calendar-alt"></i></span>
                     </div>
                 </div>
-                <div class="col-sm-2">
-                    <label>Tuyến thăm quan</label>
-                    <select class="form-control" id="ddl-gatecode">
-                        <option value="All">Tất cả</option>
-                        @{
-                            var lstGate = (List<GateListModel>)ViewBag.GateList;
-                            foreach (var item in lstGate)
-                            {
-                                <option value="@(item.GateCode)">@(item.GateName)</option>
-                            }
-                        }
-                    </select>
-                </div>
+
                 <div class="col-sm-2">
                     <label>Mã vé</label>
                     <select class="form-control" id="TicketCode">
-                        <option value=""></option>
+                        <option value="All">Tất cả</option>
                         @{
                             var lstTicket = (List<Ticket>)ViewBag.LstAllTicket;
                             foreach (var opt in lstTicket)
@@ -217,7 +205,7 @@
 
             var dataSearch = {
                 SaleChanelId: $("#ddl-sale-chanel").val(),
-                GateCode: $("#ddl-gatecode").val(),
+                GateCode: "All",//$("#ddl-gatecode").val(),
                 UserName: $("#ddl-employee").val(),
                 FromDate: ConverFormatDate($("#FromDate").val()),
                 ToDate: ConverFormatDate($("#ToDate").val()),
@@ -230,7 +218,7 @@
         function ExportExcel() {
             var dataSearch = {
                 SaleChanelId: $("#ddl-sale-chanel").val(),
-                GateCode: $("#ddl-gatecode").val(),
+                GateCode: "All",//$("#ddl-gatecode").val(),
                 UserName: $("#ddl-employee").val(),
                 FromDate: ConverFormatDate($("#FromDate").val()),
                 ToDate: ConverFormatDate($("#ToDate").val()),
@@ -274,7 +262,7 @@
 
             var counterFilter = {
                 SaleChanelId: $("#ddl-sale-chanel").val(),
-                GateCode: $("#ddl-gatecode").val(),
+                GateCode: "All",//$("#ddl-gatecode").val(),
                 UserName: $("#ddl-employee").val(),
                 FromDate: ConverFormatDate($("#FromDate").val()),
                 ToDate: ConverFormatDate($("#ToDate").val()),

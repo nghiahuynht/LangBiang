@@ -1,10 +1,12 @@
 ﻿using DAL.IService;
 using DAL.Models;
 using DAL.Models.Report;
+using DAL.Models.Ticket;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 
 namespace WebApp.Controllers
@@ -139,5 +141,41 @@ namespace WebApp.Controllers
             var res = reportService.GetColumnCharteport(year);
             return res;
         }
+
+
+
+        public async Task<IActionResult> ReportSaleByCustType()
+        {
+            var searchModel = new SaleHistoryFilterModel
+            {
+                SaleChanelId = 0,
+                UserName = "",
+                FromDate = DateTime.Now.AddDays(-7).ToString("dd/MM/yyyy"),
+                ToDate = DateTime.Now.ToString("dd/MM/yyyy"),
+                TicketCode = ""
+            };
+            ViewBag.LstAllTicket = ticketService.GetAllTicket();
+            var roleUser = User.Claims.FirstOrDefault(x => x.Type == ClaimTypes.Role).Value;
+            if (roleUser.ToUpper() == "ADMIN")
+            {
+                ViewBag.LstUser = await userService.ListAllUserInfo();
+            }
+            else
+            {
+                var allUserInfo = await userService.ListAllUserInfo();
+                ViewBag.LstUser = allUserInfo.FindAll(x => x.UserName == User.Identity.Name);
+            }
+            ViewBag.GateList = soatVeService.GetAllGateFullInfo();
+            return View(searchModel);
+        }
+
+        [HttpPost]
+        // [ValidateAntiForgeryToken]
+        public async Task<DataTableResultModel<ReportBanVeByCustTypeGridModel>> GetReportSaleByCustType(SaleHistoryFilterModel filter)
+        {
+            var res = await reportService.BaoCaoBanVeTheoLoaiKH(filter,false);
+            return res;
+        }
+
     }
 }

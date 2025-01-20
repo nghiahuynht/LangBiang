@@ -184,7 +184,7 @@ namespace WebApp.Controllers
         /// <param name="filter"></param>
         /// <returns></returns>
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public async Task<DataTableResultModel<SaleHistoryGridModel>> GetSaleHistory(SaleHistoryFilterModel filter)
         {
 
@@ -300,7 +300,7 @@ namespace WebApp.Controllers
         /// <param name="filter"></param>
         /// <returns></returns>
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public async Task<DataTableResultModel<SaleReportGridModel>> GetSaleReport(SaleReportFilterModel filter)
         {
 
@@ -308,7 +308,7 @@ namespace WebApp.Controllers
             return res;
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
+       // [ValidateAntiForgeryToken]
         public ReportSaleCounterModel GetSaleReportCounter([FromBody] SaleReportFilterModel filter)
         {
             var res = ticketOrderService.ReportSaleCounterModel(filter);
@@ -399,6 +399,13 @@ namespace WebApp.Controllers
             var res = await ticketService.GetSoatVeReport(filter);
                 return res;
         }
+
+
+
+      
+
+
+
 
     }
 }

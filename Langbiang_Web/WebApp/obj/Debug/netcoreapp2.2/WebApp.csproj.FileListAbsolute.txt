@@ -752,3 +752,4 @@ D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Web
 D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.dll
 D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\WebApp.pdb
 D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\TicketOrder\PrintQRview.g.cshtml.cs
+D:\Projects\OnGit\LangBianSytem\Langbiang_Web\WebApp\obj\Debug\netcoreapp2.2\Razor\Views\Report\ReportSaleByCustType.g.cshtml.cs

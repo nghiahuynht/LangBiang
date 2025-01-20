@@ -407,17 +407,18 @@ namespace DAL.Service
                 var param = new SqlParameter[] {
                 new SqlParameter("@SaleChanelId", filter.SaleChanelId),
                 new SqlParameter("@UserName", filter.UserName),
-                new SqlParameter("@TicketCode", filter.Keyword),
+                new SqlParameter("@TicketCode", filter.TicketCode),
                 new SqlParameter("@FromDate", filter.FromDate),
                 new SqlParameter("@ToDate", filter.ToDate),
                 new SqlParameter("@GateCode", filter.GateCode),
+                new SqlParameter("@Keyword", filter.Keyword),
                 new SqlParameter("@Start", filter.start),
                 new SqlParameter("@Length",filter.length),
                 new SqlParameter("@IsExcel", isExcel),
                 new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int16, Direction = System.Data.ParameterDirection.Output }
             };
                 ValidNullValue(param);
-                var lstData = await dtx.SaleHistoryGridModel.FromSql("EXEC sp_SearchSaleHistoryWeb @SaleChanelId,@UserName,@TicketCode,@FromDate,@ToDate,@GateCode,@Start,@Length,@IsExcel,@TotalRow OUT", param).ToListAsync();
+                var lstData = await dtx.SaleHistoryGridModel.FromSql("EXEC sp_SearchSaleHistoryWeb @SaleChanelId,@UserName,@TicketCode,@FromDate,@ToDate,@GateCode,@Keyword,@Start,@Length,@IsExcel,@TotalRow OUT", param).ToListAsync();
                 res.recordsTotal = Convert.ToInt16(param[param.Length - 1].Value);
                 res.recordsFiltered = res.recordsTotal;
                 res.data = lstData.ToList();

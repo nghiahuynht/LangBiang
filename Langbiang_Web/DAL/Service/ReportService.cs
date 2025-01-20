@@ -1,6 +1,7 @@
 ﻿using DAL.IService;
 using DAL.Models;
 using DAL.Models.Report;
+using DAL.Models.Ticket;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -98,23 +99,7 @@ namespace DAL.Service
                 };
                 
                 res = dtx.SaleTicketMisaStatusModel.FromSql("EXEC sp_GetTicketMisaStatus @FromDate,@ToDate", param).ToList();
-                //DataTable dtResult = CommonHelper.ExecDataTable(conString, CommandType.StoredProcedure, "sp_GetTicketMisaStatus", param);
-                //if (dtResult.Rows.Count > 0)
-                //{
-                //    foreach (DataRow row in dtResult.Rows)
-                //    {
-                //        var item = new SaleTicketMisaStatusModel
-                //        {
-                //            TicketCode = row["TicketCode"].ToString(),
-                //            KyHieu = row["KyHieu"].ToString(),
-                //            MauSoBienLai = row["MauSoBienLai"].ToString(),
-                //            QuantiPrint = Convert.ToInt64(row["QuantiPrint"]),
-                //            QuantiMisa = Convert.ToInt64(row["QuantiMisa"]),
-                //            QuantiRemain = Convert.ToInt64(row["QuantiRemain"]),
-                //        };
-                //        res.Add(item);
-                //    }
-                //}
+                
 
 
             }
@@ -134,19 +119,7 @@ namespace DAL.Service
                     new SqlParameter("@Year",year)
                 };
                 resData = dtx.ColumnChartModel.FromSql("EXEC sp_GetColumnChartDashBoar @Year", param).ToList();
-                //DataTable dtResult = CommonHelper.ExecDataTable(conString, CommandType.StoredProcedure, "sp_GetColumnChartDashBoar", param);
-                //if (dtResult.Rows.Count > 0)
-                //{
-                //    foreach (DataRow row in dtResult.Rows)
-                //    {
-                //        var griditem = new ColumnChartModel
-                //        {
-                //            Thang = string.Format("Tháng {0}", row["Thang"].ToString()),
-                //            KetQua = Convert.ToInt64(row["KetQua"]),
-                //        };
-                //        resData.Add(griditem);
-                //    }
-                //}
+               
 
             }
             catch (Exception ex)
@@ -196,6 +169,44 @@ namespace DAL.Service
 
             return res;
         }
+
+
+
+        public async Task<DataTableResultModel<ReportBanVeByCustTypeGridModel>> BaoCaoBanVeTheoLoaiKH(SaleHistoryFilterModel filter,bool isExcel)
+        {
+            var res = new DataTableResultModel<ReportBanVeByCustTypeGridModel>();
+            try
+            {
+                var param = new SqlParameter[] {
+                new SqlParameter("@SaleChanelId", filter.SaleChanelId),
+                new SqlParameter("@UserName", filter.UserName),
+                new SqlParameter("@TicketCode", filter.TicketCode),
+                new SqlParameter("@FromDate", filter.FromDate),
+                new SqlParameter("@ToDate", filter.ToDate),
+                new SqlParameter("@GateCode", filter.GateCode),
+                new SqlParameter("@Start", filter.start),
+                new SqlParameter("@Length",filter.length),
+                new SqlParameter("@IsExcel", isExcel),
+                new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int64, Direction = System.Data.ParameterDirection.Output }
+            };
+                ValidNullValue(param);
+                var lstData = await dtx.ReportBanVeByCustTypeGridModel.FromSql("EXEC sp_ReportSaleByCustType @SaleChanelId,@UserName,@TicketCode,@FromDate,@ToDate,@GateCode,@Start,@Length,@IsExcel,@TotalRow OUT", param).ToListAsync();
+                res.recordsTotal = Convert.ToInt32(param[param.Length - 1].Value);
+                res.recordsFiltered = res.recordsTotal;
+                res.data = lstData.ToList();
+            }
+            catch (Exception ex)
+            {
+                WriteLog.writeToLogFile($"[Exception]: {ex}");
+                res.recordsTotal = 0;
+                res.recordsFiltered = 0;
+                res.data = new List<ReportBanVeByCustTypeGridModel>();
+            }
+
+            return res;
+
+        }
+
 
 
 

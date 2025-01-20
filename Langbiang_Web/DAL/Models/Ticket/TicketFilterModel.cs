@@ -44,6 +44,7 @@ namespace DAL.Models.Ticket
         /// </summary>
         public int IsExcel { get; set; } = 0;
         public string GateCode { get; set; }
+        public string Keyword { get; set; }
     }
 
     public class SaleReportFilter

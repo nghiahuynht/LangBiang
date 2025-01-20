@@ -37,14 +37,7 @@
     <div class="card">
         <div class="card-header">
             <div class="row">
-                <div class="col-sm-2">
-                    <label>Hình thức bán vé</label>
-                    <select class="form-control" id="ddl-sale-chanel">
-                        <option value="0">Tất cả</option>
-                        <option value="1">Website bán vé</option>
-                        <option value="2">Bán tại quầy</option>
-                    </select>
-                </div>
+
                 <div class="col-sm-2">
                     <label>Nhân viên</label>
                     <select class="form-control" id="ddl-employee">
@@ -77,23 +70,27 @@
                     </div>
                 </div>
                 <div class="col-sm-2">
-                    <label>Tuyến thăm quan</label>
-                    <select class="form-control" id="ddl-gatecode">
+                    <label>Mã vé</label>
+                    <select class="form-control" id="txt-ticketcode">
                         <option value="All">Tất cả</option>
                         @{
-                            var lstGate = (List<GateListModel>)ViewBag.GateList;
-                            foreach (var item in lstGate)
+                            var lstTickets = (List<Ticket>)ViewBag.LstAllTicket;
+                            foreach (var ticket in lstTickets)
                             {
-                                <option value="@(item.GateCode)">@(item.GateName)</option>
+                                <option value="@(ticket.Code)">@(ticket.Description)</option>
                             }
                         }
                     </select>
+
+
                 </div>
-                
+                <div class="col-sm-2">
+                    <label>Từ khóa</label>
+                    <input type="text" class="form-control" placeholder="Mã tra cứu/mã KH/ tên KH" id="txt-keyword" />
+                </div>
+
                 <div class="col-sm-2">
                     <input type="button" value="OK" class="btn btn-primary btn-filter" id="btn-search" />
-                   
-                   
                 </div>
 
             </div>
@@ -249,12 +246,12 @@
         function GetSaleHistory() {
             
             var dataSearch = {
-                SaleChanelId: $("#ddl-sale-chanel").val(),
+                SaleChanelId: 0,
                 GateCode: $("#ddl-gatecode").val(),
                 UserName: $("#ddl-employee").val(),
                 FromDate: ConverFormatDate($("#FromDate").val()),
                 ToDate: ConverFormatDate($("#ToDate").val()),
-                TicketCode: $("#TicketCode").val(),
+                TicketCode: $("#txt-ticketcode").val(),
                 Keyword: $("#txt-keyword").val(),
             };
             GenrateDataTableSearch(tableId, ajaxURL, columnData, dataSearch, 10,"vé");
@@ -263,12 +260,13 @@
 
         function ExportExcel() {
             var dataSearch = {
-                SaleChanelId: $("#ddl-sale-chanel").val(),
+                SaleChanelId: 0,
                 GateCode: $("#ddl-gatecode").val(),
                 UserName: $("#ddl-employee").val(),
                 FromDate: ConverFormatDate($("#FromDate").val()),
                 ToDate: ConverFormatDate($("#ToDate").val()),
-                TicketCode: $("#TicketCode").val(),
+                TicketCode: $("#txt-ticketcode").val(),
+                Keyword: $("#txt-keyword").val(),
             };
 
             var dataSearch = JSON.stringify(dataSearch);
@@ -317,12 +315,13 @@
         {
 
             var dataSearch = {
-                SaleChanelId: $("#ddl-sale-chanel").val(),
+                SaleChanelId: 0,
                 GateCode: $("#ddl-gatecode").val(),
                 UserName: $("#ddl-employee").val(),
                 FromDate: ConverFormatDate($("#FromDate").val()),
                 ToDate: ConverFormatDate($("#ToDate").val()),
-                TicketCode: $("#TicketCode").val()
+                TicketCode: $("#txt-ticketcode").val(),
+                Keyword: $("#txt-keyword").val(),
             };
 
             $.ajax({

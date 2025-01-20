@@ -1,5 +1,6 @@
 ﻿using DAL.Models;
 using DAL.Models.Report;
+using DAL.Models.Ticket;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -21,5 +22,6 @@ namespace DAL.IService
 
         List<ColumnChartModel> GetColumnCharteport(int year);
         Task<ResGetRPByPartner> GetReportSalesByPartner(TicketTypeRPFilter filter);
+        Task<DataTableResultModel<ReportBanVeByCustTypeGridModel>> BaoCaoBanVeTheoLoaiKH(SaleHistoryFilterModel filter, bool isExcel);
     }
 }
