@@ -472,13 +472,13 @@
             debugger;
             if (printOption == "InLe") {
                 $.each(lstTicketSuccess, function (index, value) {
-                    //printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + value.subId);
-                    printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + value.subId);
+                    printPdf("https://langbiang-land.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + value.subId);
+                    //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + value.subId);
                 });
             } else if (printOption == "InGop") {
                 let firstRowId = lstTicketSuccess[0].subId;
-                //printPdf("https://langbian.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + firstRowId);
-                printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + firstRowId);
+                printPdf("https://langbiang-land.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + firstRowId);
+                //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + firstRowId);
             } else if (printOption == "InQRCode") {
                 window.open('http://localhost:44377/ticketorder/PrintQRview?orderId=' + orderId, '_blank');
             }
