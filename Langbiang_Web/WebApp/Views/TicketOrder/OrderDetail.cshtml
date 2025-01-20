@@ -37,11 +37,12 @@
                             if (Model.TicketOrder.OrderStatus == Contanst.OrderStatus_Completed)
                             {
                                 <input type="button" value="Hủy" class="btn btn-danger" id="btn-cancel-order" style="margin-right:5px;" />
-                                <input type="button" value="In lại vé" class="btn btn-primary" id="btn-print-order" style="margin-right:5px;" />
+                                @*<input type="button" value="In lại vé" class="btn btn-primary" id="btn-print-order" style="margin-right:5px;" />*@
                             }
 
-
+                            <input type="button" value="Xuất excel cho đối tác" class="btn btn-success" id="btn-export-suborder" style="margin-right:5px;" />
                             <a class="btn btn-default" href="/ticketorder/index">Trở lại danh sách</a>
+
                         }
 
 
@@ -257,7 +258,32 @@
 
 
 </section>
-
+<div class="modal fade show" id="modal-category-detail" aria-modal="true" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">In lại vé</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">×</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <label>Chọn kiểu in</label>
+                <select id="ddl-printtypes" class="form-control" data-style="btn-info">
+                    <option value="InLe">In lẻ</option>
+                    <option value="InGop">In gộp</option>
+                    <option value="InQRCode">In QR Code</option>
+                </select>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+                <button type="button" class="btn btn-primary" id="btn-save-category">Lưu</button>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>
 @section scripts{
     <script src="~/app-script/helper.js"></script>
     <script>
@@ -265,18 +291,25 @@
         {
             $("#btn-confirm").click(function ()
             {
-                                                ChangeStatusPayment(1);
-                                            });
+               ChangeStatusPayment(1);
+            });
 
             $("#btn-cancel").click(function ()
             {
-                                                ChangeStatusPayment(2);
-                                            });
+                ChangeStatusPayment(2);
+            });
             $("#btn-sendNoti").click(function () {
-                                                SendNoti();
-                                            });
+                  SendNoti();
+            });
 
-                                        })
+            $("#btn-export-suborder").click(function () {
+                let orderId = $("#TicketOrder_Id").val();
+                location.href = "/ticketorder/ExportExcelSubOrderByOrderId?orderId=" + orderId;
+            });
+
+
+
+         })
 
         function ChangeStatusPayment(newStatus) {
         let orderId = $("#TicketOrder_Id").val();

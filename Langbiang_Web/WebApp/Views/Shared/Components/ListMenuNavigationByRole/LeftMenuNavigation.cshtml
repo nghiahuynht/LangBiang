@@ -12,7 +12,7 @@
             {
                 var lstChild = Model.Where(x => x.Parent == menuParent.Id).OrderBy(x => x.Priority);
 
-                <li class="nav-item">
+                <li class="nav-item menu-is-opening menu-open">
                     <a href="@(menuParent.URL)" class="nav-link">
                         <i class="nav-icon @(menuParent.MenuIcon)"></i> 
                         <p>
@@ -29,7 +29,7 @@
                         
                         if (lstChild.Any())
                         {
-                    <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview " style="display: block;">
 
                         @{
                             foreach (var menuChild in lstChild)

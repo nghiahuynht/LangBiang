@@ -16,6 +16,7 @@ using DAL.Models.Zalo;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using OfficeOpenXml;
 using QRCoder;
 using Rotativa;
 using Rotativa.AspNetCore;
@@ -379,7 +380,41 @@ namespace WebApp.Controllers
             return View(viewmodel);
         }
 
+        [HttpGet]
+        public async Task<FileContentResult> ExportExcelSubOrderByOrderId(long orderId)
+        {
+            var lstSubCode =await ticketOrderService.GetSubCodePrintInfo(orderId);
+            ExcelPackage.LicenseContext = LicenseContext.Commercial;
+            ExcelPackage excel = new ExcelPackage();
+            var workSheet = excel.Workbook.Worksheets.Add("Sheet1");
+            Color colFromHex = ColorTranslator.FromHtml("#3377ff");
+            Color colFromHexTextHeader = ColorTranslator.FromHtml("#ffffff");
 
+            workSheet.Cells["A1"].Value = "STT";
+            workSheet.Cells["B1"].Value = "Mã đơn";
+            workSheet.Cells["C1"].Value = "Mã vé tra cứu";
+            workSheet.Cells["D1"].Value = "Mã vé cho đối tác";
+
+            workSheet.Cells[1, 1, 1, 11].Style.Font.Bold = true;
+            int rowData = 2;
+            int stt = 1;
+            foreach (var item in lstSubCode)
+            {
+
+                workSheet.Cells["A" + rowData].Value = stt;
+                workSheet.Cells["B" + rowData].Value = orderId.ToString();
+                workSheet.Cells["C" + rowData].Value = item.SubOrderCode;
+                workSheet.Cells["D" + rowData].Value = item.CardNum;
+                rowData++;
+                stt++;
+            }
+            workSheet.Column(1).Width = 10;
+            workSheet.Column(2).Width = 10;
+            workSheet.Column(3).Width = 20;
+            workSheet.Column(4).Width = 20;
+            return File(excel.GetAsByteArray(), ExcelExportHelper.ExcelContentType, "DanhSachMaVeChoDoiTac.xlsx");
+
+        }
 
 
         #endregion
