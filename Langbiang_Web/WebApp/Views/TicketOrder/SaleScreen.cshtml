@@ -282,12 +282,18 @@
                 GetCustomerByType();
                 let priceSale = GetPriceForSale();
                 $("#txt-price-by-policy").val(priceSale);
+                calculaTotal();
             });
 
             $("#ddl-objType").change(function () {
                 let priceSale = GetPriceForSale();
                 $("#txt-price-by-policy").val(priceSale);
+                calculaTotal();
             });
+
+            
+
+
         });
 
 
@@ -402,9 +408,14 @@
             } else {
 
                 let quanti = ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) ? 0 : parseInt($("#txt-quanti").val());
-                let price = GetPriceForSale();
                 let doituong = $("#ddl-objType").val();
                 let isFree = $('input[name="radioisfree"]:checked').val();
+                let price = GetPriceForSale();
+
+                if (price == 0) // nếu price ko nằm trong policy
+                {
+                    price = parseFloat($("#txt-price-by-policy").val());
+                }
 
                 debugger;
                 let customerName = $("#ddl-customer option:selected").text();

@@ -106,12 +106,13 @@ namespace DAL.Service
                         new SqlParameter("@TicketGroup", filter.GroupTicket),
                         new SqlParameter("@ObjType", filter.ObjType),
                         new SqlParameter("@TicketCode", filter.TicketCode),
+                        new SqlParameter("@IsFree", filter.IsFree),
                         new SqlParameter("@Start", filter.start),
                         new SqlParameter("@Length", filter.length),
                         new SqlParameter { ParameterName = "@TotalRow", DbType = System.Data.DbType.Int16, Direction = System.Data.ParameterDirection.Output }
                     };
                 ValidNullValue(param);
-                var lstData = await dtx.OrderGridModel.FromSql("sp_SearchOrder @ChanelId,@FromDate,@ToDate,@PaymentMethod,@PaymentStatus,@GateCode,@Keyword,@PartnerCode,@CustomerType,@TicketGroup,@ObjType,@TicketCode,@Start,@Length,@TotalRow OUT", param).ToListAsync();
+                var lstData = await dtx.OrderGridModel.FromSql("sp_SearchOrder @ChanelId,@FromDate,@ToDate,@PaymentMethod,@PaymentStatus,@GateCode,@Keyword,@PartnerCode,@CustomerType,@TicketGroup,@ObjType,@TicketCode,@IsFree,@Start,@Length,@TotalRow OUT", param).ToListAsync();
                 res.recordsTotal = Convert.ToInt16(param[param.Length-1].Value);
                 res.recordsFiltered = res.recordsTotal;
                 res.data = lstData;

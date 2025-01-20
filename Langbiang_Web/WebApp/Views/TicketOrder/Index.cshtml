@@ -50,8 +50,7 @@
 
                             foreach (var item in lstCustType)
                             {
-                                string selected = item.Code == "Khach_Le" ? "selected='selected'" : string.Empty;
-                                <option value="@(item.Code)" @(selected)>@item.Name</option>
+                                <option value="@(item.Code)" >@item.Name</option>
                             }
                         }
                     </select>
@@ -136,20 +135,15 @@
                     <tr>
                         <th width="40px"></th>
                         <th width="50px">Id vé</th>
-                        <th width="200px">Đối tượng</th>
-                        <th width="150px">Ngày mua</th>
-                        <th width="150px">Ngày thăm quan</th>
                         <th width="200px">Tên KH</th>
-                        <th width="120px">Điện thoại</th>
-                        <th width="200px">Tình trạng thanh toán</th>
-                        <th width="70px">Mã đối tác</th>
+                        <th width="150px">Loại KH</th>
+                        <th width="100px">Đối tượng</th>
+                        <th width="150px">Ngày mua</th>
                         <th width="70px">Mã vé</th>
                         <th width="100px">Đơn giá</th>
                         <th width="40px">SL</th>
                         <th width="150px">Thành tiền</th>
-                        <th width="150px">Tiền Giảm</th>
-                        <th width="150px">Tổng tiền</th>
-                        <th width="200px">PT thanh toán</th>
+
                     </tr>
                 </thead>
             </table>
@@ -173,33 +167,17 @@
                 }
             },
             { "data": "id" },
-            { "data": "objName" },
-            { "data": "createdDate" },
-            { "data": "visitDate" },
             { "data": "customerName" },
-            { "data": "phone" },
-            {
-                "data": "paymentStatus", "render": function (data, type, row, meta) {
-                    return RenderStatus(data);
-                }
-            },
-
-            { "data": "partnerCode" },
+            { "data": "customerTypeName" },
+            { "data": "objName" },
+           
+            { "data": "createdDate" },
             { "data": "ticketCode" },
+            
             { "data": "price" },
             { "data": "quanti" },
             { "data": "total" },
-            {
-                "data": "discountedAmount", "render": function (data, type, row, meta) {
-                    return RenderNumerFormat(data);
-                }
-            },
-            {
-                "data": "totalAfterDiscounted", "render": function (data, type, row, meta) {
-                    return RenderNumerFormat(data);
-                }
-            },
-            { "data": "paymentMethod" },
+           
         ];
 
         $(document).ready(function () {
@@ -207,8 +185,8 @@
             var searchHistory = JSON.parse(sessionStorage.getItem('searchHistory'));
             if (searchHistory) {
                 $("#ddl-chanel").val(searchHistory.ChanelId);
-                $("#FromDate").val(searchHistory.FromDate);
-                $("#ToDate").val(searchHistory.ToDate);
+                $("#FromDate").val(ConverFormatDate(searchHistory.FromDate));
+                $("#ToDate").val(ConverFormatDate(searchHistory.ToDate));
                 $("#ddl-status").val(searchHistory.PaymentStatus);
                 $("#txtkeyword").val(searchHistory.Keyword);
                 $("#ddl-customertype").val(searchHistory.CustomerType);

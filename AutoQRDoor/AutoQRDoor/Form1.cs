@@ -163,6 +163,8 @@ namespace AutoQRDoor
         // hàm scan QR code lấy value quét
         void EventHandler(RAcsEvent Event, TTCPControllerBase Object)
         {
+
+
             string qrValue = Event.Value.ToString();
             bool validQR = CheckValidQR(qrValue);
             if (validQR == true)
@@ -228,7 +230,7 @@ namespace AutoQRDoor
 
 
 
-        public DataTable GetCheckValidQR(long qrValue)
+        public DataTable GetCheckValidQR(string qrValue)
         {
             var param = new SqlParameter[] {
                         new SqlParameter("@QRValue", qrValue)
@@ -248,7 +250,7 @@ namespace AutoQRDoor
 
             try
             {
-                DataTable dtresult = GetCheckValidQR(Convert.ToInt64(qrValue));
+                DataTable dtresult = GetCheckValidQR(qrValue);
                 if (dtresult.Rows.Count != 0 && dtresult.Rows[0]["ResultScan"].ToString() == "ok")
                 {
                     return true;

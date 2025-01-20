@@ -1,4 +1,5 @@
-﻿@model DAL.Models.ConDao.OrderResultViewModel
+﻿@using DAL
+@model DAL.Models.ConDao.OrderResultViewModel
 @{
     Layout = null;
 }
@@ -45,11 +46,13 @@
                 {
                     foreach (var item in Model.ListSubCode)
                     {
+                        string uuQRValue = item.UUID.HasValue ? item.UUID.Value.ToString() : "";
+                        string scanCode = string.Format(@"lbl{0}", uuQRValue.Substring(0, 8));
+
                         <div class="col-sm-2">
                             <div class="border" style="padding:2px;margin-bottom:15px;">
                                 <div class="text-center">
-                                    <img src="~/QRCode/@(item.Id).jpg" class="rounded img" style="width:100%; width:90px;">
-                                    <label style="font-size:6pt;">@(item.SubOrderCode)</label>
+                                    <label style="font-size:11pt;">@(scanCode)</label>
                                 </div>
                             </div>
 

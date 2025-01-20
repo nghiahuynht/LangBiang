@@ -23,5 +23,6 @@ namespace DAL.Models.ConDao
         public string PartnerCode { get; set; }
         public decimal DiscountedAmount { get; set; }
         public decimal TotalAfterDiscounted { get; set; }
+        public string CustomerTypeName { get; set; }
     }
 }

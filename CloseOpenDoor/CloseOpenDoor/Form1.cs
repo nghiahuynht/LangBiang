@@ -43,9 +43,15 @@ namespace CloseOpenDoor
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (TCPClientWorker.TCPNet.IsConnectSuccess())
+            if(TCPClientWorker.TCPNet.IsConnectSuccess())
+            {
                 lblStatusConntion.Text = "Online";
-            else lblStatusConntion.Text = "Offline";
+            }else
+            {
+                lblStatusConntion.Text = "Offline";
+            }
+               
+            
         }
 
         public bool Checkvalid(string qrValue)
@@ -113,6 +119,7 @@ namespace CloseOpenDoor
         // hàm scan QR code lấy value quét
         void EventHandler(RAcsEvent Event, TTCPControllerBase Object)
         {
+            string serialDevice = Event.SerialNo;
             string qrValue = Event.Value.ToString();
             bool validQR = CheckValidQR(qrValue);
             if (validQR == true)
@@ -120,6 +127,7 @@ namespace CloseOpenDoor
                 //OpenConnectionDevice();
                 if (TCPClientWorker.TCPNet.IsConnectSuccess())
                 {
+
                     OpenDoor();
                 }
                 //CloseConnectionDevice();
@@ -207,7 +215,7 @@ namespace CloseOpenDoor
             
             try
             {
-                DataTable dtresult = GetCheckValidQR(Convert.ToInt64(qrValue));
+                DataTable dtresult = GetCheckValidQR(qrValue);
                 if (dtresult.Rows.Count != 0 && dtresult.Rows[0]["ResultScan"].ToString() == "ok")
                 {
                     return true;
@@ -223,7 +231,7 @@ namespace CloseOpenDoor
             }
         }
 
-        public DataTable GetCheckValidQR(long qrValue)
+        public DataTable GetCheckValidQR(string qrValue)
         {
             var param = new SqlParameter[] {
                         new SqlParameter("@QRValue", qrValue)

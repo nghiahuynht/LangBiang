@@ -200,7 +200,61 @@ namespace WebApp.Controllers
             var log = new StringBuilder();
             try
             {
-                ticketOrderService.AssignSubIdForMapping(orderId);
+
+                string qrCodeFolder = Path.GetFullPath(AppSettingServices.Get.GeneralSettings.QRCodeFolder);//config["General:RootFolder"];
+                log.AppendLine($"QRCodeFolder: {qrCodeFolder}");
+
+                var lstSubCode = ticketOrderService.GetSubCodePrintInfo(orderId).Result;
+                if (lstSubCode.Any())
+                {
+                    foreach (var subCode in lstSubCode)
+                    {
+                        log.AppendLine($"SubCode: {JsonConvert.SerializeObject(subCode)}");
+                        using (QRCodeGenerator QrGenerator = new QRCodeGenerator())
+                        {
+                            QRCodeData QrCodeInfo = QrGenerator.CreateQrCode(subCode.SubId.ToString(), QRCodeGenerator.ECCLevel.Q);
+                            QRCode QrCode = new QRCode(QrCodeInfo);
+                            using (Bitmap bitMap = QrCode.GetGraphic(20))
+                            {
+                                string fileFullPath = string.Format(qrCodeFolder, subCode.SubId);
+                                if (!System.IO.File.Exists(fileFullPath))
+                                {
+                                    bitMap.Save(fileFullPath, ImageFormat.Jpeg);
+                                }
+
+                                //bitMap.Dispose();
+                            }
+
+
+
+
+                        }
+                    }
+
+                }
+
+            }
+            catch (Exception ex)
+            {
+                log.AppendLine($"[Exception]: {ex}");
+            }
+            finally
+            {
+                WriteLog.writeToLogFile(log.ToString());
+            }
+
+        }
+
+
+
+        private void CreateQRCodeLangbianLand(long orderId)
+        {
+  
+
+            var log = new StringBuilder();
+            try
+            {
+                
                 string qrCodeFolder = Path.GetFullPath(AppSettingServices.Get.GeneralSettings.QRCodeFolder);//config["General:RootFolder"];
                 log.AppendLine($"QRCodeFolder: {qrCodeFolder}");
                 
@@ -212,7 +266,7 @@ namespace WebApp.Controllers
                         log.AppendLine($"SubCode: {JsonConvert.SerializeObject(subCode)}");
                         using (QRCodeGenerator QrGenerator = new QRCodeGenerator())
                         {
-                            QRCodeData QrCodeInfo = QrGenerator.CreateQrCode(subCode.SubId.ToString(), QRCodeGenerator.ECCLevel.Q);
+                            QRCodeData QrCodeInfo = QrGenerator.CreateQrCode(subCode.CardNum, QRCodeGenerator.ECCLevel.Q);
                             QRCode QrCode = new QRCode(QrCodeInfo);
                             using (Bitmap bitMap = QrCode.GetGraphic(20))
                             {
@@ -277,7 +331,7 @@ namespace WebApp.Controllers
                 if (!string.IsNullOrEmpty(AuthenInfo().UserName))
                 {
                     var res = ticketOrderService.SaveOrderToData(model, AuthenInfo().UserName,string.Empty);
-                    CreateQRCode(res.ValueReturn);
+                    CreateQRCodeLangbianLand(res.ValueReturn);
                     lstSubCode = ticketOrderService.GetSubCodePrintInfo(res.ValueReturn).Result;
                     viewModel.OrderId = res.ValueReturn;
                     viewModel.LstSubCode = lstSubCode;

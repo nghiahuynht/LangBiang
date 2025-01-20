@@ -86,16 +86,16 @@ namespace DAL
             return phone;
         }
 
-        public static string GenMaDon(Int64 orderId)
+        public static string GenMaDon(Int64 value)
         {
             int standerLen = 7;
-            int refixLength = orderId.ToString().Length;
+            int refixLength = value.ToString().Length;
             string temp = "";
             for (int i = refixLength; i < standerLen; i++)
             {
                 temp = temp + "0";
             }
-            string madon = temp + orderId.ToString();
+            string madon = temp + value.ToString();
             return madon;
         }
 
@@ -128,7 +128,20 @@ namespace DAL
             return stringBuilder.ToString().Normalize(NormalizationForm.FormC) + randomNumber.ToString();
         }
 
+        public static string GenQRValue(Int64 numValue)
+        {
+            var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+            var stringChars = new char[8];
+            var random = new Random();
 
+            for (int i = 0; i < stringChars.Length; i++)
+            {
+                stringChars[i] = chars[random.Next(chars.Length)];
+            }
+
+            string finalString = new String(stringChars);
+            return finalString;
+        }
 
 
     }
