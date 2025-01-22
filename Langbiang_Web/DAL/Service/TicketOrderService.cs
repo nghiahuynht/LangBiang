@@ -256,13 +256,16 @@ namespace DAL.Service
                         new SqlParameter("@GateName", gateName),
                         new SqlParameter("@Objtype", model.ObjType),
                         new SqlParameter("@IsFree", model.IsFree),
+                        new SqlParameter("@PrintType", model.PrintType),
+                        new SqlParameter("@DiscountPercent", model.DiscountPercent),
+                        new SqlParameter("@DiscountValue",Convert.ToDecimal(model.DiscountValue)),
+                        new SqlParameter("@TienKhachDua", model.TienKhachDua),
                         new SqlParameter { ParameterName = "@OrderId", DbType = System.Data.DbType.Int64, Direction = System.Data.ParameterDirection.Output }
 
                     };
 
-
                 ValidNullValue(param);
-                dtx.Database.ExecuteSqlCommand("EXEC sp_SaveOrderTicket @Id,@CustomerCode,@CustomerName,@CustomerType,@TicketCode,@Quanti,@Price,@UserName,@BienSoXe,@IsCopy,@GateName,@Objtype,@IsFree,@OrderId OUT", param);
+                dtx.Database.ExecuteSqlCommand("EXEC sp_SaveOrderTicket @Id,@CustomerCode,@CustomerName,@CustomerType,@TicketCode,@Quanti,@Price,@UserName,@BienSoXe,@IsCopy,@GateName,@Objtype,@IsFree,@PrintType,@DiscountPercent,@DiscountValue,@TienKhachDua,@OrderId OUT", param);
                 
 
                 res.ValueReturn = Convert.ToInt64(param[param.Length - 1].Value);

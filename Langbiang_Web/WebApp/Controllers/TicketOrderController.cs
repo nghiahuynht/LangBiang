@@ -68,6 +68,7 @@ namespace WebApp.Controllers
 
         public IActionResult OrderDetail(long? id)
         {
+            
             OrderResultViewModel viewmodel = new OrderResultViewModel();
             try
             {
@@ -309,6 +310,8 @@ namespace WebApp.Controllers
 
         public async Task<IActionResult> SaleScreen()
         {
+
+
             ViewBag.CustomerList = await customerService.GetAllCustomer();
             ViewBag.GateList = soatVeService.GetAllGateFullInfo();
             ViewBag.TicketList = ticketService.GetAllTicket();

@@ -16,5 +16,9 @@ namespace DAL.Models.TicketOrder
         public string BienSoXe { get; set; }
         public string GateName { get; set; }
         public bool IsFree { get; set; }
+        public string PrintType { get; set; }
+        public decimal DiscountPercent { get; set; }
+        public decimal DiscountValue { get; set; }
+        public string TienKhachDua { get; set; }
     }
 }

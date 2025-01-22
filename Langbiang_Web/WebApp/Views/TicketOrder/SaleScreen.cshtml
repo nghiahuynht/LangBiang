@@ -67,10 +67,42 @@
                 <h1><span id="span-price-policy-available"></span>&nbsp; BÁN VÉ </h1>
             </div>
             <div class="col-sm-6">
-                <ol class="breadcrumb float-sm-right">
-                    <li class="breadcrumb-item active">Trang chủ</li>
-                    <li class="breadcrumb-item">Bán vé</li>
-                </ol>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <div class="col-sm-12"><label class="col-form-label">Loại khách hàng</label></div>
+                        <div class="col-sm-12">
+                            <select class="form-control" id="ddl-customer-type">
+                                @{
+                                    var lstCustType = (List<CustomerType>)ViewBag.ListCustType;
+
+                                    foreach (var item in lstCustType)
+                                    {
+                                        string selected = item.Code == "Khach_Le" ? "selected='selected'" : string.Empty;
+                                        <option value="@(item.Code)" @(selected)>@item.Name</option>
+                                    }
+                                }
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="col-sm-4">
+                        <div class="col-sm-12"><label class="col-form-label">Khách hàng</label></div>
+                        <div class="col-sm-12">
+                            <select class="form-control" id="ddl-customer" data-style="btn-info" data-live-search="true"></select>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="col-sm-12"><label class="col-form-label">Đối tượng</label></div>
+                        <div class="col-sm-12">
+                            <select id="ddl-objType" class="form-control" data-style="btn-info">
+                                <option value="NguoiLon">Người lớn</option>
+                                <option value="TreEm">Trẻ em</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div><!-- /.container-fluid -->
@@ -128,62 +160,77 @@
                 <div class="card-header">
                     <div class="row">
                         <div class="col-sm-6">
-                            <div class="col-sm-12"><label class="col-form-label">Loại khách hàng</label></div>
-                            <div class="col-sm-12">
-                                <select class="form-control" id="ddl-customer-type">
-                                    @{
-                                        var lstCustType = (List<CustomerType>)ViewBag.ListCustType;
-
-                                        foreach (var item in lstCustType)
-                                        {
-                                            string selected = item.Code == "Khach_Le" ? "selected='selected'" : string.Empty;
-                                            <option value="@(item.Code)" @(selected)>@item.Name</option>
-                                        }
-                                    }
-                                </select>
-
-                            </div>
+                            
                         </div>
                         <div class="col-sm-6">
-                            <div class="col-sm-12"><label class="col-form-label">Khách hàng</label></div>
-                            <div class="col-sm-12">
-                                <select class="form-control" id="ddl-customer" data-style="btn-info" data-live-search="true"></select>
-
-                            </div>
+                            
                         </div>
 
                     </div>
                     <div class="row">
-                        <div class="col-sm-6">
-                            <label class="col-md-12 col-form-label">Đối tượng</label>
-                            <div class="col-md-12">
-                                <select id="ddl-objType" class="form-control" data-style="btn-info">
-                                    <option value="NguoiLon">Người lớn</option>
-                                    <option value="TreEm">Trẻ em</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
+
+                        <div class="col-sm-4">
                             <label class="col-md-12 col-form-label">Đơn giá</label>
                             <div class="col-md-12">
                                 <input type="number" class="form-control" style="font-size:16pt;font-weight:bold;" onblur="calculaTotal()" id="txt-price-by-policy" />
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <label class="col-md-12 col-form-label">Số lượng</label>
                             <div class="col-md-12">
                                 <input type="number" class="form-control" style="font-size:18pt;font-weight:bold;" onblur="calculaTotal()" id="txt-quanti" value="1" />
                             </div>
                         </div>
-                        <div class="col-sm-6">
+                        <div class="col-sm-4">
                             <label class="col-md-12 col-form-label">Thành tiền</label>
                             <div class="col-md-12">
-                                <h5 id="span-total" style="font-size:20pt;color:#ff0000">0</h5>
+                                <h5 id="span-total" style="font-size:18pt;color:#0094ff;">0</h5>
                             </div>
                         </div>
                     </div>
+                    <div class="row">
+
+
+                        <div class="col-sm-4">
+                            <label class="col-md-12 col-form-label">Khuyến mãi (%)</label>
+                            <div class="col-md-12">
+                                <input type="number" class="form-control" style="font-size:18pt;font-weight:bold;" onblur="calculaTotal()" id="txt-km-percen" value="0" />
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="col-md-12 col-form-label">Tiền khuyến mãi</label>
+                            <div class="col-md-12">
+                                <h5 id="span-tien-khuyemmai" style="font-size:18pt;color:#b200ff;">0</h5>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
+                            <label class="col-md-12 col-form-label">Tổng thanh toán</label>
+                            <div class="col-md-12">
+                                <h5 id="span-total-after-khuyenmai" style="font-size:18pt;color:#ff0000;">0</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                       
+                        
+                    </div>
+   
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <label class="col-md-12 col-form-label">Khách đưa</label>
+                            <div class="col-md-12">
+                                <input type="number" class="form-control" style="font-size:16pt;font-weight:bold;" onblur="calculaTotal()" id="txt-cus-payamount" />
+                            </div>
+                        </div>
+                        <div class="col-sm-8">
+                            <label class="col-md-12 col-form-label">Tiền thối</label>
+                            <div class="col-md-12">
+                                <h5 id="span-tien-thoi" style="font-size:18pt;">0</h5>
+                            </div>
+                        </div>
+                    </div>
+
+
                     <div class="row">
                         <div class="col-sm-6">
                             <label class="col-md-12 col-form-label">Loại đơn</label>
@@ -214,22 +261,19 @@
                     </div>
                 </div>
                 <div class="card-body">
-    
-                    
-                    <br />
                     <div class="row">
                         @{
                             for (int stt = 1; stt <= 9; stt++)
                             {
-                                <div class="col-sm-3">
+                                <div class="col-sm-2">
                                     <div class="btn-num bg-info" onclick="clickNum(@(stt))">@(stt)</div>
                                 </div>
                             }
-                            <div class="col-sm-3">
+                            <div class="col-sm-2">
                                 <div class="btn-num bg-info" onclick="clickNum(0)">0</div>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="btn-num bg-warning" onclick="clearQuanti()">XOÁ NHẬP LẠI SỐ LƯỢNG</div>
+                            <div class="col-sm-4">
+                                <div class="btn-num bg-warning" onclick="clearQuanti()">Xóa nhập lại</div>
                             </div>
                         }
                     </div>
@@ -331,16 +375,45 @@
 
 
         }
-        function calculaTotal() {
+        function calculaTotal()
+        {
+            /* tổng trước khuyến mãi */
             let quanti = ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) ? 0 : parseInt($("#txt-quanti").val());
             let price = ($("#txt-price-by-policy").val() == "" || $("#txt-price-by-policy") == null) ? 0 : parseFloat($("#txt-price-by-policy").val());
+            let totalFirst = quanti * price;
+            $("#span-total").html(RenderTotal(totalFirst));
 
-          
-            let total = quanti * price;
-            $("#span-total").html(RenderTotal(total));
+            /* khuyến mãi */
+            let discountPercent = ($("#txt-km-percen").val() == "" || $("#txt-km-percen").val() == null) ? 0 : parseFloat($("#txt-km-percen").val());
+            let tienkhuyenmai = Math.round((totalFirst * (discountPercent / 100)));
+            let tienkhuyenmailamtron = LamTronKhuyenMai(tienkhuyenmai);
+            $("#span-tien-khuyemmai").html(RenderTotal(tienkhuyenmailamtron));
+
+            /* tổng sau khuyến mãi*/
+            let totalLast = totalFirst - tienkhuyenmailamtron;
+            $("#span-total-after-khuyenmai").html(RenderTotal(totalLast));
+
+            /* tiền thối*/
+            let khachdua = ($("#txt-cus-payamount").val() == "" || $("#txt-cus-payamount").val() == null) ? 0 : parseFloat($("#txt-cus-payamount").val());
+            let tienthoi = khachdua - totalLast;
+            $("#span-tien-thoi").html(RenderTotal(tienthoi));
         }
 
-
+        function LamTronKhuyenMai(tienkm)
+        {
+            let arrKM = RenderTotal(tienkm).split(",");
+            if (arrKM.length > 0)
+            {
+                let hantram = parseFloat(arrKM[arrKM.length - 1]);
+                if (hantram >= 500) {
+                    return tienkm + (1000 - hantram);
+                }
+                else {
+                    return tienkm - parseFloat(hantram);
+                }
+            }
+            
+        }
         function clickNum(num) {
 
             let currentNum = $("#txt-quanti").val();
@@ -403,9 +476,18 @@
 
             if ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) {
                 bootbox.alert(AlertFail("Bạn chưa chọn số lượng"));
-            } else if ($("#hid_TicketCode").val() == "" || $("#hid_TicketCode").val() == null) {
+            }
+            else if ($("#txt-km-percen").val() == "" || $("#txt-km-percen").val() == null)
+            {
+                bootbox.alert(AlertFail("Bạn chưa nhập khuyến mãi, không có thì nhập khuyến mãi = 0"));
+            }
+            else if ($("#txt-cus-payamount").val() == "" || $("#txt-cus-payamount").val() == null) {
+                bootbox.alert(AlertFail("Bạn chưa nhập tiền khách đưa"));
+            }
+            else if ($("#hid_TicketCode").val() == "" || $("#hid_TicketCode").val() == null) {
                 bootbox.alert(AlertFail("Bạn chưa chọn vé bán"));
-            } else {
+            }
+            else {
 
                 let quanti = ($("#txt-quanti").val() == "" || $("#txt-quanti").val() == null) ? 0 : parseInt($("#txt-quanti").val());
                 let doituong = $("#ddl-objType").val();
@@ -417,6 +499,9 @@
                     price = parseFloat($("#txt-price-by-policy").val());
                 }
 
+                let discountPercent = ($("#txt-km-percen").val() == "" || $("#txt-km-percen").val() == null) ? 0 : parseFloat($("#txt-km-percen").val());
+                let discountValue = $("#span-tien-khuyemmai").text();
+                let khachdua = ($("#txt-cus-payamount").val() == "" || $("#txt-cus-payamount").val() == null) ? 0 : parseFloat($("#txt-cus-payamount").val());
                 debugger;
                 let customerName = $("#ddl-customer option:selected").text();
                 var modelData = {
@@ -425,11 +510,14 @@
                     CustomerName: customerName,
                     CustomerType: $("#ddl-customer-type").val(),
                     ObjType: doituong,
-                    PrintType: "Ve_Le",
+                    PrintType: $("#ddl-printtypes").val(),
                     Quanti: quanti,
                     Price: price,
                     IsFree: isFree,
-                    GateName:"LBL"
+                    GateName: "LBL",
+                    DiscountPercent: discountPercent,
+                    DiscountValue: discountValue,
+                    TienKhachDua: khachdua,
                 }
 
                 $.ajax({

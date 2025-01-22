@@ -85,7 +85,7 @@ namespace AutoQRDoor
         private bool OpenConnectionDevice(string ip,int port,int ormCode)
         {
            bool connectResult = TCPClientWorker.OpenIP(ip, port, Convert.ToUInt16(ormCode));
-            return connectResult;
+           return connectResult;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
