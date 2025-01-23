@@ -217,12 +217,21 @@
    
                     <div class="row">
                         <div class="col-sm-4">
+                            <label class="col-md-12 col-form-label">Hình thức thanh toán</label>
+                            <div class="col-md-12">
+                                <select class="form-control" id="ddl-paymenttype">
+                                    <option value="TM">Tiền mặt</option>
+                                    <option value="CK">Chuyển khoản</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-4">
                             <label class="col-md-12 col-form-label">Khách đưa</label>
                             <div class="col-md-12">
                                 <input type="number" class="form-control" style="font-size:16pt;font-weight:bold;" onblur="calculaTotal()" id="txt-cus-payamount" />
                             </div>
                         </div>
-                        <div class="col-sm-8">
+                        <div class="col-sm-4">
                             <label class="col-md-12 col-form-label">Tiền thối</label>
                             <div class="col-md-12">
                                 <h5 id="span-tien-thoi" style="font-size:18pt;">0</h5>
@@ -232,19 +241,20 @@
 
 
                     <div class="row">
-                        <div class="col-sm-6">
+                        <div class="col-sm-8">
                             <label class="col-md-12 col-form-label">Loại đơn</label>
                             <div class="row">
                                 <div class="col-md-6">
-                                    <input type="radio" style="width:15px;height:15px;" value="false" name="radioisfree" checked="checked" />&nbsp;Bình thường
+                                    <input type="radio" style="width:15px;height:15px;margin-left:10px;" value="false" name="radioisfree" checked="checked" />&nbsp;Bình thường
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-sm-6">
                                     <input type="radio" style="width:15px;height:15px;" value="true" name="radioisfree" />&nbsp;Miễn phí
                                 </div>
                             </div>
-
+                           
                         </div>
-                        <div class="col-sm-6">
+  
+                        <div class="col-sm-4">
                             <label class="col-md-12 col-form-label">Kiểu in</label>
                             <div class="col-md-12">
                                 <select id="ddl-printtypes" class="form-control" data-style="btn-info">
@@ -308,7 +318,7 @@
     </div>
 
 
-
+    <input type="hidden" value="@(ViewBag.Domain)" id="hid-domain" />
 </section>
 @section scripts{
 
@@ -481,9 +491,6 @@
             {
                 bootbox.alert(AlertFail("Bạn chưa nhập khuyến mãi, không có thì nhập khuyến mãi = 0"));
             }
-            else if ($("#txt-cus-payamount").val() == "" || $("#txt-cus-payamount").val() == null) {
-                bootbox.alert(AlertFail("Bạn chưa nhập tiền khách đưa"));
-            }
             else if ($("#hid_TicketCode").val() == "" || $("#hid_TicketCode").val() == null) {
                 bootbox.alert(AlertFail("Bạn chưa chọn vé bán"));
             }
@@ -518,6 +525,7 @@
                     DiscountPercent: discountPercent,
                     DiscountValue: discountValue,
                     TienKhachDua: khachdua,
+                    PaymentType: $("#ddl-paymenttype").val()
                 }
 
                 $.ajax({
@@ -558,17 +566,16 @@
 
         function PrintOrder(printOption,orderId ,lstTicketSuccess) {
             debugger;
+            let domain = $("#hid-domain").val();
             if (printOption == "InLe") {
                 $.each(lstTicketSuccess, function (index, value) {
-                    printPdf("https://langbiang-land.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + value.subId);
-                    //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + value.subId);
+                    printPdf(domain+"/ticketorder/GetPDFForPrint?subId=" + value.subId);
                 });
             } else if (printOption == "InGop") {
                 let firstRowId = lstTicketSuccess[0].subId;
-                printPdf("https://langbiang-land.gamanjsc.com/ticketorder/GetPDFForPrint?subId=" + firstRowId);
-                //printPdf("http://localhost:44377/ticketorder/GetPDFForPrint?subId=" + firstRowId);
+                printPdf(domain + "/ticketorder/GetPDFForPrint?subId=" + firstRowId);
             } else if (printOption == "InQRCode") {
-                window.open('http://localhost:44377/ticketorder/PrintQRview?orderId=' + orderId, '_blank');
+                window.open(domain+'/ticketorder/PrintQRview?orderId=' + orderId, '_blank');
             }
         }
         
@@ -620,6 +627,12 @@
             $("#txt-quanti").val(1);
             $("#hid_TicketCode").val(null);
             $("#txt-price-by-policy").val(null);
+            $("#ddl-printtypes").val("InLe");
+            $("#ddl-customer").val("MACDINH");
+            $("#ddl-customer-type").val("Khach_Le");
+            $("#txt-cus-payamount").val(null);
+            $("#txt-km-percen").val(0);
+            $("#span-tien-thoi").html("");
             calculaTotal();
         }
         function RenderTotal(data) {

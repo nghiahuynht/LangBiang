@@ -28,6 +28,12 @@ namespace DAL.Models.TicketOrder
         public string CustomerTypeName { get; set; }
         public string ObjTypeName { get; set; }
         public string TicketGroup { get; set; }
+        public decimal DiscountPercent { get; set; }
+        public decimal DiscountedAmount { get; set; }
+        public string PaymentValue { get; set; }
+        public decimal PaymentRemain { get; set; }
+        public string PaymentType { get; set; }
+        public decimal? TotalAfterDiscounted { get; set; }
 
         [NotMapped]
         public List<GateListModel> ListGate { get; set; }= new List<GateListModel>();

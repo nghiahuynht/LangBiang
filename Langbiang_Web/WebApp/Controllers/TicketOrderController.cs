@@ -87,7 +87,7 @@ namespace WebApp.Controllers
                 viewmodel.ListSubCode = new List<DAL.Entities.TicketOrderSubNum>();
             }
             viewmodel.GateListAll = ticketService.GetAllGatelist();
-
+            ViewBag.Domain = AppSettingServices.Get.GeneralSettings.Domain;
 
             return View(viewmodel);
         }
@@ -317,6 +317,7 @@ namespace WebApp.Controllers
             ViewBag.TicketList = ticketService.GetAllTicket();
             ViewBag.GroupTicketList = ticketService.GetTicketGroupDDL();
             ViewBag.ListCustType = await customerService.LstAllCustomerType();
+            ViewBag.Domain = AppSettingServices.Get.GeneralSettings.Domain;
             return View();
         }
 
@@ -362,7 +363,7 @@ namespace WebApp.Controllers
 
 
         [HttpGet]
-        public IActionResult GetPDFForPrint(int subId)// dành cho kiểu in lẻ và in gộp
+        public IActionResult GetPDFForPrint(long subId)// dành cho kiểu in lẻ và in gộp
         {
 
             var subDetail = ticketOrderService.GetPrintPdfSubOrderDetail(subId);
@@ -371,6 +372,15 @@ namespace WebApp.Controllers
            
             subDetail.TotalByText = TienBangChu(subDetail.TotalAfterVAT.ToString());
             return View(subDetail);
+        }
+
+        [HttpGet]
+        public JsonResult GetInfoPrintAgain(long orderId)
+        {
+            var viewModel = new SaveOrderSuccessViewModel();
+            viewModel.OrderId = orderId;
+            viewModel.LstSubCode = ticketOrderService.GetSubCodePrintInfo(orderId).Result;
+            return Json(viewModel);
         }
 
 
@@ -425,20 +435,7 @@ namespace WebApp.Controllers
 
 
 
-        #region ============== SaleScreen custom version for LangbiAng==============
-
-        //public async Task<IActionResult> SaleScreenLangbiAng()
-        //{
-        //    ViewBag.CustomerList = await customerService.GetAllCustomer();
-        //    ViewBag.GateList = soatVeService.GetAllGateFullInfo();
-        //    ViewBag.TicketList = ticketService.GetAllTicket();
-        //    ViewBag.GroupTicketList = ticketService.GetTicketGroupDDL();
-        //    return View();
-        //}
-
-
-
-        #endregion
+       
 
 
 

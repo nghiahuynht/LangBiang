@@ -20,5 +20,6 @@ namespace DAL.Models.TicketOrder
         public decimal DiscountPercent { get; set; }
         public decimal DiscountValue { get; set; }
         public string TienKhachDua { get; set; }
+        public string PaymentType { get; set; }
     }
 }

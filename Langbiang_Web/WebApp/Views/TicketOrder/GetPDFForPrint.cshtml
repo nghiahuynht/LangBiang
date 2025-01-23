@@ -149,6 +149,23 @@
                     <td class="wtd30 fS23" style="text-align:center">@(Model.Price.ToString("#,##0"))</td>
                     <td class="wtd35 fS23" style="text-align:center">@(Model.TotalAfterVAT.ToString("#,##0"))</td>
                 </tr>
+                @{
+                    if (Model.DiscountPercent > 0)
+                    {
+                        <tr>
+                            <th class="wtd35 fS23" style="text-align:center;">KM(%)</th>
+                            <th class="wtd30 fS23" style="text-align:center">Tiền giảm</th>
+                            <th class="wtd35 fS23" style="text-align:center">Tổng thanh toán</th>
+                        </tr>
+                        <tr>
+                            <td class="wtd35 fS23" style="text-align:center">@(Model.DiscountPercent)</td>
+                            <td class="wtd30 fS23" style="text-align:center">@(Model.DiscountedAmount.ToString("N0"))</td>
+                            <td class="wtd35 fS23" style="text-align:center">@(Model.TotalAfterDiscounted.Value.ToString("N0"))</td>
+                        </tr>
+                    }
+                }
+
+
                 <tr>
                     <td colspan="3" class="pad-top10" style="text-align:center;">
                         <span class="fS23">Bằng chữ: @(Model.TotalByText)</span><br />
@@ -164,6 +181,7 @@
                     <td colspan="3" style="text-align:center;" class="fS23"><strong>(Vé chỉ có giá trị sử dụng trong ngày)</strong></td>
                 </tr>
             </table>
+
             <br />
             <table class="wtd100" style="border-bottom:1px solid #000;">
                 <tr>

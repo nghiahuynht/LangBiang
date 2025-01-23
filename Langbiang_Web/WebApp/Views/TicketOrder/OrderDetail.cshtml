@@ -40,8 +40,12 @@
                                 @*<input type="button" value="In lại vé" class="btn btn-primary" id="btn-print-order" style="margin-right:5px;" />*@
                             }
 
+
+
                             <input type="button" value="Xuất excel cho đối tác" class="btn btn-success" id="btn-export-suborder" style="margin-right:5px;" />
+                            <input type="button" value="In lại" class="btn btn-secondary" id="btn-print-again" style="margin-right:5px;" />
                             <a class="btn btn-default" href="/ticketorder/index">Trở lại danh sách</a>
+
 
                         }
 
@@ -181,6 +185,16 @@
                                 }
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label class="col-md-3 col-form-label">Kiểu in</label>
+                            <div class="col-md-9">
+                                <select class="form-control" id="ddl-printtypes">
+                                    <option value="InLe">In lẻ</option>
+                                    <option value="InGop">In gộp</option>
+                                    <option value="InQRCode">In QR Code</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -197,19 +211,19 @@
                     </thead>
                     <tbody>
                         @{
-                                                if (Model.ListSubCode.Any())
-                                                {
-                                                    foreach (var item in Model.ListSubCode)
-                                                    {
-                                                        <tr>
-                                                            <td width="40px"><div class="text-center" onclick="ViewPDf(@(item.Id))"><span class="fa fa-eye"></span></div></td>
-                                                            <td>@(item.SubNum)</td>
-                                                            <td><span style="font-size:14pt;">@(item.SubOrderCode)</span></td>
-                                                            <td>@(item.InvoiceNumber)</td>
-                                                            <td>@(item.TransactionID)</td>
-                                                        </tr>
-                                                    }
-                                                }
+                            if (Model.ListSubCode.Any())
+                            {
+                                foreach (var item in Model.ListSubCode)
+                                {
+                                    <tr>
+                                        <td width="40px"><div class="text-center" onclick="ViewPDf(@(item.Id))"><span class="fa fa-eye"></span></div></td>
+                                        <td>@(item.SubNum)</td>
+                                        <td><span style="font-size:14pt;">@(item.SubOrderCode)</span></td>
+                                        <td>@(item.InvoiceNumber)</td>
+                                        <td>@(item.TransactionID)</td>
+                                    </tr>
+                                }
+                            }
                         }
                     </tbody>
                 </table>
@@ -256,7 +270,7 @@
     </div>
 
 
-
+    <input type="hidden" value="@(ViewBag.Domain)" id="hid-domain" />
 </section>
 <div class="modal fade show" id="modal-category-detail" aria-modal="true" role="dialog">
     <div class="modal-dialog">
@@ -307,7 +321,9 @@
                 location.href = "/ticketorder/ExportExcelSubOrderByOrderId?orderId=" + orderId;
             });
 
-
+            $("#btn-print-again").click(function () {
+                PrintAgain();
+            });
 
          })
 
@@ -319,23 +335,23 @@
             if (confi)
             {
                 $.ajax({
-                                type: "GET",
-                contentType: 'application/json; charset=utf-8',
-                url: "/TicketOrder/ChangePaymentStatusOrder?orderId=" + orderId + "&newStatus=" + newStatus,
-                success: function (result) {
+                        type: "GET",
+                        contentType: 'application/json; charset=utf-8',
+                        url: "/TicketOrder/ChangePaymentStatusOrder?orderId=" + orderId + "&newStatus=" + newStatus,
+                        success: function (result) {
 
-                        if (result.isSuccess == true) {
-                            bootbox.alert(AlertSuccess("Chuyển trạng thái thành công"), function () {
+                            if (result.isSuccess == true) {
+                                bootbox.alert(AlertSuccess("Chuyển trạng thái thành công"), function () {
 
-                                location.href = "/TicketOrder/OrderDetail/" + orderId;
-                                SendNoti();
-                            });
+                                    location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                    SendNoti();
+                                });
 
-                        } else {
-                            bootbox.alert(AlertFail("Chuyển trạng thái không thành công"), function () {
-                                location.href = "/TicketOrder/OrderDetail/" + orderId;
-                            });
-                        }
+                            } else {
+                                bootbox.alert(AlertFail("Chuyển trạng thái không thành công"), function () {
+                                    location.href = "/TicketOrder/OrderDetail/" + orderId;
+                                });
+                            }
 
 
                     }
@@ -404,5 +420,63 @@
     }
 
 
+
+        function PrintAgain() 
+        {
+            let orderId = $("#TicketOrder_Id").val();
+            $.ajax({
+                type: "GET",
+                contentType: 'application/json; charset=utf-8',
+                url: "/TicketOrder/GetInfoPrintAgain?orderId=" + orderId,
+                beforeSend: function () {
+                    ShowWaiting();
+                },
+                success: function (res) {
+
+                    HideWaiting();
+                    if (res.lstSubCode.length > 0) {
+
+                        let printOptionVal = $("#ddl-printtypes").val();
+                        PrintOrder(printOptionVal, res.orderId, res.lstSubCode);
+
+                    } else {
+                        bootbox.alert(AlertFail("In không thành công"));
+                    }
+
+
+                }
+            });
+        }
+        function PrintOrder(printOption, orderId, lstTicketSuccess) {
+            debugger;
+            let domain = $("#hid-domain").val();
+            if (printOption == "InLe") {
+                $.each(lstTicketSuccess, function (index, value) {
+                    printPdf(domain + "/ticketorder/GetPDFForPrint?subId=" + value.subId);
+                });
+            } else if (printOption == "InGop") {
+                let firstRowId = lstTicketSuccess[0].subId;
+                printPdf(domain + "/ticketorder/GetPDFForPrint?subId=" + firstRowId);
+            } else if (printOption == "InQRCode") {
+                window.open(domain + '/ticketorder/PrintQRview?orderId=' + orderId, '_blank');
+            }
+        }
+        function printPdf(url) {
+            var iframe = document.createElement('iframe');
+            // iframe.id = 'pdfIframe'
+            iframe.className = 'pdfIframe'
+            document.body.appendChild(iframe);
+            iframe.style.display = 'none';
+            iframe.onload = function () {
+                setTimeout(function () {
+                    iframe.focus();
+                    iframe.contentWindow.print();
+                    URL.revokeObjectURL(url)
+                    // document.body.removeChild(iframe)
+                }, 1);
+            };
+            iframe.src = url;
+            // URL.revokeObjectURL(url)
+        }
     </script>
 }
