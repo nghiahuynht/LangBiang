@@ -188,10 +188,10 @@
                         <div class="form-group row">
                             <label class="col-md-3 col-form-label">Kiểu in</label>
                             <div class="col-md-9">
-                                <select class="form-control" id="ddl-printtypes">
-                                    <option value="InLe">In lẻ</option>
-                                    <option value="InGop">In gộp</option>
-                                    <option value="InQRCode">In QR Code</option>
+                                <select class="form-control" id="ddl-printtypes" readonly="true">
+                                    <option value="InLe" @(Model.TicketOrder.PrintType == "InLe"?"selected='selected'":string.Empty)>In lẻ</option>
+                                    <option value="InGop" @(Model.TicketOrder.PrintType == "InGop"?"selected='selected'":string.Empty)>In gộp</option>
+                                    <option value="InQRCode" @(Model.TicketOrder.PrintType == "InQRCode"?"selected='selected'":string.Empty)>In QR Code</option>
                                 </select>
                             </div>
                         </div>
@@ -272,32 +272,7 @@
 
     <input type="hidden" value="@(ViewBag.Domain)" id="hid-domain" />
 </section>
-<div class="modal fade show" id="modal-category-detail" aria-modal="true" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h4 class="modal-title">In lại vé</h4>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">×</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <label>Chọn kiểu in</label>
-                <select id="ddl-printtypes" class="form-control" data-style="btn-info">
-                    <option value="InLe">In lẻ</option>
-                    <option value="InGop">In gộp</option>
-                    <option value="InQRCode">In QR Code</option>
-                </select>
-            </div>
-            <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
-                <button type="button" class="btn btn-primary" id="btn-save-category">Lưu</button>
-            </div>
-        </div>
-        <!-- /.modal-content -->
-    </div>
-    <!-- /.modal-dialog -->
-</div>
+
 @section scripts{
     <script src="~/app-script/helper.js"></script>
     <script>

@@ -1,15 +1,20 @@
-﻿using System;
+﻿using Microsoft.ApplicationBlocks.Data;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TcpStandard_Server.GamanModel;
 using TcpStandard_Server.StandTcpController;
 using TcpStandard_Server.StandTcpProtocol;
+using LangbiangLand;
+
 
 namespace TcpStandard_Server
 {
@@ -19,6 +24,54 @@ namespace TcpStandard_Server
         StandTCPControllerManager AllController;
         StandardTCPServer ServerTcp;
         // TAllTest AllTest;
+
+        public List<GamanDoorModel> lstDoors = new List<GamanDoorModel> {
+            new GamanDoorModel
+            {
+                DoorSlotNum=0,
+                IP = "192.168.30.2",
+                Port = "8000",
+                Oem="23456",
+            },
+            new GamanDoorModel
+            {
+                DoorSlotNum=0,
+                IP = "192.168.30.3",
+                Port = "8000",
+                Oem="23456"
+            },
+            new GamanDoorModel
+            {
+                DoorSlotNum=0,
+                IP = "192.168.30.4",
+                Port = "8000",
+                Oem="23456"
+            },
+            new GamanDoorModel
+            {
+                DoorSlotNum=0,
+                IP = "192.168.30.5",
+                Port = "8000",
+                Oem="23456"
+            },
+            new GamanDoorModel
+            {
+                DoorSlotNum=0,
+                IP = "192.168.30.6",
+                Port = "8000",
+                Oem="23456"
+            },
+            new GamanDoorModel
+            {
+                DoorSlotNum=0,
+                IP = "192.168.30.7",
+                Port = "8000",
+                Oem="23456"
+            }
+
+        };
+
+        Logs gamanLog = new Logs();
 
         #region 初始化
         public Form1()
@@ -36,6 +89,8 @@ namespace TcpStandard_Server
         // 创建所有对象，启动服务器
         public void CreateAllClass()
         {
+            
+
             eventHandle.OnShowAlarmEvent += EventHandle_OnShowAlarmEvent;
             eventHandle.OnShowCardEvent += EventHandle_OnShowCardEvent;
             eventHandle.OnShowHeartEvent += EventHandle_OnShowHeartEvent;
@@ -44,11 +99,20 @@ namespace TcpStandard_Server
             eventHandle.OnShowNetChange += ShowNetChange;
             AllController = new StandTCPControllerManager(eventHandle);
 
-            AllController.AddControl("1E0050", "name");
-            AllController.AddControl("118130", "118130");
+            //  AllController.AddControl("1E0050", "name");
+            //  AllController.AddControl("118130", "118130");
 
             // 控制器web界面-网络界面上中，配置网络， 通信模式需要选择“设备作为客户端”。
             // 服务器端口 和此处的端口一致，  注意需要检查服务器电脑的防火墙，让它通过该端口。
+
+
+            foreach (GamanDoorModel item in lstDoors)
+            {
+                AllController.AddControl(item.Serial, item.IP);
+            }
+
+
+
             ServerTcp = new StandardTCPServer(AllController);
             ServerTcp.onServerStatus += OnServerStatus;
         }
@@ -133,6 +197,14 @@ namespace TcpStandard_Server
 
         private void EventHandle_OnShowHeartEvent(RHeartStatus HeartStatus, TCPController controller)
         {
+   
+            var door = lstDoors.Where(x => x.Serial.Equals(HeartStatus.SerialNo));
+            if (door.Any())
+            {
+                GamanDoorModel doorInfo = door.FirstOrDefault();
+            }
+
+
             String str = "";
             str += "时间:" + HeartStatus.Datetime.ToString() + ",  ";
             str += "序列号:" + (HeartStatus.SerialNo) + ",  ";
@@ -145,6 +217,7 @@ namespace TcpStandard_Server
 
         private void EventHandle_OnShowCardEvent(RCardEvent CardEvent, TCPController controller)
         {
+            
             String str = "";
             str += "时间:" + CardEvent.Datetime.ToString() + ", ";
             str += "卡号:" + (CardEvent.CardNo) + ", ";
@@ -849,5 +922,69 @@ namespace TcpStandard_Server
             }
             else AddLog("批量加卡 ");
         }
+
+
+        /*===================== GAMAN customize ===========================*/
+        public bool GetCheckValidQR(string qrValue)
+        {
+            if (qrValue == "GM")
+            {
+                return true;
+            }
+
+
+            gamanLog.WriteLog("Scan date: "+DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss")+", value: "+ qrValue);
+            
+
+            try
+            {
+                SqlParameter[] param = new SqlParameter[] {  new SqlParameter("@QRValue", qrValue)};
+
+                SqlHelper.ValidNullValue(param);
+                string query = string.Format(@"EXEC sp_CheckValidQRforScan @QRValue");
+                DataTable dataResult = SqlHelper.ExecuteDataset(SqlHelper.ConnString(), CommandType.Text, query, param).Tables[0];
+
+                if (dataResult.Rows.Count != 0)
+                {
+                    gamanLog.WriteLog("Check valid result: " + dataResult.Rows[0]["ResultScan"].ToString());
+                    gamanLog.WriteLog("=======================================================================");
+                }
+                else
+                {
+                    gamanLog.WriteLog("QR không hợp lệ");
+                    gamanLog.WriteLog("=======================================================================");
+                }
+
+                if (dataResult.Rows.Count != 0 && dataResult.Rows[0]["ResultScan"].ToString() == "ok")
+                {
+
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            catch(Exception ex)
+            {
+                gamanLog.WriteLog("QR error but you can pass");
+                gamanLog.WriteLog("=======================================================================");
+                return true;
+            }
+
+           
+
+
+        }
+
+
+       
+
+
+
+
+
+
+
     }
 }

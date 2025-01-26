@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -53,8 +54,11 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="GamanModel\GamanDoorModel.cs" />
+    <Compile Include="Logs.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLHelper.cs" />
     <Compile Include="StandTcpController\EventHandleInterface.cs" />
     <Compile Include="StandTcpController\StandTCPControllerManager.cs" />
     <Compile Include="StandTcpController\StandTCPServer.cs" />

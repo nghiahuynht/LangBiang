@@ -68,7 +68,6 @@ D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-T
 D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\netstandard1.3\DotNetty.Common.dll
 D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\netstandard1.3\DotNetty.Common.pdb
 D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\bin\Debug\netstandard1.3\DotNetty.Common.xml
-D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\netstandard1.3\DotNetty.Common.csprojAssemblyReference.cache
 D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\netstandard1.3\DotNetty.Common.csproj.CoreCompileInputs.cache
 D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\netstandard1.3\DotNetty.Common.dll
 D:\Projects\OnGit\LangBianSytem\Doucments\BenKhac\SDK for access controller\C#-TCP-Server-SDK\Netty\DotNetty.Common\obj\Debug\netstandard1.3\DotNetty.Common.xml

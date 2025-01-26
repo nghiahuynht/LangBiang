@@ -100,6 +100,7 @@ namespace DAL.Entities
         public string GateName { get; set; }
         public string ObjType { get; set; }
         public string OrderStatus { get; set; }
+        public string PrintType { get; set; }
 
     }
 }
